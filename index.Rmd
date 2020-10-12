@@ -24,14 +24,15 @@ _Arabesque_ allows the creation of flow maps from a web browser -
 equipped with Mozilla or Chrome, from its own datasets.
 It is based on current technological possibilities, in particular 
 those offered by the new web visualization (built in javascript and HTML 5) 
-and mapping libraries (OpenLayers, D3.js, OpenStreetMap, Turf, NaturalEarth data). 
+and mapping libraries ([OpenLayers](https://openlayers.org/), [D3.js](https://d3js.org/), [Turf](https://turfjs.org/), [OpenStreetMap](https://www.openstreetmap.org) and [Natural Earth](https://www.naturalearthdata.com/) data). 
 
 ## Challenges {-}
 
 The challenge of _Arabesque_ consists in offering a set of tools for 
-the analysis and tne cartographic representation of complex matrices 
+the analysis and the cartographic representation of complex matrices 
 (categorical and temporal). Its methodology is innovative : 
-it articulates several dimensions of a matrix, interactivity and animation). 
+it articulates several dimensions of a matrix, interactivity and animation.
+
 Its techniques allow an easy exploration, a fluidity of the display 
 in a simple configuration facilitating the appropriation of flow mapping 
 by different audiences (academic, institutional, socio-economic, educational...).
