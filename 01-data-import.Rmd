@@ -1,0 +1,17 @@
+# Data import
+
+## Links (*edges*) data
+
+## Nodes (*vertex*) data
+
+## Preset data
+
+## Agreggations on weighted links
+
+## Automated computations
+
+### For the nodes
+
+### For the links
+
+### For weighted links
