@@ -24,7 +24,7 @@ _Arabesque_ allows the creation of flow maps from a web browser -
 equipped with Mozilla or Chrome, from its own datasets.
 It is based on current technological possibilities, in particular 
 those offered by the new web visualization (built in javascript and HTML 5) 
-and mapping libraries (openlayers, d3, OSM, Turf, NaturalEarthData). 
+and mapping libraries (OpenLayers, D3.js, OpenStreetMap, Turf, NaturalEarth data). 
 
 ## Challenges {-}
 
