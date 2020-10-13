@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1 Data import | Arabesque documentation</title>
   <meta name="description" content="This is the online documentation of the Arabesque web application." />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1 Data import | Arabesque documentation" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="GFlowiz project team" />
 
 
-<meta name="date" content="2020-10-12" />
+<meta name="date" content="2020-10-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -123,9 +123,26 @@
 <h1><span class="header-section-number">1</span> Data import</h1>
 <div id="ricardo-data" class="section level2">
 <h2><span class="header-section-number">1.1</span> RICardo data</h2>
-<p>For this tutorial, we will use the historical trade flows listed in the <a href="https://github.com/gflowiz/sageo-ricardo">RICardo database</a>. The files used are available in this repository and have the following structure :</p>
+<p>For this tutorial, we will use the historical trade flows listed in the <a href="https://github.com/gflowiz/sageo-ricardo">RICardo database</a>.</p>
+<blockquote>
+<blockquote>
+<p>These files come from <a href="http://ricardo.medialab.sciences-po.fr/#/">RIcardo</a>, a research project on historical international trade flows,
+observed from the beginning of the Industrial Revolution to the World War II. The project combines a historical trade flows database
+covering all countries of the world, see: <a href="https://github.com/medialab/ricardo_data/releases/tag/2017.12">github/medialab/ricardo_data</a>
+with a website that offers to explore the history of international trade flows through visualizations,
+see: <a href="http://ricardo.medialab.sciences-po.fr/#/">medialab/ricardo</a>.</p>
+</blockquote>
+</blockquote>
+<p>In order to produce the first cartographic / geovisualizations of this historical corpus describing trade flows,
+a dataset has been prepared by Paul Girard (Medialab, Sciences Po) and Béatrice Dedinger (Centre d’Histoire, Sciences Po)
+for collective handling and exploitation during the GEOWEB-gflowiz worshop organized during the SAGEO2019 conference
+(More information: <a href="https://geoflowiz.hypotheses.org/workshop-geoweb-gflowiz-sageo2019">geoweb-gflowiz-Sageo</a>.</p>
+<p>A version of this tutorial is available in French here: <br/>
+<em>Une version française de ce tutoriel est disponible ici</em>: <br/>
+<a href="https://github.com/gflowiz/sageo-ricardo">github/gflowiz/sageo-ricardo</a></p>
+<p>The files used are available in this repository have the following structure:</p>
 <ul>
-<li><a href="https://raw.githubusercontent.com/gflowiz/sageo-ricardo/master/SAGEO_RICardo_nodes.csv">SAGEO_RICardo_nodes.csv</a> : geographical location of entities files
+<li><a href="https://raw.githubusercontent.com/gflowiz/sageo-ricardo/master/SAGEO_RICardo_nodes.csv">SAGEO_RICardo_nodes.csv</a>: geographical location of entities files
 <ul>
 <li>id (identifier of the geographical entity)</li>
 <li>name (name of the geographical entity)</li>
@@ -160,7 +177,7 @@ cartographic semiology.</p>
 <div id="links-edges-data" class="section level2">
 <h2><span class="header-section-number">1.2</span> Links (<em>edges</em>) data</h2>
 <p>Arabesque requires the loading of at least one stream data set: a link file in CSV (separator: comma) and long format.</p>
-<p>You must also declare the 3 minimum fields required for flow mapping: those corresponding to the origin locations, the destination locations and the flow values.</p>
+<p>You must also declare the 3 minimum fields required for flow mapping: those corresponding to the origin locations, to the destination locations and the flow values.</p>
 <p>If the OD matrix is temporal or available for different categories, you must also choose an aggregation method.</p>
 <p>On the homepage of(<a href="http://arabesque.ifsttar.fr/">Arabesque</a>), load at least one set of flow data.</p>
 <p><img src="images/BjvHVHn.png" /></p>

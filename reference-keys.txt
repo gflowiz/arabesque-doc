@@ -1,0 +1,16 @@
+data-import
+ricardo-data
+links-edges-data
+nodes-vertex-data
+preset-data
+agreggations-on-weighted-links
+automated-computations
+for-the-nodes
+for-the-links
+for-weighted-links
+interface
+geographical-layer-information
+map
+statistical-information
+exports
+examples
