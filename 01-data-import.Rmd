@@ -2,9 +2,26 @@
 
 ## RICardo data 
 
-For this tutorial, we will use the historical trade flows listed in the [RICardo database](https://github.com/gflowiz/sageo-ricardo). The files used are available in this repository and have the following structure :
+For this tutorial, we will use the historical trade flows listed in the [RICardo database](https://github.com/gflowiz/sageo-ricardo). 
 
-- [SAGEO_RICardo_nodes.csv](https://raw.githubusercontent.com/gflowiz/sageo-ricardo/master/SAGEO_RICardo_nodes.csv) : geographical location of entities files
+>> These files come from [RIcardo](http://ricardo.medialab.sciences-po.fr/#/), a research project on historical international trade flows, 
+observed from the beginning of the Industrial Revolution to the World War II. The project combines a historical trade flows database
+covering all countries of the world, see: [github/medialab/ricardo_data](https://github.com/medialab/ricardo_data/releases/tag/2017.12)
+with a website that offers to explore the history of international trade flows through visualizations,
+see: [medialab/ricardo](http://ricardo.medialab.sciences-po.fr/#/). 
+
+In order to produce the first cartographic / geovisualizations of this historical corpus describing trade flows,
+a dataset has been prepared by Paul Girard (Medialab, Sciences Po) and Béatrice Dedinger (Centre d'Histoire, Sciences Po)
+for collective handling and exploitation during the GEOWEB-gflowiz worshop organized during the SAGEO2019 conference
+(More information: [geoweb-gflowiz-Sageo](https://geoflowiz.hypotheses.org/workshop-geoweb-gflowiz-sageo2019). 
+
+A version of this tutorial is available in French here: <br/>
+_Une version française de ce tutoriel est disponible ici_: <br/>
+[github/gflowiz/sageo-ricardo](https://github.com/gflowiz/sageo-ricardo)
+
+The files used are available in this repository have the following structure:
+
+- [SAGEO_RICardo_nodes.csv](https://raw.githubusercontent.com/gflowiz/sageo-ricardo/master/SAGEO_RICardo_nodes.csv): geographical location of entities files
 	- id (identifier of the geographical entity)
 	- name (name of the geographical entity)
 	- type (entity type : _country_, _city_, ...)
@@ -17,7 +34,6 @@ For this tutorial, we will use the historical trade flows listed in the [RICardo
 	- iddestination (identifier of the destination entity of the flow)
 	- volume (financial volume of the flow in pounds sterling)
 	- decennie (decade concerned by the flow)
-
 
 - [SAGEO_RICardo_edges_nona.csv](https://raw.githubusercontent.com/gflowiz/sageo-ricardo/master/SAGEO_RICardo_edges_nona.csv) : non-aggregated historical trade flows
 	- idorigin (identifier of the entity of origin of the flow)
@@ -37,7 +53,7 @@ cartographic semiology.
 
 Arabesque requires the loading of at least one stream data set: a link file in CSV (separator: comma) and long format. 
 
-You must also declare the 3 minimum fields required for flow mapping: those corresponding to the origin locations, the destination locations and the flow values. 
+You must also declare the 3 minimum fields required for flow mapping: those corresponding to the origin locations, to  the destination locations and the flow values. 
 
 If the OD matrix is temporal or available for different categories, you must also choose an aggregation method.
 
