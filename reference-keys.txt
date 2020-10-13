@@ -1,10 +1,10 @@
 data-import
 ricardo-data
+statistical-datasets
 links-edges-data
 nodes-vertex-data
-preset-data
+preset-dataset
 agreggations-on-weighted-links
-automated-computations
 for-the-nodes
 for-the-links
 for-weighted-links
