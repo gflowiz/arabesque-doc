@@ -1,15 +1,28 @@
 # Data import
 
+Arabesque also allows you to import your own data sets : (1) flowdata in the form of an origin-destination matrix
+(adjacency long format in .csv), to agregate them if necessary and (2) nodes dataset before building a readable flowmap.
+
+For this tutorial, we will use for example the historical trade flows listed in the [RICardo database](https://github.com/gflowiz/sageo-ricardo). 
+
+The creation of a flow map with Arabesque can be broken down into the following main steps:
+
+**1. Importing flow datasets (links and/or nodes)**
+2. Processing flow datasets (creation of indicators, statistics)
+3. Statistical data computing (filtering, ...)
+4. Geographical data computing (choosing the map background...)
+5. Graphic symbolization for thematic flow mapping purposes
+6. Flowmap decoration 
+7. Export
+
+
 ## RICardo data 
 
-For this tutorial, we will use the historical trade flows listed in the [RICardo database](https://github.com/gflowiz/sageo-ricardo). 
-
->> These files come from [RIcardo](http://ricardo.medialab.sciences-po.fr/#/), a research project on historical international trade flows, 
+These files come from [RIcardo](http://ricardo.medialab.sciences-po.fr/#/), a research project on historical international trade flows, 
 observed from the beginning of the Industrial Revolution to the World War II. The project combines a historical trade flows database
 covering all countries of the world, see: [github/medialab/ricardo_data](https://github.com/medialab/ricardo_data/releases/tag/2017.12)
 with a website that offers to explore the history of international trade flows through visualizations,
-see: [medialab/ricardo](http://ricardo.medialab.sciences-po.fr/#/). 
-
+see: [medialab/ricardo](http://ricardo.medialab.sciences-po.fr/#/).
 In order to produce the first cartographic / geovisualizations of this historical corpus describing trade flows,
 a dataset has been prepared by Paul Girard (Medialab, Sciences Po) and Béatrice Dedinger (Centre d'Histoire, Sciences Po)
 for collective handling and exploitation during the GEOWEB-gflowiz worshop organized during the SAGEO2019 conference
@@ -43,13 +56,10 @@ The files used are available in this repository have the following structure:
 	- periode (period of the exchange)
 	- decennie (decade of exchange)
 
-***Arabesque*** also allows you to import your own flow data
-sets, in the form of an origin-destination matrix (adjacency
-list format in CSV), explore and filter them to create a
-readable flow map, in accordance with the principles of
-cartographic semiology.
 
-## Links (*edges*) data
+## Statistical datasets
+
+### Links (*edges*) data
 
 Arabesque requires the loading of at least one stream data set: a link file in CSV (separator: comma) and long format. 
 
@@ -65,19 +75,37 @@ On the homepage of([Arabesque](http://arabesque.ifsttar.fr/)), load at least one
 
 **Application**
 
+Statistical dataset
+
 Loading data *SAGEO_RICardo_edges_small.csv*.
 
 ![](images/GjzU9IE.png)
 
-## Nodes (*vertex*) data
+### Nodes (*vertex*) data
 
-## Preset data
+If you have locational data associated with your ODs, you can load the corresponding node files with "Import Location",
+otherwise you can use predefined locations with "Preset Location".
 
-## Agreggations on weighted links
+If you select "Import Location", you must load a .GEOJSON or .CSV file, then choose the ID of the nodes and their lat/long geographic coordinates.
 
-## Automated computations
+**Application**
+
+Loading _SAGEO_RICardo_nodes.csv_ data
+
+![](https://i.imgur.com/5uIbhj4.png)
+
+### Preset dataset
+
+List of Arabesque' references datasets
+
+
+### Agreggations on weighted links
+
+**Automated computations**
 
 ### For the nodes
+
+**Automated indicators computation for nodes**
 
 ### For the links
 
