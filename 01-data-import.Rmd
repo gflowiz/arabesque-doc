@@ -22,15 +22,12 @@ These files come from [RIcardo](http://ricardo.medialab.sciences-po.fr/#/), a re
 observed from the beginning of the Industrial Revolution to the World War II. The project combines a historical trade flows database
 covering all countries of the world, see: [github/medialab/ricardo_data](https://github.com/medialab/ricardo_data/releases/tag/2017.12)
 with a website that offers to explore the history of international trade flows through visualizations,
-see: [medialab/ricardo](http://ricardo.medialab.sciences-po.fr/#/).
-In order to produce the first cartographic / geovisualizations of this historical corpus describing trade flows,
-a dataset has been prepared by Paul Girard (Medialab, Sciences Po) and Béatrice Dedinger (Centre d'Histoire, Sciences Po)
-for collective handling and exploitation during the GEOWEB-gflowiz worshop organized during the SAGEO2019 conference
+see: [medialab/ricardo](http://ricardo.medialab.sciences-po.fr/#/). In order to produce the first cartographic / geovisualizations
+of this historical corpus describing trade flows, a dataset has been prepared by Paul Girard (Medialab, Sciences Po) and Béatrice Dedinger (Centre d'Histoire, Sciences Po) for collective handling and exploitation during the GEOWEB-gflowiz worshop organized during the SAGEO2019 conference
 (More information: [geoweb-gflowiz-Sageo](https://geoflowiz.hypotheses.org/workshop-geoweb-gflowiz-sageo2019). 
 
 A version of this tutorial is available in French here: <br/>
-_Une version française de ce tutoriel est disponible ici_: <br/>
-[github/gflowiz/sageo-ricardo](https://github.com/gflowiz/sageo-ricardo)
+[Version française](https://github.com/gflowiz/sageo-ricardo)
 
 The files used are available in this repository have the following structure:
 
