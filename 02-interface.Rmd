@@ -69,6 +69,24 @@ The progression (up/down) of the *colorrange* depends on that of the *value rang
 
 ![](images/geom_add_nodes_1_color_variable3.png)
 
+*Size*: The size of the nodes can be fixed and the weight defined.
+
+![](images/geom_add_nodes_2_size.png)
+
+
+The size can be *weighted by a variable* according to one of the initial or additional *variables* available in the dataset (hereby the balance).
+
+
+![](images/geom_add_nodes_2_size_variable.png)
+Three functions to set the size of the node according to the corresponding value are proposed: the square, the square root and the logarithm.
+
+![](images/geom_add_nodes_2_size_fct.png)
+
+The *ratio* representing the max width in pixel of the graphic features can be defined - according to the map bounding box, to obtain an image with balanced features (neither too small nor too big).
+
+![](images/geom_add_nodes_2_size_ratio.png)
+
+
 
 ### Add Link Features
 
