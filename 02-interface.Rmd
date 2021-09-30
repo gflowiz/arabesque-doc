@@ -15,16 +15,49 @@ By default, the links are represented in shades of blue and the nodes in red. Th
 Except in the case of loading a projected geometry as input, the map is presented in WGS84.
 
 
-## General structure on the Interface
+The general structure of the interface of Arabesque is composed of three panel. 
+
+> The central panel is for displaying the map and the two side panels is for playing with geographic and statistical information. The right panel is for playing with the flow data set and the right panel is for dealing with the statistics.
 
 
-The interface of Arabesque is composed of three panel. The central view is for displaying the map and the two side panels is for playing with geographic and statistical information.
+## The central panel
 
 
-The right panel is for playing with the flow data set and the right panel is for dealing with the statistics.
+The central part of Arabesque corresponds to the map view. It results from the choice of the layers to be displayed (from the left panel) and the filtering of the values of the links and nodes (from the right panel).
+
+This central panel also presents different buttons allowing the implementation of primary actions.
+
+### Primary actions with butons
+
+![](images/Buton_home.png) Return to the [home page](arabesque.ifsttar.fr) to start a new view.
+
+![](images/Buton_in_out.png) Successively zoom in/out - the same way as with the mouse wheel.
+
+![](images/Buton_sauv.png) Save the project in .ZIP for later use.
+
+![](images/Buton_export.png) Export the map in .PNG including legends and and contributors' sources for external backgrounds such as OSM or NaturalEarth data.
+
+![](images/Buton_center.png) Refocus and display the entire view without zooming in/out or panning.
+
+![](images/Buton_export.png) Export the filtered flow data - the ones visible on the map - as a list file in .JSON format.
+
+![](images/Buton_leg.png) Show/hide the legend.
+
+![](images/Buton_screen_black.png) Switch to full screen display - with black background.
+
+![](images/Buton_open_panel.png) Open/close the panels located on each side of the map.
 
 
-## Geographic panel
+### Primary legend
+
+A legend is automatically generated for each map for nodes and links plot.
+
+![](images/center_legend.png)
+
+The symbolization elements (size, color and opacity) of the nodes and links are included. Here (for the default map), it is the volume of flows and the degree of places that are represented.
+
+
+## The geographic panel
 
 The left panel is for dealing with the geography/geometry layers and customize the map.
 
@@ -107,10 +140,12 @@ The opacity of the text shade (currently set to black) can be varied according t
 The opacity of the text shade can vary according to an indicator present in the dataset and according to a corresponding function which can be Linear, Square, SquareRoot or Logarithm and defined in an min/max interval: here between 0.25 and 0.85. 
 
 
-
 ### Add Link Features
 
 Add Link Feature leads to act on the design/style the flow interactions features.
+
+![](images/geom_add_links_1.png)
+
 
 
 
@@ -138,4 +173,4 @@ Manipulation, layout and display of layers
 
 
 
-## Statistical panel
+## The statistical panel
