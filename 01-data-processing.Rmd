@@ -24,9 +24,6 @@ See below the indicators that have been automatically computed on the nodes of t
 
 
 
-
-
-
 These files come from [RIcardo](http://ricardo.medialab.sciences-po.fr/#/), a research project on historical international trade flows, 
 observed from the beginning of the Industrial Revolution to the World War II. The project combines a historical trade flows database
 covering all countries of the world, see: [github/medialab/ricardo_data](https://github.com/medialab/ricardo_data/releases/tag/2017.12)
@@ -133,5 +130,23 @@ The list of deleted nodes and links is displayed in a new window.
 ![](images/import_suppr_entities.png)
 
 This list is for quick reference only. You must copy and paste it (into a text file, for example) if you want to keep the list of deleted entities : here 77 nodes have been deleted because they are not related to other nodes. The corresponding nodes ID are list.
+
+Loading data into Arabesque leads to the creation of a default map, which is placed in the center of the interface.
+
+## Default flow map
+
+Loading data in Arabesque leads to the creation of a default map.
+
+By default, the links are represented in shades of blue and the nodes in red. The map is presented in the WGS84 projection, according to the lat/lon coordinates* declared during the import.
+
+Except in the case of loading a projected geometry as input, the map is presented in WGS84.
+
+Hereby is the Ricardo's dataset default map with global statistic of the percent of links versus the percent of volume of flows and nodes.
+
+![](images/defaut_flowmap.png)
+Only the 10% most important links (in value) are represented and symbolized (see the automatic legend) according to their intensity (the flow variable entered at import).
+The corresponding nodes are symbolized according to their degree (variable calculated automatically during the import).
+
+
 
 
