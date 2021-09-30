@@ -1,12 +1,21 @@
 # Interface
 
-Loading data into Arabesque leads to the creation of a default map, which is placed in the center of the view.
 
+The general structure of the interface of Arabesque is composed of three panel. 
+- The *central* panel is for displaying the map and the two side panels is for playing with information.
+- The *left* panel is for dealing with geometries and geographical layers
+- The *right* panel is for playing with the flow data set.
 
-## Default flow mapping
+Loading data into Arabesque leads to the creation of a default map, which is placed in the center of the interface.
+
+## General Presentation
+
+### Default flow mapping
 
 Only the 10% most important links (in value) are represented and symbolized (see the automatic legend) according to their intensity (the flow variable entered at import).
 The corresponding nodes are symbolized according to their degree (variable calculated automatically during the import).
+
+Hereby is the Ricardo's dataset default map with global statistic of the percent of links versus the percent of volume of flows and nodes.
 
 ![](images/defaut_flowmap.png)
 
@@ -15,13 +24,7 @@ By default, the links are represented in shades of blue and the nodes in red. Th
 Except in the case of loading a projected geometry as input, the map is presented in WGS84.
 
 
-The general structure of the interface of Arabesque is composed of three panel. 
-
-> The central panel is for displaying the map and the two side panels is for playing with geographic and statistical information. The right panel is for playing with the flow data set and the right panel is for dealing with the statistics.
-
-
 ## The central panel
-
 
 The central part of Arabesque corresponds to the map view. It results from the choice of the layers to be displayed (from the left panel) and the filtering of the values of the links and nodes (from the right panel).
 
