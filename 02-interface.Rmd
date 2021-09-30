@@ -1,5 +1,34 @@
 # Interface
 
-## Geographical layer information
+Loading data into Arabesque leads to the creation of a default map, which is placed in the center of the view.
+
+
+# Default flow mapping
+
+Only the 10% most important links (in value) are represented and symbolized (see the automatic legend) according to their intensity (the flow variable entered at import).
+The corresponding nodes are symbolized according to their degree (variable calculated automatically during the import).
+
+![](images/defaut_flowmap.png)
+
+By default, the links are represented in shades of blue and the nodes in red. The map is presented in the WGS84 projection, according to the lat/lon coordinates* declared during the import.
+
+Except in the case of loading a projected geometry as input, the map is presented in WGS84.
+
+
+## Interface
+
+The interface of Arabesque is composed of the central view - which displays the map - and two side panels.
+
+The left panel is for dealing with the geography/geometry layers.
+
+The right panel is for playing with the flow data set.
+
+## Geographic panel
+
+
+
 ## Map
-## Statistical information
+
+
+
+## Statistical panel
