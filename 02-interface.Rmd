@@ -3,7 +3,7 @@
 Loading data into Arabesque leads to the creation of a default map, which is placed in the center of the view.
 
 
-# Default flow mapping
+## Default flow mapping
 
 Only the 10% most important links (in value) are represented and symbolized (see the automatic legend) according to their intensity (the flow variable entered at import).
 The corresponding nodes are symbolized according to their degree (variable calculated automatically during the import).
@@ -15,18 +15,87 @@ By default, the links are represented in shades of blue and the nodes in red. Th
 Except in the case of loading a projected geometry as input, the map is presented in WGS84.
 
 
-## Interface
+## General structure on the Interface
 
-The interface of Arabesque is composed of the central view - which displays the map - and two side panels.
 
-The left panel is for dealing with the geography/geometry layers.
+The interface of Arabesque is composed of three panel. The central view is for displaying the map and the two side panels is for playing with geographic and statistical information.
 
-The right panel is for playing with the flow data set.
+
+The right panel is for playing with the flow data set and the right panel is for dealing with the statistics.
+
 
 ## Geographic panel
 
+The left panel is for dealing with the geography/geometry layers and customize the map.
+
+The management of geographic information is composed of two sub-sections:
+
+![](images/geom_panel.png)
+
+Actions on the background of the map are for changing projections of the current map and/or to add other layers.
+
+Actions on the design/style is for (additional) geographic layers that have been adding through the previous action.
+
+*Add Other layers*
 
 
+![](images/geom_add_layers.png)
+
+Five types of geographic layers can be loaded/add to construct the map (Add Node Feature and Add Link Features) and/or to contextualize the map (Add Base Layer, Add Tile Layers (OSM), Import GeoJson Layers).
+
+Add Node Feature and Add Link Features leads to act on the design/style the flow features: to symbolize and customize the links and the nodes.
+
+
+### Add Node Features
+
+Add Node Feature leads to act on the design/style of the flow places features.
+
+![](images/geom_add_nodes_1.png)
+It is possible to set up all the graphic dimensions of the nodes.
+
+*Color*: The color of the nodes can be fixed (e.g. in red) or shaded in a range of tones.
+
+![](images/geom_add_nodes_1_color.png)
+The reference for the color schemes is Cynthia Brewer palette for Diverging, Multi Hue and Single Hue. See: [Color Brewer advices for maps](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3). An Extra Palette is also proposed in Arabesque.
+
+The color of the node can be set according to one of the variables (initial or calculated by Arabesque) present in the dataset.
+
+![](images/geom_add_nodes_1_color_variable.png)
+
+By definition, the type of color range (Diverging/Multi Hue/Single Hue/Extra Palette) will have to be realized according to the type of the variable to represent (quantitative/qualitative, discrete/continuous, stock/ratio/scale, ...). 
+
+![](images/geom_add_nodes_1_color_variable2.png)
+The progression (up/down) of the *colorrange* depends on that of the *value range*: it can be direct or inverse. The checked box means an inverse progression: a light color is applied to a strong value.
+
+![](images/geom_add_nodes_1_color_variable3.png)
+
+
+### Add Link Features
+
+Add Link Feature leads to act on the design/style the flow interactions features.
+
+
+
+### Add  Base Layer
+
+
+
+
+### Add Tile Layers (OSM) 
+
+
+
+### Import GeoJson Layers
+
+*General*
+    - Projections
+    - Title
+    - Management and symbolization of layers (Add Layers)
+
+Manipulation, layout and display of layers
+    - Links
+    - Nodes
+    - Other layers
 ## Map
 
 
