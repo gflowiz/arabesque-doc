@@ -62,7 +62,10 @@ The symbolization elements (size, color and opacity) of the nodes and links are 
 
 ## The geographic panel
 
-The left panel is for dealing with the geography/geometry layers and customize the map.
+The left panel is to design the map :
+- dealing with the background as the geographical/geometrical layers 
+- customize the _design_/style of the nodes and links features
+map.
 
 The management of geographic information is composed of two sub-sections:
 
@@ -89,7 +92,8 @@ Add Node Feature leads to act on the design/style of the flow places features.
 ![](images/geom_add_nodes_1.png)
 It is possible to set up all the graphic dimensions of the nodes.
 
-*Color*: The color of the nodes can be fixed (e.g. in red) or shaded in a range of tones.
+#### *Color* 
+The color of the nodes can be fixed (e.g. in red) or shaded in a range of tones.
 
 ![](images/geom_add_nodes_1_color.png)
 The reference for the color schemes is Cynthia Brewer palette for Diverging, Multi Hue and Single Hue. See: [Color Brewer advices for maps](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3). An Extra Palette is also proposed in Arabesque.
@@ -105,7 +109,8 @@ The progression (up/down) of the *colorrange* depends on that of the *value rang
 
 ![](images/geom_add_nodes_1_color_variable3.png)
 
-*Size*: The size of the nodes can be fixed and the weight defined.
+####*Size*
+The size of the nodes can be fixed and the weight defined.
 
 ![](images/geom_add_nodes_2_size.png)
 
@@ -122,7 +127,8 @@ The *ratio* representing the max width in pixel of the graphic features can be d
 
 ![](images/geom_add_nodes_2_size_ratio.png)
 
-*Text*: textual element can also be added near the nodes.
+#### *Text*
+Textuals elements can also be added near the nodes.
 
 ![](images/geom_add_nodes_3_texte.png)
 The text can be defined according to one of the variable available in the dataset.
