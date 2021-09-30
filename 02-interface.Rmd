@@ -86,6 +86,26 @@ The *ratio* representing the max width in pixel of the graphic features can be d
 
 ![](images/geom_add_nodes_2_size_ratio.png)
 
+*Text*: textual element can also be added near the nodes.
+
+![](images/geom_add_nodes_3_texte.png)
+The text can be defined according to one of the variable available in the dataset.
+
+![](images/geom_add_nodes_3_texte2.png).
+
+The opacity of the text shade (currently set to black) can be set to a given value (here 0.85).
+
+
+![](images/geom_add_nodes_3_texte_fixe.png)
+
+The opacity of the text shade (currently set to black) can be varied according to an indicator present in the dataset.
+
+![](images/geom_add_nodes_3_texte_variable.png)
+
+![](images/geom_add_nodes_3_texte_funct.png)
+
+The opacity of the text shade can vary according to an indicator present in the dataset and according to a corresponding function which can be Linear, Square, SquareRoot or Logarithm and defined in an min/max interval: here between 0.25 and 0.85. 
+
 
 
 ### Add Link Features
