@@ -23,6 +23,7 @@ See below the indicators that have been automatically computed on the nodes of t
 ![](images/GjzU9IE.png)
 
 
+**CASE STUDY**
 
 These files come from [RIcardo](http://ricardo.medialab.sciences-po.fr/#/), a research project on historical international trade flows, 
 observed from the beginning of the Industrial Revolution to the World War II. The project combines a historical trade flows database
@@ -60,9 +61,9 @@ The files used are available in this repository have the following structure:
 	- decennie (decade of exchange)
 
 
-## Statistical datasets
+## Data importation
 
-### Links (*edges*) data
+### Links (*edges*) dataset importation
 
 Arabesque requires the loading of at least one stream data set: a link file in CSV (separator: comma) and long format. 
 
@@ -97,7 +98,7 @@ Several aggregation functions are available (sum, average, median, maximum, mini
 Note: This aggregation does not interfere with the geo-visualization possibilities that will remain available for all existing types.
 
 
-### Nodes (*vertex*) data
+## Nodes (*vertex*) dataset importation
 
 If you have locational data associated with your ODs, you can load the corresponding node files with "Import Location",
 otherwise you can use predefined locations with "Preset Location".
@@ -114,7 +115,7 @@ The data must be in long format, with at least 3 columns to identify the place a
 
 If you do not have a file for the geometry, you can use the codes identifying the reference data (e.g. INSEE codes of the French communes, ISO codes of the countries), to automatically geolocate your nodes. See Preset.
 
-### Preset dataset
+## Preset nodes dataset
 
 Example of pre-selection of French municipalities.
 
@@ -122,6 +123,9 @@ Example of pre-selection of French municipalities.
 
 
 After loading the link and node files, Arabesque automatically performs a join of the common attributes between the two files.
+
+
+## Checking missing nodes/links features
 
 Links that do not have an origin and/or destination ID are automatically deleted. Nodes that don't have an ID code that allows them to be geographically located are also not kept.
 
@@ -133,7 +137,7 @@ This list is for quick reference only. You must copy and paste it (into a text f
 
 Loading data into Arabesque leads to the creation of a default map, which is placed in the center of the interface.
 
-## Default flow map
+## Visualize a default flow map
 
 Loading data in Arabesque leads to the creation of a default map.
 
