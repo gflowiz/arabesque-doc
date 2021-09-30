@@ -1,9 +1,13 @@
 # Data import
 
-Arabesque also allows you to import your own data sets : (1) flowdata in the form of an origin-destination matrix
-(adjacency long format in .csv), to agregate them if necessary and (2) nodes dataset before building a readable flowmap.
+Arabesque also allows you to import your own data sets : (1) flowdata in the form of an origin-destination matrix (adjacency long format in .csv), to agregate them if necessary and (2) nodes dataset before building a readable flowmap.
 
 For this tutorial, we will use for example the historical trade flows listed in the [RICardo database](https://github.com/gflowiz/sageo-ricardo). 
+
+For more informations about the dataset and its use with Arabesque, see:
+
+*Reference* : Girard P. et Dedinger B. (2020), Pourquoi et comment géolocaliser le commerce mondial des XIXe-miXXe siècles ? : Retour d’expérience sur l’usage de wikidata comme gazetteer historique et de l’application de cartographie de flux Arabesque, _Humanistica_, Medialab Sciences-Po. et Centre d’histoire de Sciences-Po., en ligne
+
 
 The creation of a flow map with Arabesque can be broken down into the following main steps:
 
@@ -26,7 +30,7 @@ see: [medialab/ricardo](http://ricardo.medialab.sciences-po.fr/#/). In order to 
 of this historical corpus describing trade flows, a dataset has been prepared by Paul Girard (Medialab, Sciences Po) and Béatrice Dedinger (Centre d'Histoire, Sciences Po) for collective handling and exploitation during the GEOWEB-gflowiz worshop organized during the SAGEO2019 conference
 (More information: [geoweb-gflowiz-Sageo](https://geoflowiz.hypotheses.org/workshop-geoweb-gflowiz-sageo2019). 
 
-A version of this tutorial is available in French here: <br/>
+A french version of this tutorial is available in French here: <br/>
 [Version française](https://github.com/gflowiz/sageo-ricardo)
 
 The files used are available in this repository have the following structure:
@@ -78,6 +82,19 @@ Loading data *SAGEO_RICardo_edges_small.csv*.
 
 ![](images/GjzU9IE.png)
 
+The data must be in long format, with at least 3 columns  : origin, destination, flow
+
+The data must be in long format, with at least 3 columns to identify the origin, destination and volume of flows.
+
+If the flow data are multiscalar (e.g. flows that concern several social groups, several goods transported or that occur on several dates), it is necessary to aggregate them when loading them into Arabesque.
+
+Several aggregation functions are available (sum, average, median, maximum, minimum) to simplify the flows.
+
+![](images/flow_aggreg_import.png)
+
+Note: This aggregation does not interfere with the geo-visualization possibilities that will remain available for all existing types.
+
+
 ### Nodes (*vertex*) data
 
 If you have locational data associated with your ODs, you can load the corresponding node files with "Import Location",
@@ -89,21 +106,27 @@ If you select "Import Location", you must load a .GEOJSON or .CSV file, then cho
 
 Loading _SAGEO_RICardo_nodes.csv_ data
 
-![](https://i.imgur.com/5uIbhj4.png)
+![](images/import_nodes.png)
+
+The data must be in long format, with at least 3 columns to identify the place and the latitude (Y) and longitude (X) coordinates.
+
+If you do not have a file for the geometry, you can use the codes identifying the reference data (e.g. INSEE codes of the French communes, ISO codes of the countries), to automatically geolocate your nodes. See Preset.
 
 ### Preset dataset
 
-List of Arabesque' references datasets
+Example of pre-selection of French municipalities.
+
+![](images/preset_nodes_import.png)
 
 
-### Agreggations on weighted links
+After loading the link and node files, Arabesque automatically performs a join of the common attributes between the two files.
 
-**Automated computations**
+Links that do not have an origin and/or destination ID are automatically deleted. Nodes that don't have an ID code that allows them to be geographically located are also not kept.
 
-### For the nodes
+The list of deleted nodes and links is displayed in a new window.
 
-**Automated indicators computation for nodes**
+![](images/import_suppr_entities.png)
 
-### For the links
+This list is for quick reference only. You must copy and paste it (into a text file, for example) if you want to keep the list of deleted entities : here 77 nodes have been deleted because they are not related to other nodes. The corresponding nodes ID are list.
 
-### For weighted links
+
