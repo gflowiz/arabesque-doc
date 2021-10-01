@@ -46,3 +46,9 @@ swiss-commuting
 london-bike-sharing
 french-commutingmobilités-professionelles-mobpro
 french-school-mobilitiesmobilités-scolaires-mobsco
+design-of-the-flowmap-signs-nodeslinks
+designing-the-nodes
+the-color-of-nodes
+size-2
+text-2
+designing-the-links
