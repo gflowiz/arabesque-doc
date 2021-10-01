@@ -1,0 +1,45 @@
+The creation of a flow map with Arabesque can be broken down into the following main steps:
+
+1. Importing flow datasets (links and/or nodes)
+**2. Processing flow datasets (creation of indicators, statistics)**
+3. Statistical data computing (filtering, ...)
+4. Geographical data computing (choosing the map background...)
+5. Graphic symbolization for thematic flow mapping purposes
+6. Flowmap decoration 
+7. Export
+
+The links and nodes datasets are automatically modified when importing and _Arabesque_ computes different indicators. 
+
+
+## Data indicators pre processing
+
+*Indicators on links*: Euclidean distance between the origin and destination entities
+
+*Indicators on nodes* : see below the additional indicators () automatically calculated on the nodes of the RIcardo data
+
+See below the indicators that have been automatically computed (ie the additional variable) on the nodes of the RIcardo data.
+
+![](images/import_indic.png)
+
+
+These indicators can be downloaded in . csv format (see Export and Save sections). 
+
+Loading links and nodes data into _Arabesque_ leads to the creation of a default map, which is placed in the center of the interface.
+
+
+## Visualize a default flow map
+
+Loading data in Arabesque leads to the creation of a default map to avoid visualizing a "spaghetti effect" when entering the application ; all the defined parameters can then be modified during the exploration.
+
+By default, the links are represented in shades of blue and the nodes in red. The map is presented in the WGS84 projection, according to the lat/lon coordinates* declared during the import.
+
+Except in the case of loading a projected geometry as input, the map is presented in WGS84.
+
+Hereby is the Ricardo's dataset default map with global statistic of the percent of links versus the percent of volume of flows and nodes.
+
+![](images/defaut_flowmap.png)
+Only the 10% most important links (in value) are represented and symbolized (see the automatic legend) according to their intensity (the flow variable entered at import).
+The corresponding nodes are symbolized according to their degree (variable calculated automatically during the import).
+
+
+
