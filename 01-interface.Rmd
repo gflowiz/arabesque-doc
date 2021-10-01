@@ -98,10 +98,11 @@ Five types of geographic layers can be loaded/add to construct the map (Add Node
 
 Add Node Feature and Add Link Features leads to act on the design/style the flow features: to symbolize and customize the links and the nodes.
 
-
 ### Add Node Features
 
+
 ![](images/add_Nodes_features.png)
+
 
 Add Node Feature leads to act on the design/style of the flow places features.
 
@@ -317,16 +318,84 @@ Add based layers consists in calling a remote geographic information layer, to c
 
 
 
+![](images/Add_base_Layer_1.png)
+
+
+
+Several layers are available :
+
+![](images/Add_base_Layer_choose.png)
+
+
+
+
+
+
+
+
+![](images/Add_base_Layer_Graticule.png)
+
+![](images/Add_base_Layer_Country.png)
+
 EXAMPLE: various geometry of a same Covid-19 flowmaps.
 
-![](images/Ex_geographie_covid.png)
+
 
 
 
 ### Add Tile Layers (OSM) 
 
+
+
+
 ![](images/Add_Tiles_OSM.png)
 
+
+The Base type of tiles layers come from Open Street Map (OSM). 
+See for details: [OSM tile server](https://wiki.openstreetmap.org/wiki/Tile_servers)
+
+
+![](images/Add_Tile_Layer_base.png)
+Several OSM tiles are available.
+
+
+![](images/Add_Tile_Layer_baseOSM.png)
+
+The second type of tile layer is the Overlay one, specially adapted for maps related to transportation, by sea (OPenSeaMap), by bike (Waymarkedtrails Cycling) or by hiking (Waymarkedtrails Hiking). 
+
+
+![](images/Add_Tile_Layer_overlay.png)
+
+![](images/Add_Tile_overlay.png)
+
+
+The third type of tile layer is the famous Stamen one.
+
+![](images/Add_Tile_Layer_Stamen.png)
+
+For **Stamen styles**, see [Stamen Open source tools](https://stamen.com/open-source/)
+
+Text layer can be loaded, and present a style compatible to Stamen, CARTO and voyager nolabels.
+
+![](images/Add_Tile_Layer_Text.png)
+The four type of tile layers is CARTO basemap.
+
+![](images/Add_Tile_Layer_CARTObasemap.png)
+
+The CARTO base map styles are available  [here](https://carto.com/help/building-maps/basemap-list/)
+
+
+EXAMPLE: Different layers to geographically contextualize a flow dataset.
+
+![](images/Ex_geographie_covid.png)
+You can also add an external/personal tile.
+
+![](images/Add_tile_perso.png)
+
+You can import additional tiles by specifying a URL, the sources/contributors and setting the rendering.
+
+
+![](images/Add_tile_perso2.png)
 
 ### Import GeoJson Layers
 
