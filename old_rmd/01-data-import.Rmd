@@ -1,0 +1,132 @@
+# Data import
+
+Arabesque also allows you to import your own data sets : (1) flowdata in the form of an origin-destination matrix (adjacency long format in .csv), to agregate them if necessary and (2) nodes dataset before building a readable flowmap.
+
+For this tutorial, we will use for example the historical trade flows listed in the [RICardo database](https://github.com/gflowiz/sageo-ricardo). 
+
+For more informations about the dataset and its use with Arabesque, see:
+
+*Reference* : Girard P. et Dedinger B. (2020), Pourquoi et comment géolocaliser le commerce mondial des XIXe-miXXe siècles ? : Retour d’expérience sur l’usage de wikidata comme gazetteer historique et de l’application de cartographie de flux Arabesque, _Humanistica_, Medialab Sciences-Po. et Centre d’histoire de Sciences-Po., en ligne
+
+
+The creation of a flow map with Arabesque can be broken down into the following main steps:
+
+**1. Importing flow datasets (links and/or nodes)**
+2. Processing flow datasets (creation of indicators, statistics)
+3. Statistical data computing (filtering, ...)
+4. Geographical data computing (choosing the map background...)
+5. Graphic symbolization for thematic flow mapping purposes
+6. Flowmap decoration 
+7. Export
+
+
+## RICardo data 
+
+These files come from [RIcardo](http://ricardo.medialab.sciences-po.fr/#/), a research project on historical international trade flows, 
+observed from the beginning of the Industrial Revolution to the World War II. The project combines a historical trade flows database
+covering all countries of the world, see: [github/medialab/ricardo_data](https://github.com/medialab/ricardo_data/releases/tag/2017.12)
+with a website that offers to explore the history of international trade flows through visualizations,
+see: [medialab/ricardo](http://ricardo.medialab.sciences-po.fr/#/). In order to produce the first cartographic / geovisualizations
+of this historical corpus describing trade flows, a dataset has been prepared by Paul Girard (Medialab, Sciences Po) and Béatrice Dedinger (Centre d'Histoire, Sciences Po) for collective handling and exploitation during the GEOWEB-gflowiz worshop organized during the SAGEO2019 conference
+(More information: [geoweb-gflowiz-Sageo](https://geoflowiz.hypotheses.org/workshop-geoweb-gflowiz-sageo2019). 
+
+A french version of this tutorial is available in French here: <br/>
+[Version française](https://github.com/gflowiz/sageo-ricardo)
+
+The files used are available in this repository have the following structure:
+
+- [SAGEO_RICardo_nodes.csv](https://raw.githubusercontent.com/gflowiz/sageo-ricardo/master/SAGEO_RICardo_nodes.csv): geographical location of entities files
+	- id (identifier of the geographical entity)
+	- name (name of the geographical entity)
+	- type (entity type : _country_, _city_, ...)
+	- continent (_continent_)
+	- lat (_latitude_)
+	- long (_longitude_)
+
+- [SAGEO_RICardo_edges_small.csv](https://raw.githubusercontent.com/gflowiz/sageo-ricardo/master/SAGEO_RICardo_edges_small.csv) : aggregated historical trade flows (to reduce the size of the dataset)
+	- idorigin (identifier of the entity of origin of the flow)
+	- iddestination (identifier of the destination entity of the flow)
+	- volume (financial volume of the flow in pounds sterling)
+	- decennie (decade concerned by the flow)
+
+- [SAGEO_RICardo_edges_nona.csv](https://raw.githubusercontent.com/gflowiz/sageo-ricardo/master/SAGEO_RICardo_edges_nona.csv) : non-aggregated historical trade flows
+	- idorigin (identifier of the entity of origin of the flow)
+	- iddestination (identifier of the destination entity of the flow)
+	- volume (financial volume of the flow in pounds sterling)
+	- annee (year of the exchange)
+	- periode (period of the exchange)
+	- decennie (decade of exchange)
+
+
+## Statistical datasets
+
+### Links (*edges*) data
+
+Arabesque requires the loading of at least one stream data set: a link file in CSV (separator: comma) and long format. 
+
+You must also declare the 3 minimum fields required for flow mapping: those corresponding to the origin locations, to  the destination locations and the flow values. 
+
+If the OD matrix is temporal or available for different categories, you must also choose an aggregation method.
+
+On the homepage of([Arabesque](http://arabesque.ifsttar.fr/)), load at least one set of flow data.
+
+![](images/BjvHVHn.png)
+
+* Click on the browse button
+
+**Application**
+
+Statistical dataset
+
+Loading data *SAGEO_RICardo_edges_small.csv*.
+
+![](images/GjzU9IE.png)
+
+The data must be in long format, with at least 3 columns  : origin, destination, flow
+
+The data must be in long format, with at least 3 columns to identify the origin, destination and volume of flows.
+
+If the flow data are multiscalar (e.g. flows that concern several social groups, several goods transported or that occur on several dates), it is necessary to aggregate them when loading them into Arabesque.
+
+Several aggregation functions are available (sum, average, median, maximum, minimum) to simplify the flows.
+
+![](images/flow_aggreg_import.png)
+
+Note: This aggregation does not interfere with the geo-visualization possibilities that will remain available for all existing types.
+
+
+### Nodes (*vertex*) data
+
+If you have locational data associated with your ODs, you can load the corresponding node files with "Import Location",
+otherwise you can use predefined locations with "Preset Location".
+
+If you select "Import Location", you must load a .GEOJSON or .CSV file, then choose the ID of the nodes and their lat/long geographic coordinates.
+
+**Application**
+
+Loading _SAGEO_RICardo_nodes.csv_ data
+
+![](images/import_nodes.png)
+
+The data must be in long format, with at least 3 columns to identify the place and the latitude (Y) and longitude (X) coordinates.
+
+If you do not have a file for the geometry, you can use the codes identifying the reference data (e.g. INSEE codes of the French communes, ISO codes of the countries), to automatically geolocate your nodes. See Preset.
+
+### Preset dataset
+
+Example of pre-selection of French municipalities.
+
+![](images/preset_nodes_import.png)
+
+
+After loading the link and node files, Arabesque automatically performs a join of the common attributes between the two files.
+
+Links that do not have an origin and/or destination ID are automatically deleted. Nodes that don't have an ID code that allows them to be geographically located are also not kept.
+
+The list of deleted nodes and links is displayed in a new window.
+
+![](images/import_suppr_entities.png)
+
+This list is for quick reference only. You must copy and paste it (into a text file, for example) if you want to keep the list of deleted entities : here 77 nodes have been deleted because they are not related to other nodes. The corresponding nodes ID are list.
+
+
