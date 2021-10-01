@@ -1,21 +1,11 @@
 # Design of the flowmap signs (nodes/links)
 
-This section is about the geometry, the design/style and the semiology of flowmap signs: nodes and links.
+This section is about changing the semiology (design/style) and changing the geometry (size, ...) of flowmap signs: nodes and links.
 
 
 ![](images/geom_panel_flowsigns.png)
 
-
-In practice, a map is composed by several layer such, as the bounding boxes, the graticule, the countries of land... All these layers can be loaded in the map design background section by Add Layers.
-
-
-![](images/RICardo_Design_signs_layers.png)
-
-All layers on the view are positioned in an order that affects their visibility. The top layer will be visible in the foreground.
-
-The position of the layers above and below (foreground or not) can be modified by a simple drag and drop.
-
-Several types of actions can be performed at the layer level, using the following icon-buttons.
+Several types of actions can be performed on all the layer level available in the layer management section, using the following icon-buttons.
 
 
 ##Types of action on a layer
@@ -41,13 +31,15 @@ Definitively deletes the layer.
 
 ## Designing the nodes
 
-Drawing the nodes opens a window that allows you to act on several dimensions of their graph
+Drawing the nodes opens a window that allows you to act on their parameters related to semiology, respecting the Jacques Bertin' (1967) principes. 
 
-It is possible to  change the style of nodes respecting the cartographic semiology as Bertin (1967). Hereby the general window.
+### Semiology paramaters
+
+Hereby the general window.
 
 ![](images/Design_nodes.png)
 
-### The color of nodes
+#### The color of nodes
 
 ![](images/geom_add_nodes_1.png)
 
@@ -114,11 +106,24 @@ The opacity of the text shade (currently set to black) can be varied according t
 
 ![](images/geom_add_nodes_3_texte_variable.png)
 
+## The nodes' geometric parameters
+
+Not implemented yet.Upcoming projects.
 
 
 ## Designing the links
 
-xxxx 
+
+
+### Semiology parameters
+
+
+
+
+
+### Change arrow shape 
+
+Drawing the links opens a window that allows you to act on several dimensions of their geometry.
 
 ![](images/Design_links_arrows.png)
 
