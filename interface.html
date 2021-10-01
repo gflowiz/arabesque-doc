@@ -104,11 +104,14 @@
 <li class="chapter" data-level="2.1.2" data-path="interface.html"><a href="interface.html#primary-legend"><i class="fa fa-check"></i><b>2.1.2</b> Primary legend</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="interface.html"><a href="interface.html#the-geographic-panel"><i class="fa fa-check"></i><b>2.2</b> The geographic panel</a><ul>
-<li class="chapter" data-level="2.2.1" data-path="interface.html"><a href="interface.html#add-node-features"><i class="fa fa-check"></i><b>2.2.1</b> Add Node Features</a></li>
-<li class="chapter" data-level="2.2.2" data-path="interface.html"><a href="interface.html#add-link-features"><i class="fa fa-check"></i><b>2.2.2</b> Add Link Features</a></li>
-<li class="chapter" data-level="2.2.3" data-path="interface.html"><a href="interface.html#add-base-layer"><i class="fa fa-check"></i><b>2.2.3</b> Add Base Layer</a></li>
-<li class="chapter" data-level="2.2.4" data-path="interface.html"><a href="interface.html#add-tile-layers-osm"><i class="fa fa-check"></i><b>2.2.4</b> Add Tile Layers (OSM)</a></li>
-<li class="chapter" data-level="2.2.5" data-path="interface.html"><a href="interface.html#import-geojson-layers"><i class="fa fa-check"></i><b>2.2.5</b> Import GeoJson Layers</a></li>
+<li class="chapter" data-level="2.2.1" data-path="interface.html"><a href="interface.html#the-add-projection"><i class="fa fa-check"></i><b>2.2.1</b> The Add Projection</a></li>
+<li class="chapter" data-level="2.2.2" data-path="interface.html"><a href="interface.html#the-add-title"><i class="fa fa-check"></i><b>2.2.2</b> The Add Title</a></li>
+<li class="chapter" data-level="2.2.3" data-path="interface.html"><a href="interface.html#the-add-layers"><i class="fa fa-check"></i><b>2.2.3</b> The Add layers</a></li>
+<li class="chapter" data-level="2.2.4" data-path="interface.html"><a href="interface.html#add-node-features"><i class="fa fa-check"></i><b>2.2.4</b> Add Node Features</a></li>
+<li class="chapter" data-level="2.2.5" data-path="interface.html"><a href="interface.html#add-link-features"><i class="fa fa-check"></i><b>2.2.5</b> Add Link Features</a></li>
+<li class="chapter" data-level="2.2.6" data-path="interface.html"><a href="interface.html#add-base-layer"><i class="fa fa-check"></i><b>2.2.6</b> Add Base Layer</a></li>
+<li class="chapter" data-level="2.2.7" data-path="interface.html"><a href="interface.html#add-tile-layers-osm"><i class="fa fa-check"></i><b>2.2.7</b> Add Tile Layers (OSM)</a></li>
+<li class="chapter" data-level="2.2.8" data-path="interface.html"><a href="interface.html#import-geojson-layers"><i class="fa fa-check"></i><b>2.2.8</b> Import GeoJson Layers</a></li>
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="interface.html"><a href="interface.html#the-statistical-panel"><i class="fa fa-check"></i><b>2.3</b> The statistical panel</a></li>
 <li class="chapter" data-level="2.4" data-path="interface.html"><a href="interface.html#linksflow-dataset-importation"><i class="fa fa-check"></i><b>2.4</b> Links/flow dataset importation</a></li>
@@ -210,18 +213,34 @@ map.</p>
 <p><img src="images/Buton_home.png" /> Return to the <a href="arabesque.ifsttar.fr">home page</a> to start a new view.</p>
 <p>Actions on the background of the map are for changing projections of the current map and/or to add other layers.</p>
 <p>Actions on the design/style is for (additional) geographic layers that have been adding through the previous action.</p>
-<p><em>Add Other layers</em></p>
+<div id="the-add-projection" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> The Add Projection</h3>
+<p>Geographic layers can be reprojected, by choosing one of the proposed formulas:</p>
+<p><img src="images/geom_Projection.png" /></p>
+<p>Reprojection can also be used by entering an EPSG code.</p>
+<p><img src="images/Add_projection_epsg.PNG" />
+EXAMPLE: several projections of RICardo data</p>
+<p><img src="images/RIcardo_reprojection.png" /></p>
+</div>
+<div id="the-add-title" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> The Add Title</h3>
+<p>The Add Title section allows you to add a simple title to the view, useful when importing</p>
+<p><img src="images/Add_geom_title.png" /></p>
+</div>
+<div id="the-add-layers" class="section level3">
+<h3><span class="header-section-number">2.2.3</span> The Add layers</h3>
 <p><img src="images/geom_add_layers.PNG" /></p>
 <p>Five types of geographic layers can be loaded/add to construct the map (Add Node Feature and Add Link Features) and/or to contextualize the map (Add Base Layer, Add Tile Layers (OSM), Import GeoJson Layers).</p>
 <p>Add Node Feature and Add Link Features leads to act on the design/style the flow features: to symbolize and customize the links and the nodes.</p>
+</div>
 <div id="add-node-features" class="section level3">
-<h3><span class="header-section-number">2.2.1</span> Add Node Features</h3>
+<h3><span class="header-section-number">2.2.4</span> Add Node Features</h3>
 <p><img src="images/Add_Nodes_Features.png" /></p>
 <p>Add Node Feature leads to act on the design/style of the flow places features.</p>
 <p>It is possible to set up all the graphic dimensions of the nodes by “Choose semio” for cartographic semiology as Bertin (1967). Hereby the general window.</p>
 <p><img src="images/geom_add_nodes_1.PNG" /></p>
 <div id="color" class="section level4">
-<h4><span class="header-section-number">2.2.1.1</span> <strong>Color</strong></h4>
+<h4><span class="header-section-number">2.2.4.1</span> <strong>Color</strong></h4>
 <p>The color of the nodes can be fixed (e.g. in black) or shaded in a range of tones.</p>
 <p><img src="images/choose_fixed_color.png" /></p>
 <p><strong><em>Example</em></strong> : Application on the nodes. Symbolization of the barycenter of the zones with a circle shape (unique choice for instance) of fixed size and unique black color.</p>
@@ -237,7 +256,7 @@ The progression (up/down) of the <strong>color range</strong> depends on that of
 <p><img src="images/geom_add_nodes_1_color_variable3.png" /></p>
 </div>
 <div id="size" class="section level4">
-<h4><span class="header-section-number">2.2.1.2</span> <strong>Size</strong></h4>
+<h4><span class="header-section-number">2.2.4.2</span> <strong>Size</strong></h4>
 <p>The size of the nodes can be fixed and the weight defined.</p>
 <p><img src="images/geom_add_nodes_2_size.png" /></p>
 <p>The size can be <strong>weighted by a variable</strong> according to one of the initial or additional <strong>variables</strong> available in the dataset (hereby the balance).</p>
@@ -248,7 +267,7 @@ Three functions to set the size of the node according to the corresponding value
 <p><img src="images/geom_add_nodes_2_size_ratio.png" /></p>
 </div>
 <div id="text" class="section level4">
-<h4><span class="header-section-number">2.2.1.3</span> <strong>Text</strong></h4>
+<h4><span class="header-section-number">2.2.4.3</span> <strong>Text</strong></h4>
 <p>Textuals elements can also be added near the nodes.</p>
 <p><img src="images/geom_add_nodes_3_texte.png" />
 The text can be defined according to one of the variable available in the dataset.</p>
@@ -264,7 +283,7 @@ The text can be defined according to one of the variable available in the datase
 </div>
 </div>
 <div id="add-link-features" class="section level3">
-<h3><span class="header-section-number">2.2.2</span> Add Link Features</h3>
+<h3><span class="header-section-number">2.2.5</span> Add Link Features</h3>
 <p><img src="images/Add_Links_Features.png" /></p>
 <p>Add Link Feature leads to act on the design/style the flow interactions features.</p>
 <p>It is possible to “Choose semio” for <em>cartographic semiology</em> as Bertin (1967). Hereby the general window.</p>
@@ -274,7 +293,7 @@ The text can be defined according to one of the variable available in the datase
 <p>EXAMPLE: straight bilateral oriented links, unique black color.</p>
 <p><img src="images/geom_all_links.png" /></p>
 <div id="geometry" class="section level4">
-<h4><span class="header-section-number">2.2.2.1</span> Geometry</h4>
+<h4><span class="header-section-number">2.2.5.1</span> Geometry</h4>
 <p>The geometry of the link can be oriented or not.</p>
 <p><img src="images/geom_add_links_geometry1.PNG" /></p>
 <p>Oriented geometry takes into account the direction of the <strong>flow</strong> to define the <strong>graphic form</strong> of the sign.</p>
@@ -301,7 +320,7 @@ The text can be defined according to one of the variable available in the datase
 <p><img src="images/Ex_geom_covid.png" /></p>
 </div>
 <div id="semiology" class="section level4">
-<h4><span class="header-section-number">2.2.2.2</span> Semiology</h4>
+<h4><span class="header-section-number">2.2.5.2</span> Semiology</h4>
 <p><strong>Color</strong></p>
 <p>The Color of the links can be fixed ie it is identical for all links.</p>
 <p>The reference for the color schemes is Cynthia Brewer palette for Diverging, Multi Hue and Single Hue. See: <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=BuGn&amp;n=3">Color Brewer advices for maps</a>. An Extra Palette is also proposed in Arabesque.</p>
@@ -332,18 +351,18 @@ The text can be defined according to one of the variable available in the datase
 </div>
 </div>
 <div id="add-base-layer" class="section level3">
-<h3><span class="header-section-number">2.2.3</span> Add Base Layer</h3>
+<h3><span class="header-section-number">2.2.6</span> Add Base Layer</h3>
 <p><img src="images/Add_base_Layer.png" /></p>
 <p>Add based layers consists in calling a remote geographic information layer, to contextualize the flowmap.</p>
 <p>EXAMPLE: various geometry of a same Covid-19 flowmaps.</p>
 <p><img src="images/Ex_geographie_covid.png" /></p>
 </div>
 <div id="add-tile-layers-osm" class="section level3">
-<h3><span class="header-section-number">2.2.4</span> Add Tile Layers (OSM)</h3>
+<h3><span class="header-section-number">2.2.7</span> Add Tile Layers (OSM)</h3>
 <p><img src="images/Add_Tiles_OSM.png" /></p>
 </div>
 <div id="import-geojson-layers" class="section level3">
-<h3><span class="header-section-number">2.2.5</span> Import GeoJson Layers</h3>
+<h3><span class="header-section-number">2.2.8</span> Import GeoJson Layers</h3>
 <p><img src="images/Add_Import_Geojson.png" /></p>
 </div>
 </div>

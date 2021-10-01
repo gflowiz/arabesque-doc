@@ -16,6 +16,9 @@ the-central-panel
 primary-actions-with-butons
 primary-legend
 the-geographic-panel
+the-add-projection
+the-add-title
+the-add-layers
 add-node-features
 color
 size
