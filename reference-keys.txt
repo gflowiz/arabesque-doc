@@ -4,12 +4,12 @@ statistical-datasets
 links-edges-data
 nodes-vertex-data
 preset-dataset
-data-pre-processing
 data-importation
 links-edges-dataset-importation
 nodes-vertex-dataset-importation
 preset-nodes-dataset
 checking-missing-nodeslinks-features
+data-indicators-pre-processing
 visualize-a-default-flow-map
 interface
 the-central-panel
