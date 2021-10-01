@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 Interface | Arabesque documentation</title>
+  <title>3 Interface | Arabesque documentation</title>
   <meta name="description" content="This is the online documentation of the Arabesque web application." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2 Interface | Arabesque documentation" />
+  <meta property="og:title" content="3 Interface | Arabesque documentation" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 Interface | Arabesque documentation" />
+  <meta name="twitter:title" content="3 Interface | Arabesque documentation" />
   
   <meta name="twitter:description" content="This is the online documentation of the Arabesque web application." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="data-import.html"/>
-<link rel="next" href="interface-1.html"/>
+<link rel="prev" href="interface.html"/>
+<link rel="next" href="exports.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -166,20 +166,20 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="interface" class="section level1">
-<h1><span class="header-section-number">2</span> Interface</h1>
+<div id="interface-1" class="section level1">
+<h1><span class="header-section-number">3</span> Interface</h1>
 <p>The general structure of the interface of Arabesque is composed of three panel.
 - The **central*panel** is for displaying the map - centered in France here.</p>
 <p>The two side panels are for playing with information.
 - The <strong>left panel</strong> is for dealing with geometries and geographical layers. Here are displayed CARTO Based map : Voyager and
 - The <strong>right panel</strong> is for playing with the flow data set.</p>
 <p><img src="images/Panels_arabesque.PNG" /></p>
-<div id="the-central-panel" class="section level2">
-<h2><span class="header-section-number">2.1</span> The central panel</h2>
+<div id="the-central-panel-1" class="section level2">
+<h2><span class="header-section-number">3.1</span> The central panel</h2>
 <p>The central part of Arabesque corresponds to the map view. It results from the choice of the layers to be displayed (from the left panel) and the filtering of the values of the links and nodes (from the right panel).</p>
 <p>This central panel also presents different buttons allowing the implementation of primary actions.</p>
-<div id="primary-actions-with-butons" class="section level3">
-<h3><span class="header-section-number">2.1.1</span> Primary actions with butons</h3>
+<div id="primary-actions-with-butons-1" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Primary actions with butons</h3>
 <p>The white page of Arabesque is decorated with blue action buttons.</p>
 <p><img src="images/central_panel_clear.png" />
 <strong>Details of the different buttons</strong></p>
@@ -192,15 +192,15 @@
 <p><img src="images/Buton_screen_black.png" /> Switch to full screen display - with black background.</p>
 <p><img src="images/Buton_open_panel.png" /> Open/close the panels located on each side of the map.</p>
 </div>
-<div id="primary-legend" class="section level3">
-<h3><span class="header-section-number">2.1.2</span> Primary legend</h3>
+<div id="primary-legend-1" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Primary legend</h3>
 <p>A legend is automatically generated for each map for nodes and links plot.</p>
 <p><img src="images/center_legend.PNG" /></p>
 <p>The symbolization elements (size, color and opacity) of the nodes and links are included. Here (for the default map), it is the volume of flows and the degree of places that are represented.</p>
 </div>
 </div>
-<div id="the-geographic-panel" class="section level2">
-<h2><span class="header-section-number">2.2</span> The geographic panel</h2>
+<div id="the-geographic-panel-1" class="section level2">
+<h2><span class="header-section-number">3.2</span> The geographic panel</h2>
 <p>The left panel is to design the map :
 - dealing with the background as the geographical/geometrical layers
 - customize the <em>design</em>/style of the nodes and links features
@@ -214,14 +214,14 @@ map.</p>
 <p><img src="images/geom_add_layers.PNG" /></p>
 <p>Five types of geographic layers can be loaded/add to construct the map (Add Node Feature and Add Link Features) and/or to contextualize the map (Add Base Layer, Add Tile Layers (OSM), Import GeoJson Layers).</p>
 <p>Add Node Feature and Add Link Features leads to act on the design/style the flow features: to symbolize and customize the links and the nodes.</p>
-<div id="add-node-features" class="section level3">
-<h3><span class="header-section-number">2.2.1</span> Add Node Features</h3>
+<div id="add-node-features-1" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Add Node Features</h3>
 <p><img src="images/Add_Nodes_Features.png" /></p>
 <p>Add Node Feature leads to act on the design/style of the flow places features.</p>
 <p>It is possible to set up all the graphic dimensions of the nodes by “Choose semio” for cartographic semiology as Bertin (1967). Hereby the general window.</p>
 <p><img src="images/geom_add_nodes_1.PNG" /></p>
-<div id="color" class="section level4">
-<h4><span class="header-section-number">2.2.1.1</span> <strong>Color</strong></h4>
+<div id="color-1" class="section level4">
+<h4><span class="header-section-number">3.2.1.1</span> <strong>Color</strong></h4>
 <p>The color of the nodes can be fixed (e.g. in black) or shaded in a range of tones.</p>
 <p><img src="images/choose_fixed_color.png" /></p>
 <p><strong><em>Example</em></strong> : Application on the nodes. Symbolization of the barycenter of the zones with a circle shape (unique choice for instance) of fixed size and unique black color.</p>
@@ -236,8 +236,8 @@ The reference for the color schemes is Cynthia Brewer palette for Diverging, Mul
 The progression (up/down) of the <strong>color range</strong> depends on that of the <strong>value range</strong>: it can be direct or inverse. The checked box means an inverse progression: a light color is applied to a strong value.</p>
 <p><img src="images/geom_add_nodes_1_color_variable3.png" /></p>
 </div>
-<div id="size" class="section level4">
-<h4><span class="header-section-number">2.2.1.2</span> <strong>Size</strong></h4>
+<div id="size-1" class="section level4">
+<h4><span class="header-section-number">3.2.1.2</span> <strong>Size</strong></h4>
 <p>The size of the nodes can be fixed and the weight defined.</p>
 <p><img src="images/geom_add_nodes_2_size.png" /></p>
 <p>The size can be <strong>weighted by a variable</strong> according to one of the initial or additional <strong>variables</strong> available in the dataset (hereby the balance).</p>
@@ -247,8 +247,8 @@ Three functions to set the size of the node according to the corresponding value
 <p>The <strong>ratio</strong> representing the max width in pixel of the graphic features can be defined - according to the map bounding box, to obtain an image with balanced features (neither too small nor too big).</p>
 <p><img src="images/geom_add_nodes_2_size_ratio.png" /></p>
 </div>
-<div id="text" class="section level4">
-<h4><span class="header-section-number">2.2.1.3</span> <strong>Text</strong></h4>
+<div id="text-1" class="section level4">
+<h4><span class="header-section-number">3.2.1.3</span> <strong>Text</strong></h4>
 <p>Textuals elements can also be added near the nodes.</p>
 <p><img src="images/geom_add_nodes_3_texte.png" />
 The text can be defined according to one of the variable available in the dataset.</p>
@@ -263,8 +263,8 @@ The text can be defined according to one of the variable available in the datase
 <p>The opacity of the text shade can vary according to an indicator present in the dataset and according to a corresponding function which can be Linear, Square, SquareRoot or Logarithm and defined in an min/max interval: here between 0.25 and 0.85.</p>
 </div>
 </div>
-<div id="add-link-features" class="section level3">
-<h3><span class="header-section-number">2.2.2</span> Add Link Features</h3>
+<div id="add-link-features-1" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Add Link Features</h3>
 <p><img src="images/Add_Links_Features.png" /></p>
 <p>Add Link Feature leads to act on the design/style the flow interactions features.</p>
 <p>It is possible to “Choose semio” for <em>cartographic semiology</em> as Bertin (1967). Hereby the general window.</p>
@@ -273,8 +273,8 @@ The text can be defined according to one of the variable available in the datase
 <p>The colors of the links and nodes need to be defined, for reasons of visual harmony.</p>
 <p>EXAMPLE: straight bilateral oriented links, unique black color.</p>
 <p><img src="images/geom_all_links.png" /></p>
-<div id="geometry" class="section level4">
-<h4><span class="header-section-number">2.2.2.1</span> Geometry</h4>
+<div id="geometry-1" class="section level4">
+<h4><span class="header-section-number">3.2.2.1</span> Geometry</h4>
 <p>The geometry of the link can be oriented or not.</p>
 <p><img src="images/geom_add_links_geometry1.PNG" /></p>
 <p>Oriented geometry takes into account the direction of the <strong>flow</strong> to define the <strong>graphic form</strong> of the sign.</p>
@@ -300,8 +300,8 @@ The text can be defined according to one of the variable available in the datase
 <p>EXAMPLE*: various geometry of a same Covid-19 flowmaps.</p>
 <p><img src="images/Ex_geom_covid.png" /></p>
 </div>
-<div id="semiology" class="section level4">
-<h4><span class="header-section-number">2.2.2.2</span> Semiology</h4>
+<div id="semiology-1" class="section level4">
+<h4><span class="header-section-number">3.2.2.2</span> Semiology</h4>
 <p><strong>Color</strong></p>
 <p>The Color of the links can be fixed ie it is identical for all links.</p>
 <p>The reference for the color schemes is Cynthia Brewer palette for Diverging, Multi Hue and Single Hue. See: <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=BuGn&amp;n=3">Color Brewer advices for maps</a>. An Extra Palette is also proposed in Arabesque.</p>
@@ -331,79 +331,55 @@ The text can be defined according to one of the variable available in the datase
 <p>See layout management section to manage the overlay of the layers.</p>
 </div>
 </div>
-<div id="add-base-layer" class="section level3">
-<h3><span class="header-section-number">2.2.3</span> Add Base Layer</h3>
+<div id="add-base-layer-1" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> Add Base Layer</h3>
 <p><img src="images/Add_base_Layer.png" /></p>
 <p>Add based layers consists in calling a remote geographic information layer, to contextualize the flowmap.</p>
 <p>EXAMPLE: various geometry of a same Covid-19 flowmaps.</p>
 <p><img src="images/Ex_geographie_covid.png" /></p>
 </div>
-<div id="add-tile-layers-osm" class="section level3">
-<h3><span class="header-section-number">2.2.4</span> Add Tile Layers (OSM)</h3>
+<div id="add-tile-layers-osm-1" class="section level3">
+<h3><span class="header-section-number">3.2.4</span> Add Tile Layers (OSM)</h3>
 <p><img src="images/Add_Tiles_OSM.png" /></p>
 </div>
-<div id="import-geojson-layers" class="section level3">
-<h3><span class="header-section-number">2.2.5</span> Import GeoJson Layers</h3>
+<div id="import-geojson-layers-1" class="section level3">
+<h3><span class="header-section-number">3.2.5</span> Import GeoJson Layers</h3>
 <p><img src="images/Add_Import_Geojson.png" /></p>
 </div>
 </div>
-<div id="the-statistical-panel" class="section level2">
-<h2><span class="header-section-number">2.3</span> The statistical panel</h2>
+<div id="the-statistical-panel-1" class="section level2">
+<h2><span class="header-section-number">3.3</span> The statistical panel</h2>
 
 <p>The creation of a flow map with Arabesque can be broken down into the following main steps:</p>
-<p><strong>1. Importing flow datasets (links and/or nodes)</strong>
-2. Processing flow datasets (creation of indicators, statistics)
-3. Statistical data computing (filtering, …)
-4. Geographical data computing (choosing the map background…)
-5. Graphic symbolization for thematic flow mapping purposes
-6. Flowmap decoration
-7. Export</p>
+<ol style="list-style-type: decimal">
+<li>Importing flow datasets (links and/or nodes)
+<strong>2. Processing flow datasets (creation of indicators, statistics)</strong></li>
+<li>Statistical data computing (filtering, …)</li>
+<li>Geographical data computing (choosing the map background…)</li>
+<li>Graphic symbolization for thematic flow mapping purposes</li>
+<li>Flowmap decoration</li>
+<li>Export</li>
+</ol>
+<p>The links and nodes datasets are automatically modified when importing and <em>Arabesque</em> computes different indicators.</p>
 </div>
-<div id="linksflow-dataset-importation" class="section level2">
-<h2><span class="header-section-number">2.4</span> Links/flow dataset importation</h2>
-<p><em>Arabesque</em> requires the loading of at least one origin-destination links/edges/flow data set. It is a matrix in .CSV (separator: comma) and long format.</p>
-<p>You must also declare the 3 minimum fields required for flow mapping: those corresponding to the origin locations, to the destination locations and the flow values.</p>
-<p>If the OD matrix is temporal or available for different categories, you must also choose an aggregation method.</p>
-<p>On the homepage of(<a href="http://arabesque.ifsttar.fr/">Arabesque</a>), load at least one set of flow data.</p>
-<p><img src="images/BjvHVHn.png" /></p>
-<ul>
-<li>Click on the browse button</li>
-</ul>
-<p><strong>Application</strong></p>
-<p>Statistical dataset</p>
-<p>Loading data <em>SAGEO_RICardo_edges_small.csv</em>.</p>
-<p><img src="images/GjzU9IE.png" /></p>
-<p>The data must be in long format, with at least 3 columns : origin, destination, flow</p>
-<p>The data must be in long format, with at least 3 columns to identify the origin, destination and volume of flows.</p>
-<p>If the flow data are multiscalar (e.g. flows that concern several social groups, several goods transported or that occur on several dates), it is necessary to aggregate them when loading them into Arabesque.</p>
-<p>Several aggregation functions are available (sum, average, median, maximum, minimum) to simplify the flows.</p>
-<p><img src="images/flow_aggreg_import.png" /></p>
-<p>Note: This aggregation does not interfere with the geo-visualization possibilities that will remain available for all existing types.</p>
+<div id="data-indicators-pre-processing-1" class="section level2">
+<h2><span class="header-section-number">3.4</span> Data indicators pre processing</h2>
+<p><em>Indicators on links</em>: Euclidean distance between the origin and destination entities</p>
+<p><em>Indicators on nodes</em> : see below the additional indicators () automatically calculated on the nodes of the RIcardo data</p>
+<p>See below the indicators that have been automatically computed (ie the additional variable) on the nodes of the RIcardo data.</p>
+<p><img src="images/import_indic.png" /></p>
+<p>These indicators can be downloaded in . csv format (see Export and Save sections).</p>
+<p>Loading links and nodes data into <em>Arabesque</em> leads to the creation of a default map, which is placed in the center of the interface.</p>
 </div>
-<div id="nodesvertex-dataset-importation" class="section level2">
-<h2><span class="header-section-number">2.5</span> Nodes/vertex dataset importation</h2>
-<p>If you have locational data associated with your ODs, you can load the corresponding node files with “Import Location”,
-otherwise you can use predefined locations with “Preset Location”.</p>
-<p>If you select “Import Location”, you must load a .GEOJSON or .CSV file, then choose the ID of the nodes and their lat/long geographic coordinates.</p>
-<p><strong>Application</strong></p>
-<p>Loading <em>SAGEO_RICardo_nodes.csv</em> data</p>
-<p><img src="images/import_nodes.png" /></p>
-<p>The data must be in long format, with at least 3 columns to identify the place and the latitude (Y) and longitude (X) coordinates.</p>
-<p>If you do not have a file for the geometry, you can use the codes identifying the reference data (e.g. INSEE codes of the French communes, ISO codes of the countries), to automatically geolocate your nodes. See Preset.</p>
-</div>
-<div id="preset-nodes-dataset-1" class="section level2">
-<h2><span class="header-section-number">2.6</span> Preset nodes dataset</h2>
-<p>Example of pre-selection of French municipalities.</p>
-<p><img src="images/preset_nodes_import.png" /></p>
-<p>After loading the link and node files, Arabesque automatically performs a join of the common attributes between the two files.</p>
-</div>
-<div id="checking-missing-nodeslinks-features-1" class="section level2">
-<h2><span class="header-section-number">2.7</span> Checking missing nodes/links features</h2>
-<p>Links that do not have an origin and/or destination ID are automatically deleted. Nodes that don’t have an ID code that allows them to be geographically located are also not kept.</p>
-<p>The list of deleted nodes and links is displayed in a new window.</p>
-<p><img src="images/import_suppr_entities.png" /></p>
-<p>This list is for quick reference only. You must copy and paste it (into a text file, for example) if you want to keep the list of deleted entities : here 77 nodes have been deleted because they are not related to other nodes. The corresponding nodes ID are list.</p>
-<p>After loading the link and node files, <em>Arabesque</em> automatically performs a join of the common attributes between the two files and computes indicator on botk links and nodes data.</p>
+<div id="visualize-a-default-flow-map-1" class="section level2">
+<h2><span class="header-section-number">3.5</span> Visualize a default flow map</h2>
+<p>Loading data in Arabesque leads to the creation of a default map to avoid visualizing a “spaghetti effect” when entering the application ; all the defined parameters can then be modified during the exploration.</p>
+<p>By default, the links are represented in shades of blue and the nodes in red. The map is presented in the WGS84 projection, according to the lat/lon coordinates* declared during the import.</p>
+<p>Except in the case of loading a projected geometry as input, the map is presented in WGS84.</p>
+<p>Hereby is the Ricardo’s dataset default map with global statistic of the percent of links versus the percent of volume of flows and nodes.</p>
+<p><img src="images/defaut_flowmap.png" />
+Only the 10% most important links (in value) are represented and symbolized (see the automatic legend) according to their intensity (the flow variable entered at import).
+The corresponding nodes are symbolized according to their degree (variable calculated automatically during the import).</p>
 
 </div>
 </div>
@@ -412,8 +388,8 @@ otherwise you can use predefined locations with “Preset Location”.</p>
           </div>
         </div>
       </div>
-<a href="data-import.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="interface-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="interface.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="exports.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
