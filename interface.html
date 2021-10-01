@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 Interface | Arabesque documentation</title>
+  <title>3 Interface | Arabesque documentation</title>
   <meta name="description" content="This is the online documentation of the Arabesque web application." />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2 Interface | Arabesque documentation" />
+  <meta property="og:title" content="3 Interface | Arabesque documentation" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 Interface | Arabesque documentation" />
+  <meta name="twitter:title" content="3 Interface | Arabesque documentation" />
   
   <meta name="twitter:description" content="This is the online documentation of the Arabesque web application." />
   
@@ -24,16 +24,17 @@
 <meta name="author" content="GFlowiz project team" />
 
 
-<meta name="date" content="2020-10-13" />
+<meta name="date" content="2021-10-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="data-import.html"/>
+<link rel="prev" href="data-pre-processing.html"/>
 <link rel="next" href="exports.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,8 +50,10 @@
 
 
 
-
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
 
 
 
@@ -85,19 +88,33 @@
 <li class="chapter" data-level="1.2.1" data-path="data-import.html"><a href="data-import.html#links-edges-data"><i class="fa fa-check"></i><b>1.2.1</b> Links (<em>edges</em>) data</a></li>
 <li class="chapter" data-level="1.2.2" data-path="data-import.html"><a href="data-import.html#nodes-vertex-data"><i class="fa fa-check"></i><b>1.2.2</b> Nodes (<em>vertex</em>) data</a></li>
 <li class="chapter" data-level="1.2.3" data-path="data-import.html"><a href="data-import.html#preset-dataset"><i class="fa fa-check"></i><b>1.2.3</b> Preset dataset</a></li>
-<li class="chapter" data-level="1.2.4" data-path="data-import.html"><a href="data-import.html#agreggations-on-weighted-links"><i class="fa fa-check"></i><b>1.2.4</b> Agreggations on weighted links</a></li>
-<li class="chapter" data-level="1.2.5" data-path="data-import.html"><a href="data-import.html#for-the-nodes"><i class="fa fa-check"></i><b>1.2.5</b> For the nodes</a></li>
-<li class="chapter" data-level="1.2.6" data-path="data-import.html"><a href="data-import.html#for-the-links"><i class="fa fa-check"></i><b>1.2.6</b> For the links</a></li>
-<li class="chapter" data-level="1.2.7" data-path="data-import.html"><a href="data-import.html#for-weighted-links"><i class="fa fa-check"></i><b>1.2.7</b> For weighted links</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="interface.html"><a href="interface.html"><i class="fa fa-check"></i><b>2</b> Interface</a><ul>
-<li class="chapter" data-level="2.1" data-path="interface.html"><a href="interface.html#geographical-layer-information"><i class="fa fa-check"></i><b>2.1</b> Geographical layer information</a></li>
-<li class="chapter" data-level="2.2" data-path="interface.html"><a href="interface.html#map"><i class="fa fa-check"></i><b>2.2</b> Map</a></li>
-<li class="chapter" data-level="2.3" data-path="interface.html"><a href="interface.html#statistical-information"><i class="fa fa-check"></i><b>2.3</b> Statistical information</a></li>
+<li class="chapter" data-level="2" data-path="data-pre-processing.html"><a href="data-pre-processing.html"><i class="fa fa-check"></i><b>2</b> Data pre processing</a><ul>
+<li class="chapter" data-level="2.1" data-path="data-pre-processing.html"><a href="data-pre-processing.html#data-importation"><i class="fa fa-check"></i><b>2.1</b> Data importation</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="data-pre-processing.html"><a href="data-pre-processing.html#links-edges-dataset-importation"><i class="fa fa-check"></i><b>2.1.1</b> Links (<em>edges</em>) dataset importation</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="exports.html"><a href="exports.html"><i class="fa fa-check"></i><b>3</b> Exports</a></li>
-<li class="chapter" data-level="4" data-path="examples.html"><a href="examples.html"><i class="fa fa-check"></i><b>4</b> Examples</a></li>
+<li class="chapter" data-level="2.2" data-path="data-pre-processing.html"><a href="data-pre-processing.html#nodes-vertex-dataset-importation"><i class="fa fa-check"></i><b>2.2</b> Nodes (<em>vertex</em>) dataset importation</a></li>
+<li class="chapter" data-level="2.3" data-path="data-pre-processing.html"><a href="data-pre-processing.html#preset-nodes-dataset"><i class="fa fa-check"></i><b>2.3</b> Preset nodes dataset</a></li>
+<li class="chapter" data-level="2.4" data-path="data-pre-processing.html"><a href="data-pre-processing.html#checking-missing-nodeslinks-features"><i class="fa fa-check"></i><b>2.4</b> Checking missing nodes/links features</a></li>
+<li class="chapter" data-level="2.5" data-path="data-pre-processing.html"><a href="data-pre-processing.html#visualize-a-default-flow-map"><i class="fa fa-check"></i><b>2.5</b> Visualize a default flow map</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="interface.html"><a href="interface.html"><i class="fa fa-check"></i><b>3</b> Interface</a><ul>
+<li class="chapter" data-level="3.1" data-path="interface.html"><a href="interface.html#the-central-panel"><i class="fa fa-check"></i><b>3.1</b> The central panel</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="interface.html"><a href="interface.html#primary-actions-with-butons"><i class="fa fa-check"></i><b>3.1.1</b> Primary actions with butons</a></li>
+<li class="chapter" data-level="3.1.2" data-path="interface.html"><a href="interface.html#primary-legend"><i class="fa fa-check"></i><b>3.1.2</b> Primary legend</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="interface.html"><a href="interface.html#the-geographic-panel"><i class="fa fa-check"></i><b>3.2</b> The geographic panel</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="interface.html"><a href="interface.html#add-node-features"><i class="fa fa-check"></i><b>3.2.1</b> Add Node Features</a></li>
+<li class="chapter" data-level="3.2.2" data-path="interface.html"><a href="interface.html#add-link-features"><i class="fa fa-check"></i><b>3.2.2</b> Add Link Features</a></li>
+<li class="chapter" data-level="3.2.3" data-path="interface.html"><a href="interface.html#add-base-layer"><i class="fa fa-check"></i><b>3.2.3</b> Add Base Layer</a></li>
+<li class="chapter" data-level="3.2.4" data-path="interface.html"><a href="interface.html#add-tile-layers-osm"><i class="fa fa-check"></i><b>3.2.4</b> Add Tile Layers (OSM)</a></li>
+<li class="chapter" data-level="3.2.5" data-path="interface.html"><a href="interface.html#import-geojson-layers"><i class="fa fa-check"></i><b>3.2.5</b> Import GeoJson Layers</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="interface.html"><a href="interface.html#the-statistical-panel"><i class="fa fa-check"></i><b>3.3</b> The statistical panel</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="exports.html"><a href="exports.html"><i class="fa fa-check"></i><b>4</b> Exports</a></li>
+<li class="chapter" data-level="5" data-path="examples.html"><a href="examples.html"><i class="fa fa-check"></i><b>5</b> Examples</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -120,15 +137,188 @@
 
             <section class="normal" id="section-">
 <div id="interface" class="section level1">
-<h1><span class="header-section-number">2</span> Interface</h1>
-<div id="geographical-layer-information" class="section level2">
-<h2><span class="header-section-number">2.1</span> Geographical layer information</h2>
+<h1><span class="header-section-number">3</span> Interface</h1>
+<p>The general structure of the interface of Arabesque is composed of three panel.
+- The **central*panel** is for displaying the map - centered in France here.</p>
+<p>The two side panels are for playing with information.
+- The <strong>left panel</strong> is for dealing with geometries and geographical layers. Here are displayed CARTO Based map : Voyager and
+- The <strong>right panel</strong> is for playing with the flow data set.</p>
+<p><img src="images/Panels_arabesque.PNG" /></p>
+<div id="the-central-panel" class="section level2">
+<h2><span class="header-section-number">3.1</span> The central panel</h2>
+<p>The central part of Arabesque corresponds to the map view. It results from the choice of the layers to be displayed (from the left panel) and the filtering of the values of the links and nodes (from the right panel).</p>
+<p>This central panel also presents different buttons allowing the implementation of primary actions.</p>
+<div id="primary-actions-with-butons" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Primary actions with butons</h3>
+<p>The white page of Arabesque is decorated with blue action buttons.</p>
+<p><img src="images/central_panel_clear.png" />
+<strong>Details of the different buttons</strong></p>
+<p><img src="images/Buton_in_out.png" /> Successively zoom in/out - the same way as with the mouse wheel.</p>
+<p><img src="images/Buton_sauv.png" /> Save the project in .ZIP for later use.</p>
+<p><img src="images/Buton_export.png" /> Export the map in .PNG including legends and and contributors’ sources for external backgrounds such as OSM or NaturalEarth data.</p>
+<p><img src="images/Buton_center.png" /> Refocus and display the entire view without zooming in/out or panning.</p>
+<p><img src="images/Buton_export.png" /> Export the filtered flow data - the ones visible on the map - as a list file in .JSON format.</p>
+<p><img src="images/Buton_leg.png" /> Show/hide the legend.</p>
+<p><img src="images/Buton_screen_black.png" /> Switch to full screen display - with black background.</p>
+<p><img src="images/Buton_open_panel.png" /> Open/close the panels located on each side of the map.</p>
 </div>
-<div id="map" class="section level2">
-<h2><span class="header-section-number">2.2</span> Map</h2>
+<div id="primary-legend" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Primary legend</h3>
+<p>A legend is automatically generated for each map for nodes and links plot.</p>
+<p><img src="images/center_legend.PNG" /></p>
+<p>The symbolization elements (size, color and opacity) of the nodes and links are included. Here (for the default map), it is the volume of flows and the degree of places that are represented.</p>
 </div>
-<div id="statistical-information" class="section level2">
-<h2><span class="header-section-number">2.3</span> Statistical information</h2>
+</div>
+<div id="the-geographic-panel" class="section level2">
+<h2><span class="header-section-number">3.2</span> The geographic panel</h2>
+<p>The left panel is to design the map :
+- dealing with the background as the geographical/geometrical layers
+- customize the <em>design</em>/style of the nodes and links features
+map.</p>
+<p>The management of geographic information is composed of two sub-sections:</p>
+<p><img src="images/geom_panel.PNG" /></p>
+<p><img src="images/Buton_home.png" /> Return to the <a href="arabesque.ifsttar.fr">home page</a> to start a new view.</p>
+<p>Actions on the background of the map are for changing projections of the current map and/or to add other layers.</p>
+<p>Actions on the design/style is for (additional) geographic layers that have been adding through the previous action.</p>
+<p><em>Add Other layers</em></p>
+<p><img src="images/geom_add_layers.PNG" /></p>
+<p>Five types of geographic layers can be loaded/add to construct the map (Add Node Feature and Add Link Features) and/or to contextualize the map (Add Base Layer, Add Tile Layers (OSM), Import GeoJson Layers).</p>
+<p>Add Node Feature and Add Link Features leads to act on the design/style the flow features: to symbolize and customize the links and the nodes.</p>
+<div id="add-node-features" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Add Node Features</h3>
+<p><img src="images/Add_Nodes_Features.png" /></p>
+<p>Add Node Feature leads to act on the design/style of the flow places features.</p>
+<p>It is possible to set up all the graphic dimensions of the nodes by “Choose semio” for cartographic semiology as Bertin (1967). Hereby the general window.</p>
+<p><img src="images/geom_add_nodes_1.PNG" /></p>
+<div id="color" class="section level4">
+<h4><span class="header-section-number">3.2.1.1</span> <strong>Color</strong></h4>
+<p>The color of the nodes can be fixed (e.g. in black) or shaded in a range of tones.</p>
+<p><img src="images/choose_fixed_color.png" /></p>
+<p><strong><em>Example</em></strong> : Application on the nodes. Symbolization of the barycenter of the zones with a circle shape (unique choice for instance) of fixed size and unique black color.</p>
+<p><img src="images/nodes_color.png" /></p>
+<p>The color of the nodes can be shaded in a range of tones.</p>
+<p><img src="images/geom_add_nodes_1_color.PNG" />
+The reference for the color schemes is Cynthia Brewer palette for Diverging, Multi Hue and Single Hue. See: <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=BuGn&amp;n=3">Color Brewer advices for maps</a>. An Extra Palette is also proposed in Arabesque.</p>
+<p>The color of the node can be set according to one of the variables (initial or calculated by Arabesque) present in the dataset.</p>
+<p><img src="images/geom_add_nodes_1_color_variable.png" /></p>
+<p>By definition, the type of color range (Diverging/Multi Hue/Single Hue/Extra Palette) will have to be realized according to the type of the variable to represent (quantitative/qualitative, discrete/continuous, stock/ratio/scale, …).</p>
+<p><img src="images/geom_add_nodes_1_color_variable2.png" />
+The progression (up/down) of the <strong>color range</strong> depends on that of the <strong>value range</strong>: it can be direct or inverse. The checked box means an inverse progression: a light color is applied to a strong value.</p>
+<p><img src="images/geom_add_nodes_1_color_variable3.png" /></p>
+</div>
+<div id="size" class="section level4">
+<h4><span class="header-section-number">3.2.1.2</span> <strong>Size</strong></h4>
+<p>The size of the nodes can be fixed and the weight defined.</p>
+<p><img src="images/geom_add_nodes_2_size.png" /></p>
+<p>The size can be <strong>weighted by a variable</strong> according to one of the initial or additional <strong>variables</strong> available in the dataset (hereby the balance).</p>
+<p><img src="images/geom_add_nodes_2_size_variable.png" />
+Three functions to set the size of the node according to the corresponding value are proposed: the square, the square root and the logarithm.</p>
+<p><img src="images/geom_add_nodes_2_size_fct.png" /></p>
+<p>The <strong>ratio</strong> representing the max width in pixel of the graphic features can be defined - according to the map bounding box, to obtain an image with balanced features (neither too small nor too big).</p>
+<p><img src="images/geom_add_nodes_2_size_ratio.png" /></p>
+</div>
+<div id="text" class="section level4">
+<h4><span class="header-section-number">3.2.1.3</span> <strong>Text</strong></h4>
+<p>Textuals elements can also be added near the nodes.</p>
+<p><img src="images/geom_add_nodes_3_texte.png" />
+The text can be defined according to one of the variable available in the dataset.</p>
+<p><img src="images/geom_add_nodes_3_texte2.png" />.</p>
+<p>The opacity of the text shade (currently set to black) can be set to a given value (here 0.85).</p>
+<p><img src="images/geom_add_nodes_3_texte_fixe.png" /></p>
+<p>The opacity of the text shade (currently set to black) can be varied according to an indicator present in the dataset.</p>
+<p><img src="images/geom_add_nodes_3_texte_variable.png" /></p>
+<p>EXAMPLE : Application of the shade opacity on the nodes. Symbolization of the nodes with a circle shape of variable size according to a linear function, represented with a shaded black shade with opacity variation.</p>
+<p><img src="images/nodes_opacity.png" /></p>
+<p><img src="images/geom_add_nodes_3_texte_funct.png" /></p>
+<p>The opacity of the text shade can vary according to an indicator present in the dataset and according to a corresponding function which can be Linear, Square, SquareRoot or Logarithm and defined in an min/max interval: here between 0.25 and 0.85.</p>
+</div>
+</div>
+<div id="add-link-features" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Add Link Features</h3>
+<p><img src="images/Add_Links_Features.png" /></p>
+<p>Add Link Feature leads to act on the design/style the flow interactions features.</p>
+<p>It is possible to “Choose semio” for <em>cartographic semiology</em> as Bertin (1967). Hereby the general window.</p>
+<p>The symbology of the links consists of setting their design parameters and applying visual variables to qualitatively enrich the map.</p>
+<p><img src="images/geom_add_links_1.PNG" /></p>
+<p>The colors of the links and nodes need to be defined, for reasons of visual harmony.</p>
+<p>EXAMPLE: straight bilateral oriented links, unique black color.</p>
+<p><img src="images/geom_all_links.png" /></p>
+<div id="geometry" class="section level4">
+<h4><span class="header-section-number">3.2.2.1</span> Geometry</h4>
+<p>The geometry of the link can be oriented or not.</p>
+<p><img src="images/geom_add_links_geometry1.PNG" /></p>
+<p>Oriented geometry takes into account the direction of the <strong>flow</strong> to define the <strong>graphic form</strong> of the sign.</p>
+<p><img src="images/geom_add_links_oriented.png" /></p>
+<p>Five form are available : straight (as euclidian distance symbolisation), straight no hook, Triangle, (line) Curve and Triangle curve.</p>
+<p><img src="images/Links_geom.png" /></p>
+<ul>
+<li><p><strong>Straight</strong>: The link is straight and oriented, with a half arrowhead</p></li>
+<li><p><strong>Straight no hook</strong>: The link is straight and oriented, it has a point without hook</p></li>
+<li><p><strong>Triangle</strong>: The link is straight and takes the shape of a triangle</p></li>
+<li><p><strong>Curve</strong> : The link is curved and oriented, its curvature is configurable.</p></li>
+<li><p><strong>Triangle curve</strong>: The link is curved and takes the shape of a drop of water, its curvature is configurable.</p></li>
+<li><p><strong>Non oriented</strong>: The link is straight, validated or not, it has no orientation.</p></li>
+</ul>
+<p><strong>The design of arrows</strong></p>
+<p>The arrow geometry - which corresponds to the visual shape variable - can be rectilinear or curvilinear.</p>
+<p>The curvature of the line is generated according to the Chaikin algorithm which allows to parameterize its height and its base, with respect to the body of the link.</p>
+<p><img src="images/geom_add_links_curve.png" /></p>
+<ul>
+<li><p><strong>Arrow / Height curve</strong>: The value of the height of the head is the percentage of the map distance of the link (distance between the origin and the destination) used to define the maximum (map) width of the link - the width being itself a function of the value of the flow.</p></li>
+<li><p><strong>Arrow / Height</strong>: The value of ([0,1]) is that of the center of the curve; the point is identified by the indication of a distance from the origin node of the link.</p></li>
+</ul>
+<p>EXAMPLE*: various geometry of a same Covid-19 flowmaps.</p>
+<p><img src="images/Ex_geom_covid.png" /></p>
+</div>
+<div id="semiology" class="section level4">
+<h4><span class="header-section-number">3.2.2.2</span> Semiology</h4>
+<p><strong>Color</strong></p>
+<p>The Color of the links can be fixed ie it is identical for all links.</p>
+<p>The reference for the color schemes is Cynthia Brewer palette for Diverging, Multi Hue and Single Hue. See: <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=BuGn&amp;n=3">Color Brewer advices for maps</a>. An Extra Palette is also proposed in Arabesque.</p>
+<p><img src="images/geom_add_links_color_fix.png" /></p>
+<p>The color of the links can also be set according to one of the variables present in the dataset. It is based on a predefined tone gradient. The choice of the progression (divergent or not) will depend on the type of character (specified in the type field).</p>
+<p><img src="images/Geom_add_Links_color1.png" /></p>
+<p>The choice to shade the links is associated here with a continuous (pseudo) character whose type (quantitative) must be specified.</p>
+<p><strong>Size</strong>:</p>
+<p>Ideally, it is necessary to simultaneously set the size of the links. Ideally, it is necessary to simultaneously set the size using a discrete character. The links’s color using a continuous character (ratio or rate) - otherwise, the links will keep the same size and the result of the application of a nuance will be hardly visible.</p>
+<p><img src="images/geom_add_links_geom_size.png" /></p>
+<p><strong>Scale</strong>:</p>
+<p>Four functions to set the size of the links according to the corresponding quantitative and discrete value are proposed: the linear, the square, the square root and the logarithm.</p>
+<p><img src="images/geom_add_links_scale.png" /></p>
+<p><strong>Ratio</strong>: it represents the max width in pixel of the graphic features that can be defined - according to the map bounding box, to obtain an image with balanced features (neither too small nor too big) regarding the scale function.</p>
+<p><strong>Opacity</strong></p>
+<p>The opacity of the link’s color can vary according to an indicator and also to a corresponding function which can be Linear, Square, SquareRoot or Logarithm and defined in an min/max interval: here between 0.25 and 0.85.</p>
+<p><img src="images/geom_add_links_opacity_varied.PNG" /></p>
+<p>EXAMPLES:</p>
+<ol style="list-style-type: decimal">
+<li>Black and white nodes under links as triangle curve with varied opacity.</li>
+</ol>
+<p><img src="images/Nodes_under_links.png" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Black and white nodes on links as triangle curve with varied opacity.</li>
+</ol>
+<p><img src="images/Nodes_on_links.png" /></p>
+<p>See layout management section to manage the overlay of the layers.</p>
+</div>
+</div>
+<div id="add-base-layer" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> Add Base Layer</h3>
+<p><img src="images/Add_base_Layer.png" /></p>
+<p>Add based layers consists in calling a remote geographic information layer, to contextualize the flowmap.</p>
+<p>EXAMPLE: various geometry of a same Covid-19 flowmaps.</p>
+<p><img src="images/Ex_geographie_covid.png" /></p>
+</div>
+<div id="add-tile-layers-osm" class="section level3">
+<h3><span class="header-section-number">3.2.4</span> Add Tile Layers (OSM)</h3>
+<p><img src="images/Add_Tiles_OSM.png" /></p>
+</div>
+<div id="import-geojson-layers" class="section level3">
+<h3><span class="header-section-number">3.2.5</span> Import GeoJson Layers</h3>
+<p><img src="images/Add_Import_Geojson.png" /></p>
+</div>
+</div>
+<div id="the-statistical-panel" class="section level2">
+<h2><span class="header-section-number">3.3</span> The statistical panel</h2>
 
 </div>
 </div>
@@ -137,12 +327,11 @@
           </div>
         </div>
       </div>
-<a href="data-import.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-pre-processing.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="exports.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -161,6 +350,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -181,6 +371,10 @@ gitbook.start({
 "text": null
 },
 "download": ["arabesque-doc.pdf", "arabesque-doc.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

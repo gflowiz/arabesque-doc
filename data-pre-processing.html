@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Arabesque documentation</title>
+  <title>2 Data pre processing | Arabesque documentation</title>
   <meta name="description" content="This is the online documentation of the Arabesque web application." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Arabesque documentation" />
+  <meta property="og:title" content="2 Data pre processing | Arabesque documentation" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Arabesque documentation" />
+  <meta name="twitter:title" content="2 Data pre processing | Arabesque documentation" />
   
   <meta name="twitter:description" content="This is the online documentation of the Arabesque web application." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="data-import.html"/>
+<link rel="prev" href="data-import.html"/>
+<link rel="next" href="interface.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -136,84 +136,109 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Arabesque documentation</h1>
-<p class="author"><em>GFlowiz project team</em></p>
-<p class="date"><em>2021-10-01</em></p>
-</div>
-<div id="about-arabesque" class="section level1 unnumbered">
-<h1>About <em>Arabesque</em></h1>
-<p><em>Arabesque</em> is a web application for thematic mapping of flow and spatial networks datasets.
-This first version allows the exploration, filtering, geovisualization
-and representation of complex matrices.
-it provides a full toolset to filter you origin-destination data and
-simplify it in order to make clearer and understandable maps.</p>
-<p><em>Arabesque</em> allows the creation of flow maps from a web browser -
-equipped with Mozilla or Chrome, from its own datasets.
-It is based on current technological possibilities, in particular
-those offered by the new web visualization (built in javascript and HTML 5)
-and mapping libraries (<a href="https://openlayers.org/">OpenLayers</a>, <a href="https://d3js.org/">D3.js</a>, <a href="https://turfjs.org/">Turf</a>, <a href="https://www.openstreetmap.org">OpenStreetMap</a> and <a href="https://www.naturalearthdata.com/">Natural Earth</a> data).</p>
-<div id="challenges" class="section level2 unnumbered">
-<h2>Challenges</h2>
-<p>The challenge of <em>Arabesque</em> consists in offering a set of tools for
-the analysis and the cartographic representation of complex matrices
-(categorical and temporal). Its methodology is innovative :
-it articulates several dimensions of a matrix, interactivity and animation.</p>
-<p>Its techniques allow an easy exploration, a fluidity of the display
-in a simple configuration facilitating the appropriation of flow mapping
-by different audiences (academic, institutional, socio-economic, educational…).</p>
-</div>
-<div id="contributors" class="section level2 unnumbered">
-<h2>Contributors</h2>
-<p>Contributors are:</p>
+<div id="data-pre-processing" class="section level1">
+<h1><span class="header-section-number">2</span> Data pre processing</h1>
+<p>The datasets are automatically modified when imported. Arabesque computes different indicators, which are available in a list that can be downloaded in . csv format (see Export and Save sections).</p>
+<p><em>Indicators on links</em>: Euclidean distance between the origin and destination entities</p>
+<p><em>Indicators on nodes</em> : see below the additional indicators () automatically calculated on the nodes of the RIcardo data</p>
+<p>See below the indicators that have been automatically computed on the nodes of the RIcardo data.</p>
+<p><img src="images/GjzU9IE.png" /></p>
+<p><strong>CASE STUDY</strong></p>
+<p>These files come from <a href="http://ricardo.medialab.sciences-po.fr/#/">RIcardo</a>, a research project on historical international trade flows,
+observed from the beginning of the Industrial Revolution to the World War II. The project combines a historical trade flows database
+covering all countries of the world, see: <a href="https://github.com/medialab/ricardo_data/releases/tag/2017.12">github/medialab/ricardo_data</a>
+with a website that offers to explore the history of international trade flows through visualizations,
+see: <a href="http://ricardo.medialab.sciences-po.fr/#/">medialab/ricardo</a>. In order to produce the first cartographic / geovisualizations
+of this historical corpus describing trade flows, a dataset has been prepared by Paul Girard (Medialab, Sciences Po) and Béatrice Dedinger (Centre d’Histoire, Sciences Po) for collective handling and exploitation during the GEOWEB-gflowiz worshop organized during the SAGEO2019 conference
+(More information: <a href="https://geoflowiz.hypotheses.org/workshop-geoweb-gflowiz-sageo2019">geoweb-gflowiz-Sageo</a>.</p>
+<p>A french version of this tutorial is available in French here: <br/>
+<a href="https://github.com/gflowiz/sageo-ricardo">Version française</a></p>
+<p>The files used are available in this repository have the following structure:</p>
 <ul>
-<li><p>Scientific responsibility, design and coordination </br>
-Françoise Bahoken, Etienne Côme and Laurent Jégou (coord.) </br>
-Grégoire Le Campion, Marion Maisonobe, Alain Nguyen and Nicolas Roelandt</p></li>
-<li><p>Development &amp; Design </br>
-Etienne Côme (coord.), Thomas Bapaume and Paul Fabre.</p></li>
-<li><p>Documentation </br>
-Nicolas Roelandt (coord.), Françoise Bahoken</p></li>
-</ul>
-</div>
-<div id="general-project-and-funding" class="section level2 unnumbered">
-<h2>General project and funding</h2>
-<div class="figure">
-<img src="images/logo_gflowiz.jpg" alt="" />
-<p class="caption">Logo du projet GFlowiz</p>
-</div>
-<div id="the-geographic-flow-vizualisation-gflowiz-project" class="section level3 unnumbered">
-<h3>The geographic flow vizualisation (gflowiz) project</h3>
-<p>Arabesque is part of the <a href="https://geoflowiz.hypotheses.org/">Gflowiz research project</a> on flow maps in the geoweb.
-One of its goals is the web design of a geo visualization application for flow
-or traffic data to analyze the geographical determinants of spatial mobility.
-To this end, it aims to allow data describing geographical interactions to be explored and represented graphically, from different points of view,
-by focusing on statistical and geographical data filtering,
-spatial scale issues specific to certain data sets
-(the world scale or local scale) and their temporality.</p>
-</div>
-<div id="funding" class="section level3 unnumbered">
-<h3>Funding</h3>
-<p>The project is funded by former IFSTTAR’s scientific direction
-(VP Recherche Univ. Gustave Eiffel), with the participation of the
-Projet federateur Mobilities and numeric transitions (PF MobTransNum).
-The team is strengthened by the participation of members of CNRS laboratories,
-as well as it is supported by the research GDR Magis through the GEOWEB
-prospective action (2019).</p>
-</div>
-</div>
-<div id="about-arabesque-documentation" class="section level2 unnumbered">
-<h2>About <em>Arabesque</em> documentation</h2>
-<p>This document aims to present how <em>Arabesque</em> works and how to use it using example datasets provided.</p>
-<p>The documentation is segmented in several parts:</p>
+<li><a href="https://raw.githubusercontent.com/gflowiz/sageo-ricardo/master/SAGEO_RICardo_nodes.csv">SAGEO_RICardo_nodes.csv</a>: geographical location of entities files
 <ul>
-<li><a href="./data-import.html">Data import</a></li>
-<li><a href="./interface.html">Interface</a></li>
-<li><a href="./exports.html">Exports</a></li>
-<li><a href="./examples.html">Examples</a></li>
+<li>id (identifier of the geographical entity)</li>
+<li>name (name of the geographical entity)</li>
+<li>type (entity type : <em>country</em>, <em>city</em>, …)</li>
+<li>continent (<em>continent</em>)</li>
+<li>lat (<em>latitude</em>)</li>
+<li>long (<em>longitude</em>)</li>
+</ul></li>
+<li><a href="https://raw.githubusercontent.com/gflowiz/sageo-ricardo/master/SAGEO_RICardo_edges_small.csv">SAGEO_RICardo_edges_small.csv</a> : aggregated historical trade flows (to reduce the size of the dataset)
+<ul>
+<li>idorigin (identifier of the entity of origin of the flow)</li>
+<li>iddestination (identifier of the destination entity of the flow)</li>
+<li>volume (financial volume of the flow in pounds sterling)</li>
+<li>decennie (decade concerned by the flow)</li>
+</ul></li>
+<li><a href="https://raw.githubusercontent.com/gflowiz/sageo-ricardo/master/SAGEO_RICardo_edges_nona.csv">SAGEO_RICardo_edges_nona.csv</a> : non-aggregated historical trade flows
+<ul>
+<li>idorigin (identifier of the entity of origin of the flow)</li>
+<li>iddestination (identifier of the destination entity of the flow)</li>
+<li>volume (financial volume of the flow in pounds sterling)</li>
+<li>annee (year of the exchange)</li>
+<li>periode (period of the exchange)</li>
+<li>decennie (decade of exchange)</li>
+</ul></li>
 </ul>
-<p>Please find the application at this address : <a href="http://arabesque.ifsttar.fr/">arabesque.ifsttar.fr</a> and more information on the project here : <a href="https://geoflowiz.hypotheses.org/">geoflowiz.hypotheses.org</a>.</p>
-<p>Please report any issue on <a href="https://github.com/gflowiz/arabesque">GitHub</a>. This is a Free and OpenSource project, feel free to help us make it better.</p>
+<div id="data-importation" class="section level2">
+<h2><span class="header-section-number">2.1</span> Data importation</h2>
+<div id="links-edges-dataset-importation" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> Links (<em>edges</em>) dataset importation</h3>
+<p>Arabesque requires the loading of at least one stream data set: a link file in CSV (separator: comma) and long format.</p>
+<p>You must also declare the 3 minimum fields required for flow mapping: those corresponding to the origin locations, to the destination locations and the flow values.</p>
+<p>If the OD matrix is temporal or available for different categories, you must also choose an aggregation method.</p>
+<p>On the homepage of(<a href="http://arabesque.ifsttar.fr/">Arabesque</a>), load at least one set of flow data.</p>
+<p><img src="images/BjvHVHn.png" /></p>
+<ul>
+<li>Click on the browse button</li>
+</ul>
+<p><strong>Application</strong></p>
+<p>Statistical dataset</p>
+<p>Loading data <em>SAGEO_RICardo_edges_small.csv</em>.</p>
+<p><img src="images/GjzU9IE.png" /></p>
+<p>The data must be in long format, with at least 3 columns : origin, destination, flow</p>
+<p>The data must be in long format, with at least 3 columns to identify the origin, destination and volume of flows.</p>
+<p>If the flow data are multiscalar (e.g. flows that concern several social groups, several goods transported or that occur on several dates), it is necessary to aggregate them when loading them into Arabesque.</p>
+<p>Several aggregation functions are available (sum, average, median, maximum, minimum) to simplify the flows.</p>
+<p><img src="images/flow_aggreg_import.png" /></p>
+<p>Note: This aggregation does not interfere with the geo-visualization possibilities that will remain available for all existing types.</p>
+</div>
+</div>
+<div id="nodes-vertex-dataset-importation" class="section level2">
+<h2><span class="header-section-number">2.2</span> Nodes (<em>vertex</em>) dataset importation</h2>
+<p>If you have locational data associated with your ODs, you can load the corresponding node files with “Import Location”,
+otherwise you can use predefined locations with “Preset Location”.</p>
+<p>If you select “Import Location”, you must load a .GEOJSON or .CSV file, then choose the ID of the nodes and their lat/long geographic coordinates.</p>
+<p><strong>Application</strong></p>
+<p>Loading <em>SAGEO_RICardo_nodes.csv</em> data</p>
+<p><img src="images/import_nodes.png" /></p>
+<p>The data must be in long format, with at least 3 columns to identify the place and the latitude (Y) and longitude (X) coordinates.</p>
+<p>If you do not have a file for the geometry, you can use the codes identifying the reference data (e.g. INSEE codes of the French communes, ISO codes of the countries), to automatically geolocate your nodes. See Preset.</p>
+</div>
+<div id="preset-nodes-dataset" class="section level2">
+<h2><span class="header-section-number">2.3</span> Preset nodes dataset</h2>
+<p>Example of pre-selection of French municipalities.</p>
+<p><img src="images/preset_nodes_import.png" /></p>
+<p>After loading the link and node files, Arabesque automatically performs a join of the common attributes between the two files.</p>
+</div>
+<div id="checking-missing-nodeslinks-features" class="section level2">
+<h2><span class="header-section-number">2.4</span> Checking missing nodes/links features</h2>
+<p>Links that do not have an origin and/or destination ID are automatically deleted. Nodes that don’t have an ID code that allows them to be geographically located are also not kept.</p>
+<p>The list of deleted nodes and links is displayed in a new window.</p>
+<p><img src="images/import_suppr_entities.png" /></p>
+<p>This list is for quick reference only. You must copy and paste it (into a text file, for example) if you want to keep the list of deleted entities : here 77 nodes have been deleted because they are not related to other nodes. The corresponding nodes ID are list.</p>
+<p>Loading data into Arabesque leads to the creation of a default map, which is placed in the center of the interface.</p>
+</div>
+<div id="visualize-a-default-flow-map" class="section level2">
+<h2><span class="header-section-number">2.5</span> Visualize a default flow map</h2>
+<p>Loading data in Arabesque leads to the creation of a default map.</p>
+<p>By default, the links are represented in shades of blue and the nodes in red. The map is presented in the WGS84 projection, according to the lat/lon coordinates* declared during the import.</p>
+<p>Except in the case of loading a projected geometry as input, the map is presented in WGS84.</p>
+<p>Hereby is the Ricardo’s dataset default map with global statistic of the percent of links versus the percent of volume of flows and nodes.</p>
+<p><img src="images/defaut_flowmap.png" />
+Only the 10% most important links (in value) are represented and symbolized (see the automatic legend) according to their intensity (the flow variable entered at import).
+The corresponding nodes are symbolized according to their degree (variable calculated automatically during the import).</p>
 
 </div>
 </div>
@@ -222,8 +247,8 @@ prospective action (2019).</p>
           </div>
         </div>
       </div>
-
-<a href="data-import.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-import.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="interface.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

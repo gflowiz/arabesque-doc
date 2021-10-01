@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1 Data import | Arabesque documentation</title>
   <meta name="description" content="This is the online documentation of the Arabesque web application." />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1 Data import | Arabesque documentation" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="GFlowiz project team" />
 
 
-<meta name="date" content="2020-10-13" />
+<meta name="date" content="2021-10-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,8 +32,9 @@
   
   
 <link rel="prev" href="index.html"/>
-<link rel="next" href="interface.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="next" href="data-pre-processing.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,8 +50,10 @@
 
 
 
-
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
 
 
 
@@ -85,19 +88,33 @@
 <li class="chapter" data-level="1.2.1" data-path="data-import.html"><a href="data-import.html#links-edges-data"><i class="fa fa-check"></i><b>1.2.1</b> Links (<em>edges</em>) data</a></li>
 <li class="chapter" data-level="1.2.2" data-path="data-import.html"><a href="data-import.html#nodes-vertex-data"><i class="fa fa-check"></i><b>1.2.2</b> Nodes (<em>vertex</em>) data</a></li>
 <li class="chapter" data-level="1.2.3" data-path="data-import.html"><a href="data-import.html#preset-dataset"><i class="fa fa-check"></i><b>1.2.3</b> Preset dataset</a></li>
-<li class="chapter" data-level="1.2.4" data-path="data-import.html"><a href="data-import.html#agreggations-on-weighted-links"><i class="fa fa-check"></i><b>1.2.4</b> Agreggations on weighted links</a></li>
-<li class="chapter" data-level="1.2.5" data-path="data-import.html"><a href="data-import.html#for-the-nodes"><i class="fa fa-check"></i><b>1.2.5</b> For the nodes</a></li>
-<li class="chapter" data-level="1.2.6" data-path="data-import.html"><a href="data-import.html#for-the-links"><i class="fa fa-check"></i><b>1.2.6</b> For the links</a></li>
-<li class="chapter" data-level="1.2.7" data-path="data-import.html"><a href="data-import.html#for-weighted-links"><i class="fa fa-check"></i><b>1.2.7</b> For weighted links</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="interface.html"><a href="interface.html"><i class="fa fa-check"></i><b>2</b> Interface</a><ul>
-<li class="chapter" data-level="2.1" data-path="interface.html"><a href="interface.html#geographical-layer-information"><i class="fa fa-check"></i><b>2.1</b> Geographical layer information</a></li>
-<li class="chapter" data-level="2.2" data-path="interface.html"><a href="interface.html#map"><i class="fa fa-check"></i><b>2.2</b> Map</a></li>
-<li class="chapter" data-level="2.3" data-path="interface.html"><a href="interface.html#statistical-information"><i class="fa fa-check"></i><b>2.3</b> Statistical information</a></li>
+<li class="chapter" data-level="2" data-path="data-pre-processing.html"><a href="data-pre-processing.html"><i class="fa fa-check"></i><b>2</b> Data pre processing</a><ul>
+<li class="chapter" data-level="2.1" data-path="data-pre-processing.html"><a href="data-pre-processing.html#data-importation"><i class="fa fa-check"></i><b>2.1</b> Data importation</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="data-pre-processing.html"><a href="data-pre-processing.html#links-edges-dataset-importation"><i class="fa fa-check"></i><b>2.1.1</b> Links (<em>edges</em>) dataset importation</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="exports.html"><a href="exports.html"><i class="fa fa-check"></i><b>3</b> Exports</a></li>
-<li class="chapter" data-level="4" data-path="examples.html"><a href="examples.html"><i class="fa fa-check"></i><b>4</b> Examples</a></li>
+<li class="chapter" data-level="2.2" data-path="data-pre-processing.html"><a href="data-pre-processing.html#nodes-vertex-dataset-importation"><i class="fa fa-check"></i><b>2.2</b> Nodes (<em>vertex</em>) dataset importation</a></li>
+<li class="chapter" data-level="2.3" data-path="data-pre-processing.html"><a href="data-pre-processing.html#preset-nodes-dataset"><i class="fa fa-check"></i><b>2.3</b> Preset nodes dataset</a></li>
+<li class="chapter" data-level="2.4" data-path="data-pre-processing.html"><a href="data-pre-processing.html#checking-missing-nodeslinks-features"><i class="fa fa-check"></i><b>2.4</b> Checking missing nodes/links features</a></li>
+<li class="chapter" data-level="2.5" data-path="data-pre-processing.html"><a href="data-pre-processing.html#visualize-a-default-flow-map"><i class="fa fa-check"></i><b>2.5</b> Visualize a default flow map</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="interface.html"><a href="interface.html"><i class="fa fa-check"></i><b>3</b> Interface</a><ul>
+<li class="chapter" data-level="3.1" data-path="interface.html"><a href="interface.html#the-central-panel"><i class="fa fa-check"></i><b>3.1</b> The central panel</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="interface.html"><a href="interface.html#primary-actions-with-butons"><i class="fa fa-check"></i><b>3.1.1</b> Primary actions with butons</a></li>
+<li class="chapter" data-level="3.1.2" data-path="interface.html"><a href="interface.html#primary-legend"><i class="fa fa-check"></i><b>3.1.2</b> Primary legend</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="interface.html"><a href="interface.html#the-geographic-panel"><i class="fa fa-check"></i><b>3.2</b> The geographic panel</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="interface.html"><a href="interface.html#add-node-features"><i class="fa fa-check"></i><b>3.2.1</b> Add Node Features</a></li>
+<li class="chapter" data-level="3.2.2" data-path="interface.html"><a href="interface.html#add-link-features"><i class="fa fa-check"></i><b>3.2.2</b> Add Link Features</a></li>
+<li class="chapter" data-level="3.2.3" data-path="interface.html"><a href="interface.html#add-base-layer"><i class="fa fa-check"></i><b>3.2.3</b> Add Base Layer</a></li>
+<li class="chapter" data-level="3.2.4" data-path="interface.html"><a href="interface.html#add-tile-layers-osm"><i class="fa fa-check"></i><b>3.2.4</b> Add Tile Layers (OSM)</a></li>
+<li class="chapter" data-level="3.2.5" data-path="interface.html"><a href="interface.html#import-geojson-layers"><i class="fa fa-check"></i><b>3.2.5</b> Import GeoJson Layers</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="interface.html"><a href="interface.html#the-statistical-panel"><i class="fa fa-check"></i><b>3.3</b> The statistical panel</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="exports.html"><a href="exports.html"><i class="fa fa-check"></i><b>4</b> Exports</a></li>
+<li class="chapter" data-level="5" data-path="examples.html"><a href="examples.html"><i class="fa fa-check"></i><b>5</b> Examples</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -121,9 +138,10 @@
             <section class="normal" id="section-">
 <div id="data-import" class="section level1">
 <h1><span class="header-section-number">1</span> Data import</h1>
-<p>Arabesque also allows you to import your own data sets : (1) flowdata in the form of an origin-destination matrix
-(adjacency long format in .csv), to agregate them if necessary and (2) nodes dataset before building a readable flowmap.</p>
+<p>Arabesque also allows you to import your own data sets : (1) flowdata in the form of an origin-destination matrix (adjacency long format in .csv), to agregate them if necessary and (2) nodes dataset before building a readable flowmap.</p>
 <p>For this tutorial, we will use for example the historical trade flows listed in the <a href="https://github.com/gflowiz/sageo-ricardo">RICardo database</a>.</p>
+<p>For more informations about the dataset and its use with Arabesque, see:</p>
+<p><em>Reference</em> : Girard P. et Dedinger B. (2020), Pourquoi et comment géolocaliser le commerce mondial des XIXe-miXXe siècles ? : Retour d’expérience sur l’usage de wikidata comme gazetteer historique et de l’application de cartographie de flux Arabesque, <em>Humanistica</em>, Medialab Sciences-Po. et Centre d’histoire de Sciences-Po., en ligne</p>
 <p>The creation of a flow map with Arabesque can be broken down into the following main steps:</p>
 <p><strong>1. Importing flow datasets (links and/or nodes)</strong>
 2. Processing flow datasets (creation of indicators, statistics)
@@ -141,7 +159,7 @@ with a website that offers to explore the history of international trade flows t
 see: <a href="http://ricardo.medialab.sciences-po.fr/#/">medialab/ricardo</a>. In order to produce the first cartographic / geovisualizations
 of this historical corpus describing trade flows, a dataset has been prepared by Paul Girard (Medialab, Sciences Po) and Béatrice Dedinger (Centre d’Histoire, Sciences Po) for collective handling and exploitation during the GEOWEB-gflowiz worshop organized during the SAGEO2019 conference
 (More information: <a href="https://geoflowiz.hypotheses.org/workshop-geoweb-gflowiz-sageo2019">geoweb-gflowiz-Sageo</a>.</p>
-<p>A version of this tutorial is available in French here: <br/>
+<p>A french version of this tutorial is available in French here: <br/>
 <a href="https://github.com/gflowiz/sageo-ricardo">Version française</a></p>
 <p>The files used are available in this repository have the following structure:</p>
 <ul>
@@ -188,6 +206,12 @@ of this historical corpus describing trade flows, a dataset has been prepared by
 <p>Statistical dataset</p>
 <p>Loading data <em>SAGEO_RICardo_edges_small.csv</em>.</p>
 <p><img src="images/GjzU9IE.png" /></p>
+<p>The data must be in long format, with at least 3 columns : origin, destination, flow</p>
+<p>The data must be in long format, with at least 3 columns to identify the origin, destination and volume of flows.</p>
+<p>If the flow data are multiscalar (e.g. flows that concern several social groups, several goods transported or that occur on several dates), it is necessary to aggregate them when loading them into Arabesque.</p>
+<p>Several aggregation functions are available (sum, average, median, maximum, minimum) to simplify the flows.</p>
+<p><img src="images/flow_aggreg_import.png" /></p>
+<p>Note: This aggregation does not interfere with the geo-visualization possibilities that will remain available for all existing types.</p>
 </div>
 <div id="nodes-vertex-data" class="section level3">
 <h3><span class="header-section-number">1.2.2</span> Nodes (<em>vertex</em>) data</h3>
@@ -196,26 +220,30 @@ otherwise you can use predefined locations with “Preset Location”.</p>
 <p>If you select “Import Location”, you must load a .GEOJSON or .CSV file, then choose the ID of the nodes and their lat/long geographic coordinates.</p>
 <p><strong>Application</strong></p>
 <p>Loading <em>SAGEO_RICardo_nodes.csv</em> data</p>
-<p><img src="https://i.imgur.com/5uIbhj4.png" /></p>
+<p><img src="images/import_nodes.png" /></p>
+<p>The data must be in long format, with at least 3 columns to identify the place and the latitude (Y) and longitude (X) coordinates.</p>
+<p>If you do not have a file for the geometry, you can use the codes identifying the reference data (e.g. INSEE codes of the French communes, ISO codes of the countries), to automatically geolocate your nodes. See Preset.</p>
 </div>
 <div id="preset-dataset" class="section level3">
 <h3><span class="header-section-number">1.2.3</span> Preset dataset</h3>
-<p>List of Arabesque’ references datasets</p>
-</div>
-<div id="agreggations-on-weighted-links" class="section level3">
-<h3><span class="header-section-number">1.2.4</span> Agreggations on weighted links</h3>
-<p><strong>Automated computations</strong></p>
-</div>
-<div id="for-the-nodes" class="section level3">
-<h3><span class="header-section-number">1.2.5</span> For the nodes</h3>
-<p><strong>Automated indicators computation for nodes</strong></p>
-</div>
-<div id="for-the-links" class="section level3">
-<h3><span class="header-section-number">1.2.6</span> For the links</h3>
-</div>
-<div id="for-weighted-links" class="section level3">
-<h3><span class="header-section-number">1.2.7</span> For weighted links</h3>
+<p>Example of pre-selection of French municipalities.</p>
+<p><img src="images/preset_nodes_import.png" /></p>
+<p>After loading the link and node files, Arabesque automatically performs a join of the common attributes between the two files.</p>
+<p>Links that do not have an origin and/or destination ID are automatically deleted. Nodes that don’t have an ID code that allows them to be geographically located are also not kept.</p>
+<p>The list of deleted nodes and links is displayed in a new window.</p>
+<p><img src="images/import_suppr_entities.png" /></p>
+<p>This list is for quick reference only. You must copy and paste it (into a text file, for example) if you want to keep the list of deleted entities : here 77 nodes have been deleted because they are not related to other nodes. The corresponding nodes ID are list.</p>
 
+<p>The creation of a flow map with Arabesque can be broken down into the following main steps:</p>
+<ol style="list-style-type: decimal">
+<li>Importing flow datasets (links and/or nodes)
+<strong>2. Processing flow datasets (creation of indicators, statistics)</strong></li>
+<li>Statistical data computing (filtering, …)</li>
+<li>Geographical data computing (choosing the map background…)</li>
+<li>Graphic symbolization for thematic flow mapping purposes</li>
+<li>Flowmap decoration</li>
+<li>Export</li>
+</ol>
 </div>
 </div>
 </div>
@@ -225,11 +253,10 @@ otherwise you can use predefined locations with “Preset Location”.</p>
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="interface.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-pre-processing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -248,6 +275,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -268,6 +296,10 @@ gitbook.start({
 "text": null
 },
 "download": ["arabesque-doc.pdf", "arabesque-doc.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
