@@ -2,9 +2,9 @@
 
 *Arabesque* provides several origin-destination flow data sets that are used either to illustrate the documentation or to serve as application cases for the DEMO section (these are accessible from the home page)
 
-## Data set used in the documentation
+## RIcardo Data set used in the documentation
 
-**RIcardo**
+### RIcardo general description
 
 RIcardo historical trade flows are used in the documentation and in the DEMO. 
 
@@ -17,7 +17,7 @@ In order to produce the first cartographic/geovisualizations of this historical 
 (More information: [geoweb-gflowiz-Sageo](https://geoflowiz.hypotheses.org/workshop-geoweb-gflowiz-sageo2019).
 
 
-**RIcardo dataset description**
+### RIcardo dataset description
 
 RIcardo's files have the following structure:
 
@@ -44,26 +44,25 @@ RIcardo's files have the following structure:
 	- decennie (decade of exchange)
 
 
-## Datasets used for DEMO (demonstration purposes) 
+## Datasets used for demonstration purposes
 
 These data sets are available on the Arabesque home page, in the **DEMO** section: [arabesque/DEMO]!(http://arabesque.ifsttar.fr/) 
 
-- **Swiss Commuting**:
+### Swiss Commuting
 
 ![](images/DEMO_Swiss_Commute2.png)
-
-
 Data: Daily commutes in Switzerland (2014),
 Source: [Swiss Federal Statistical Office](https://www.bfs.admin.ch/bfs/de/home/statistiken/mobilitaet-verkehr/personenverkehr/pendlermobilitaet.html)
 
--**London Bike Sharing**:
+### London Bike Sharing
 
 ![](images/DEMO_London_Bike2.png)
 
 Data: Number of trips between stations of the London's Santander Cycle Hire Scheme in 2017.
 Source:[Data London](https://data.london.gov.uk/)
 
-- **French Commuting/Mobilités professionelles (MOBPRO)**:
+### French Commuting/Mobilités professionelles (MOBPRO)
+
 Data: [INSEE/MOBPRO](https://www.insee.fr/fr/statistiques/fichier/4509353/base-csv-flux-mobilite-domicile-lieu-travail-2017.zip)
 Source: INSEE, 2018 
 Documentation : [MOBPRO/Doc](https://www.insee.fr/fr/statistiques/4509353#dictionnaire)
@@ -71,7 +70,7 @@ déplacements domicile - lieu de travail Recensement de la population - Base flu
 
 
 
-- **French School Mobilities/Mobilités scolaires (MOBSCO)**:
+### French School Mobilities/Mobilités scolaires (MOBSCO)
 
 ![](images/DEMO_France_Mobsco_2.png)
 
