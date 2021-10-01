@@ -1,0 +1,31 @@
+#Design of the flowmap signs (nodes/links)
+
+This section is about the geometry, the design/style and the semiology of flowmap signs: nodes and links.
+
+
+![](images/geom_panel_flowsigns.png)
+
+
+
+In practice, a map is composed by several layers, as the bounding boxes, the graticule, the countries of land. All these layers have be loaded in the map design background section by Add Layers.
+
+
+![](images/RICardo_Design_signs_layers.png)
+
+**Type of action on a layer**
+
+![](images/Buton_action_visible.png) Visible/invisible
+
+
+
+
+![](images/Buton_action_semio.png) Parameterizes the semiology.
+
+
+
+![](images/Buton_action_geom.png) Geometry parameter
+
+
+
+![](images/images/Buton_action_delete.png) Deletes the layer
+
