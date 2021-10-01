@@ -28,4 +28,12 @@ add-tile-layers-osm
 import-geojson-layers
 the-statistical-panel
 exports
-examples
+data-sets
+ricardo-data-set-used-in-the-documentation
+ricardo-general-description
+ricardo-dataset-description
+datasets-used-for-demonstration-purposes
+swiss-commuting
+london-bike-sharing
+french-commutingmobilités-professionelles-mobpro
+french-school-mobilitiesmobilités-scolaires-mobsco
