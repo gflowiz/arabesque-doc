@@ -85,9 +85,9 @@ The documentation aims to present how _Arabesque_ works and how to use it using 
 
 The documentation is segmented in several parts:
 
+* [Interface](./interface.html)
 * [Data import](./data-import.html)
 * [Data processing](./data-processing.html)
-* [Interface](./interface.html)
 * [Exports](./exports.html)
 * [Examples/Datasets](./examples.html)
 * [References](./examples.html)
