@@ -88,7 +88,10 @@ The documentation is segmented in several parts:
 * [Interface](./interface.html)
 * [Data import](./data-import.html)
 * [Data processing](./data-processing.html)
-* [Exports](./exports.html)
+* [Designing flowmap background](./Design-map-background.html)
+* [Designing flowmap signs](./Design-flowmap-signs.html)
+* [Filtering flowdata](./Filter-flowdata.html)
+* [Exporting flowmap](./exports.html)
 * [Examples/Datasets](./examples.html)
 * [References](./examples.html)
  
