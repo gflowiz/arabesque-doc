@@ -50,6 +50,7 @@ A legend is automatically generated for each map for nodes and links plot.
 The symbolization elements (size, color and opacity) of the nodes and links are included. Here (for the default map), it is the volume of flows and the degree of places that are represented.
 
 
+
 ## The geographic panel
 
 The left panel is to design the map :
@@ -68,7 +69,25 @@ Actions on the background of the map are for changing projections of the current
 
 Actions on the design/style is for (additional) geographic layers that have been adding through the previous action.
 
-*Add Other layers*
+### The Add Projection
+
+Geographic layers can be reprojected, by choosing one of the proposed formulas: 
+
+![](images/geom_Projection.png)
+
+Reprojection can also be used by entering an EPSG code.
+
+
+![](images/Add_projection_epsg.png)
+EXAMPLE: several projections of RICardo data
+
+![](images/RIcardo_reprojection.png)
+
+
+
+
+
+### The Add layers
 
 
 ![](images/geom_add_layers.png)
@@ -292,8 +311,6 @@ See layout management section to manage the overlay of the layers.
 
 ![](images/Add_base_layer.png)
 
-
-
 Add based layers consists in calling a remote geographic information layer, to contextualize the flowmap.
 
 
@@ -301,7 +318,6 @@ Add based layers consists in calling a remote geographic information layer, to c
 EXAMPLE: various geometry of a same Covid-19 flowmaps.
 
 ![](images/Ex_geographie_covid.png)
-
 
 
 
@@ -313,6 +329,5 @@ EXAMPLE: various geometry of a same Covid-19 flowmaps.
 ### Import GeoJson Layers
 
 ![](images/Add_import_Geojson.png)
-
 
 ## The statistical panel
