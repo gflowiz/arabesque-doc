@@ -24,6 +24,7 @@ checking-missing-nodeslinks-features
 data-indicators-pre-processing
 visualize-a-default-flow-map
 exports
+design-and-style-of-the-map-background
 the-add-projection-1
 the-add-title-1
 the-add-layers-1
@@ -48,7 +49,12 @@ french-commutingmobilités-professionelles-mobpro
 french-school-mobilitiesmobilités-scolaires-mobsco
 design-of-the-flowmap-signs-nodeslinks
 designing-the-nodes
+semiology-paramaters
 the-color-of-nodes
 size-2
 text-2
+the-nodes-geometric-parameters
 designing-the-links
+semiology-parameters
+change-arrow-shape
+filtering-flow-data-nodeslinks
