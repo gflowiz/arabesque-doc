@@ -1,6 +1,5 @@
 # Interface
 
-
 The general structure of the interface of Arabesque is composed of three panel. 
 - The **central*panel** is for displaying the map - centered in France here.
 
@@ -13,7 +12,7 @@ The two side panels are for playing with information.
 
 ## The central panel
 
-The central part of Arabesque corresponds to the map view. It results from the choice of the layers to be displayed (from the left panel) and the filtering of the values of the links and nodes (from the right panel).
+The central part of Arabesque corresponds to the **map view**. It results from the choice of the layers to be displayed (from the left panel) and the filtering of the values of the links and nodes (from the right panel).
 
 This central panel also presents different buttons allowing the implementation of primary actions.
 
@@ -50,355 +49,51 @@ A legend is automatically generated for each map for nodes and links plot.
 The symbolization elements (size, color and opacity) of the nodes and links are included. Here (for the default map), it is the volume of flows and the degree of places that are represented.
 
 
-
 ## The geographic panel
 
-The left panel is to design the map :
+The left panel is to **design the map** :
 - dealing with the background as the geographical/geometrical layers 
 - customize the _design_/style of the nodes and links features
 map.
 
 The management of geographic information is composed of two sub-sections:
 
-![](images/geom_panel.png)
+![General geographic information management panel](images/geom_panel.png)
 
 ![](images/Buton_home.png) Return to the [home page](arabesque.ifsttar.fr) to start a new view.
 
 
-Actions on the background of the map are for changing projections of the current map and/or to add other layers.
+Actions on the background of the map are for changing projections of the current map and/or to add other layers : remote or personal one. See [Design map background](./Design-map-background.html) section.
 
-Actions on the design/style is for (additional) geographic layers that have been adding through the previous action.
+Actions on the design/style is for (additional) geographic layers that have been adding through the previous action. See [Design flowmap signs](./Design-flowmap-signs.html) section.
 
-### The Add Projection
+## The geographic layer manager
 
-Geographic layers can be reprojected, by choosing one of the proposed formulas: 
+In practice, a map is composed by several layer such as the bounding boxes, the graticules, the countries of land, etc.
 
-![](images/geom_Projection.png)
+All these layers can be loaded in the map design background section by Add Layers. 
 
-Reprojection can also be used by entering an EPSG code.
+They then appear in the layer manager sub-panel, one above the other as shown below.
 
+![](images/RICardo_Design_signs_layers.png)
 
-![](images/Add_projection_epsg.png)
-EXAMPLE: several projections of RICardo data
+The present layers are all available on the map - but not necessarily all of them are visible.
 
-![](images/RIcardo_reprojection.png)
+The layers on the view are positioned in an order that affects their visibility. The top layer will be visible in the foreground.
 
-### The Add Title
+The position of the layers above and below (foreground or not) can be modified by a simple drag and drop.
 
-The Add Title section allows you to add a simple title to the view, useful when importing
-
-![](images/Add_geom_title.png)
-
-### The Add layers
-
-
-![](images/geom_add_layers.png)
-
-Five types of geographic layers can be loaded/add to construct the map (Add Node Feature and Add Link Features) and/or to contextualize the map (Add Base Layer, Add Tile Layers (OSM), Import GeoJson Layers).
-
-Add Node Feature and Add Link Features leads to act on the design/style the flow features: to symbolize and customize the links and the nodes.
-
-### Add Node Features
-
-
-![](images/add_Nodes_features.png)
-
-
-Add Node Feature leads to act on the design/style of the flow places features.
-
-It is possible to set up all the graphic dimensions of the nodes by "Choose semio" for cartographic semiology as Bertin (1967). Hereby the general window.
-
-![](images/geom_add_nodes_1.png)
-
-
-#### **Color** 
-The color of the nodes can be fixed (e.g. in black) or shaded in a range of tones.
-
-![](images/choose_fixed_color.png)
-
-**_Example_** : Application on the nodes. Symbolization of the barycenter of the zones with a circle shape (unique choice for instance) of fixed size and unique black color.
-
-![](images/nodes_color.png)
-
-The color of the nodes can be shaded in a range of tones.
-
-![](images/geom_add_nodes_1_color.png)
-The reference for the color schemes is Cynthia Brewer palette for Diverging, Multi Hue and Single Hue. See: [Color Brewer advices for maps](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3). An Extra Palette is also proposed in Arabesque.
-
-The color of the node can be set according to one of the variables (initial or calculated by Arabesque) present in the dataset.
-
-![](images/geom_add_nodes_1_color_variable.png)
-
-By definition, the type of color range (Diverging/Multi Hue/Single Hue/Extra Palette) will have to be realized according to the type of the variable to represent (quantitative/qualitative, discrete/continuous, stock/ratio/scale, ...). 
-
-![](images/geom_add_nodes_1_color_variable2.png)
-The progression (up/down) of the **color range** depends on that of the **value range**: it can be direct or inverse. The checked box means an inverse progression: a light color is applied to a strong value.
-
-![](images/geom_add_nodes_1_color_variable3.png)
-
-#### **Size**
-The size of the nodes can be fixed and the weight defined.
-
-![](images/geom_add_nodes_2_size.png)
-
-
-The size can be **weighted by a variable** according to one of the initial or additional **variables** available in the dataset (hereby the balance).
-
-
-![](images/geom_add_nodes_2_size_variable.png)
-Three functions to set the size of the node according to the corresponding value are proposed: the square, the square root and the logarithm.
-
-![](images/geom_add_nodes_2_size_fct.png)
-
-The **ratio** representing the max width in pixel of the graphic features can be defined - according to the map bounding box, to obtain an image with balanced features (neither too small nor too big).
-
-![](images/geom_add_nodes_2_size_ratio.png)
-
-#### **Text**
-Textuals elements can also be added near the nodes.
-
-![](images/geom_add_nodes_3_texte.png)
-The text can be defined according to one of the variable available in the dataset.
-
-![](images/geom_add_nodes_3_texte2.png).
-
-The opacity of the text shade (currently set to black) can be set to a given value (here 0.85).
-
-
-![](images/geom_add_nodes_3_texte_fixe.png)
-
-The opacity of the text shade (currently set to black) can be varied according to an indicator present in the dataset.
-
-![](images/geom_add_nodes_3_texte_variable.png)
-
-EXAMPLE : Application of the shade opacity on the nodes. Symbolization of the nodes with a circle shape of variable size according to a linear function, represented with a shaded black shade with opacity variation.
-
-![](images/nodes_opacity.png)
-
-
-
-![](images/geom_add_nodes_3_texte_funct.png)
-
-The opacity of the text shade can vary according to an indicator present in the dataset and according to a corresponding function which can be Linear, Square, SquareRoot or Logarithm and defined in an min/max interval: here between 0.25 and 0.85. 
-
-
-### Add Link Features
-
-![](images/add_links_features.png)
-
-Add Link Feature leads to act on the design/style the flow interactions features.
-
-It is possible to "Choose semio" for _cartographic semiology_ as Bertin (1967). Hereby the general window.
-
-The symbology of the links consists of setting their design parameters and applying visual variables to qualitatively enrich the map.
-
-
-![](images/geom_add_links_1.png)
-
-The colors of the links and nodes need to be defined, for reasons of visual harmony.
-
-EXAMPLE: straight bilateral oriented links, unique black color.
-
-![](images/geom_all_links.png)
-
-
-#### Geometry
-
-The geometry of the link can be oriented or not.
-
-![](images/geom_add_links_geometry1.png)
-
-
-Oriented geometry takes into account the direction of the **flow** to define the **graphic form** of the sign.
-
-
-![](images/geom_add_links_oriented.png)
-
-Five form are available : straight (as euclidian distance symbolisation), straight no hook, Triangle, (line) Curve and Triangle curve.
-
-![](images/Links_geom.png)
-
-
-- **Straight**:  The link is straight and oriented, with a half arrowhead
-
-- **Straight no hook**: The link is straight and oriented, it has a point without hook
-
-- **Triangle**: The link is straight and takes the shape of a triangle
-
-- **Curve** : The link is curved and oriented, its curvature is configurable.
-
-- **Triangle curve**: The link is curved and takes the shape of a drop of water, its curvature is configurable.
-
-- **Non oriented**: The link is straight, validated or not, it has no orientation.
-
-
-**The design of arrows**
-
-The arrow geometry - which corresponds to the visual shape variable - can be rectilinear or curvilinear. 
-
-The curvature of the line is generated according to the Chaikin algorithm which allows to parameterize its height and its base, with respect to the body of the link.
-
-![](images/geom_add_links_curve.png)
-
-
-- **Arrow / Height curve**: The value of the height of the head is the percentage of the map distance of the link (distance between the origin and the destination) used to define the maximum (map) width of the link - the width being itself a function of the value of the flow.
-
-- **Arrow / Height**: The value of ([0,1]) is that of the center of the curve; the point is identified by the indication of a distance from the origin node of the link.
-
-
-EXAMPLE*: various geometry of a same Covid-19 flowmaps.
-
-![](images/Ex_geom_covid.png)
-
-#### Semiology
-
-**Color**
-
-The Color of the links can be fixed ie it is identical for all links.
-
-The reference for the color schemes is Cynthia Brewer palette for Diverging, Multi Hue and Single Hue. See: [Color Brewer advices for maps](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3). An Extra Palette is also proposed in Arabesque.
-
-
-![](images/geom_add_links_color_fix.png)
-
-
-The color of the links can also be set according to one of the variables present in the dataset. It is based on a predefined tone gradient. The choice of the progression (divergent or not) will depend on the type of character (specified in the type field).
-
-
-![](images/Geom_add_Links_color1.png)
-
-The choice to shade the links is associated here with a continuous (pseudo) character whose type (quantitative) must be specified.
-
-
-**Size**:
-
-Ideally, it is necessary to simultaneously set the size of the links. Ideally, it is necessary to simultaneously set the size using a discrete character. The links's color using a continuous character (ratio or rate) - otherwise, the links will keep the same size and the result of the application of a nuance will be hardly visible.
-
-
-![](images/geom_add_links_geom_size.png)
-
-
-**Scale**:
-
-Four functions to set the size of the links according to the corresponding quantitative and discrete value are proposed: the linear, the square, the square root and the logarithm.
-
-![](images/geom_add_links_scale.png)
-
-**Ratio**: it represents the max width in pixel of the graphic features that can be defined - according to the map bounding box, to obtain an image with balanced features (neither too small nor too big) regarding the scale function.
-
-
-**Opacity**
-
-The opacity of the link's color can vary according to an indicator and also to a corresponding function which can be Linear, Square, SquareRoot or Logarithm and defined in an min/max interval: here between 0.25 and 0.85.
-
-
-![](images/geom_add_links_opacity_varied.PNG)
-
-
-EXAMPLES: 
-
-(1) Black and white nodes under links as triangle curve with varied opacity. 
-
-![](images/Nodes_under_links.png)
-
-
-(2) Black and white nodes on links as triangle curve with varied opacity. 
-
-![](images/Nodes_on_links.png)
-
-See layout management section to manage the overlay of the layers.
-
-
-### Add Base Layer
-
-
-![](images/Add_base_layer.png)
-
-Add based layers consists in calling a remote geographic information layer, to contextualize the flowmap.
-
-
-
-![](images/Add_base_Layer_1.png)
-
-
-
-Several layers are available :
-
-![](images/Add_base_Layer_choose.png)
-
-
-
-
-
-
-
-
-![](images/Add_base_Layer_Graticule.png)
-
-![](images/Add_base_Layer_Country.png)
-
-EXAMPLE: various geometry of a same Covid-19 flowmaps.
-
-
-
-
-
-### Add Tile Layers (OSM) 
-
-
-
-
-![](images/Add_Tiles_OSM.png)
-
-
-The Base type of tiles layers come from Open Street Map (OSM). 
-See for details: [OSM tile server](https://wiki.openstreetmap.org/wiki/Tile_servers)
-
-
-![](images/Add_Tile_Layer_base.png)
-Several OSM tiles are available.
-
-
-![](images/Add_Tile_Layer_baseOSM.png)
-
-The second type of tile layer is the Overlay one, specially adapted for maps related to transportation, by sea (OPenSeaMap), by bike (Waymarkedtrails Cycling) or by hiking (Waymarkedtrails Hiking). 
-
-
-![](images/Add_Tile_Layer_overlay.png)
-
-![](images/Add_Tile_overlay.png)
-
-
-The third type of tile layer is the famous Stamen one.
-
-![](images/Add_Tile_Layer_Stamen.png)
-
-For **Stamen styles**, see [Stamen Open source tools](https://stamen.com/open-source/)
-
-Text layer can be loaded, and present a style compatible to Stamen, CARTO and voyager nolabels.
-
-![](images/Add_Tile_Layer_Text.png)
-The four type of tile layers is CARTO basemap.
-
-![](images/Add_Tile_Layer_CARTObasemap.png)
-
-The CARTO base map styles are available  [here](https://carto.com/help/building-maps/basemap-list/)
-
-
-EXAMPLE: Different layers to geographically contextualize a flow dataset.
-
-![](images/Ex_geographie_covid.png)
-You can also add an external/personal tile.
-
-![](images/Add_tile_perso.png)
-
-You can import additional tiles by specifying a URL, the sources/contributors and setting the rendering.
-
-
-![](images/Add_tile_perso2.png)
-
-### Import GeoJson Layers
-
-![](images/Add_import_Geojson.png)
 
 ## The statistical panel
+
+The **right panel** is for playing with the flow data set, nodes and links, and to **filter the map**.
+
+
+![](images/icon_links_filtering.png) Display a filtering on the links/flows
+
+
+![](images/icon_nodes_filtering.png) Display a filtering on the nodes
+
+
+
+
