@@ -1,13 +1,12 @@
-The creation of a flow map with Arabesque can be broken down into the following main steps:
+#Data import
 
-**1. Importing flow datasets (links and/or nodes)**
-2. Processing flow datasets (creation of indicators, statistics)
-3. Statistical data computing (filtering, ...)
-4. Geographical data computing (choosing the map background...)
-5. Graphic symbolization for thematic flow mapping purposes
-6. Flowmap decoration 
-7. Export
+Arabesque also allows you to import your own data sets : (1) flowdata in the form of an origin-destination matrix (adjacency long format in .csv), to agregate them if necessary and (2) nodes dataset before building a readable flowmap.
 
+For this tutorial, we will use for example the historical trade flows listed in the [RICardo database](https://github.com/gflowiz/sageo-ricardo). 
+
+For more informations about the dataset and its use with Arabesque, see:
+
+*Reference* : Girard P. et Dedinger B. (2020), Pourquoi et comment géolocaliser le commerce mondial des XIXe-miXXe siècles ? : Retour d’expérience sur l’usage de wikidata comme gazetteer historique et de l’application de cartographie de flux Arabesque, _Humanistica_, Medialab Sciences-Po. et Centre d’histoire de Sciences-Po., en ligne.
 
 ## Links/flow dataset importation
 
@@ -82,3 +81,11 @@ The list of deleted nodes and links is displayed in a new window.
 This list is for quick reference only. You must copy and paste it (into a text file, for example) if you want to keep the list of deleted entities : here 77 nodes have been deleted because they are not related to other nodes. The corresponding nodes ID are list.
 
 After loading the link and node files, _Arabesque_ automatically performs a join of the common attributes between the two files and computes indicator on botk links and nodes data.
+
+
+## Import a flowmap project
+
+Import a previously made flowmap by loading a project file in .zip format.
+
+
+![](images/import_zipfile.png)
