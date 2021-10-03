@@ -5,7 +5,11 @@ This book contains the general documentation of [Arabesque](http://arabesque.ifs
 
 _Arabesque_ presents different possibilities for action on geographical, statistical and cartographic representation.
 
-**About _Arabesque_ current development**, see: [GitHub/gflowiz/arabesque](https://github.com/gflowiz/arabesque-dev)
+[Index](./index.html) to access to the different sections of the documentation.
+
+**About _Arabesque_ development**
+The online version is version 1.
+for current developments to version 2, see: [GitHub/gflowiz/arabesque](https://github.com/gflowiz/arabesque-dev)
 
 **Online documentation** (in progress) is available here: [gflowiz.github.io/arabesque-doc](https://gflowiz.github.io/arabesque-doc/).
 
@@ -21,4 +25,4 @@ and spatial networks datasets. See (in French) : [geoflowiz.hypotheses](https://
 
 ![](images/logo_UGE-gflowiz.png)
 
-The application and its documentation is under BSD 2-Clause License, Copyright (c) 2019-2020, Univ. Eiffel/IFSTTAR. All rights reserved.
+The application and its documentation is under BSD 2-Clause License, Copyright (c) 2019-2020, Univ. Gustave Eiffel/IFSTTAR. All rights reserved.
