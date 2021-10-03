@@ -1,0 +1,77 @@
+
+# GFLOWIZ project & Arabesque
+
+### Geovisualizing flows and networks
+
+From a scientific point of view, [Gflowiz  research project](https://geoflowiz.hypotheses.org/) is part of the new paradigm of **visualization cartography** introduced by Mac Eachren in 2004, which follows Waldo Tobler's ideas of **analytical cartography**. This vision of cartographic analysis consists in combining within the same interface the two pillars of representation: (geo)visualization and the upstream data processing of the corresponding geographic and statistical data.
+
+The main challenge of gFlowiz is to follow this thread, by relying on current technological possibilities, in particular those offered by the new visualization and web mapping libraries
+
+![Geographic flows visualisation - GFlowiz](images/logo_gflowiz.jpg)
+
+### Funding {-}
+
+The project is funded by former IFSTTAR's scientific direction 
+(VP Recherche Univ. Gustave Eiffel), with the participation of the 
+Projet federateur Mobilities and numeric transitions (PF MobTransNum). 
+The team is strengthened by the participation of members of CNRS laboratories,
+as well as it is  supported by the research GDR Magis through the GEOWEB
+prospective action (2019).
+
+### Contributors {-}
+
+- Scientific responsibility, design and coordination </br>
+ Françoise Bahoken, Etienne Côme & Laurent Jégou (coord.) 
+ 
+- Development & Design </br>
+Etienne Côme (coord.), Thomas Bapaume (2019) & Paul Fabre (2020).
+
+- Other members </br>
+Grégoire Le Campion, Marion Maisonobe, Alain Nguyen (2018) & Nicolas Roelandt
+
+
+## About _Arabesque_ {-}
+
+### Main goal
+
+![](/images/logo_arabesque_clair.png)
+
+Arabesque is part of this [Gflowiz  research project](https://geoflowiz.hypotheses.org/), which consists in building mapping applications for flow maping on the web.
+
+One of Arabesque's goals is the web design of a geo visualization application for flow
+or traffic data to analyze the geographical determinants of spatial mobility. 
+To this end, it aims to allow data describing geographical interactions to be explored and represented graphically, from different points of view, by focusing on statistical and geographical data filtering, spatial scale issues specific to certain data sets 
+(the world scale or local scale) and their temporality.
+
+
+### Presentation
+
+This first version allows the exploration, filtering, geovisualization 
+and representation of complex matrices. 
+it provides a full toolset to filter you origin-destination data and 
+simplify it in order to make clearer and understandable maps.
+
+_Arabesque_ allows the creation of flow maps from a web browser - 
+equipped with Mozilla or Chrome, from its own datasets.
+It is based on current technological possibilities, in particular 
+those offered by the new web visualization (built in javascript and HTML 5) 
+and mapping libraries ([OpenLayers](https://openlayers.org/), [D3.js](https://d3js.org/), [Turf](https://turfjs.org/), [OpenStreetMap](https://www.openstreetmap.org) and [Natural Earth](https://www.naturalearthdata.com/) data). 
+
+
+### Challenges {-}
+
+The challenge of _Arabesque_ consists in offering a set of tools for 
+the analysis and the cartographic representation of complex matrices 
+(categorical and temporal). Its methodology is innovative : 
+it articulates several dimensions of a matrix, interactivity and animation.
+
+Its techniques allow an easy exploration, a fluidity of the display 
+in a simple configuration facilitating the appropriation of flow mapping 
+by different audiences (academic, institutional, socio-economic, educational...).
+
+
+You can find More imformation about the project 
+
+![](/images/logo-hypotheses.png)
+[geoflowiz.hypotheses.org](https://geoflowiz.hypotheses.org/).
+
