@@ -21,6 +21,7 @@ linksflow-dataset-importation
 nodesvertex-dataset-importation
 preset-nodes-dataset
 checking-missing-nodeslinks-features
+import-a-flowmap-project
 data-indicators-pre-processing
 visualize-a-default-flow-map
 exports

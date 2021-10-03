@@ -24,7 +24,7 @@
 <meta name="author" content="GFlowiz project team" />
 
 
-<meta name="date" content="2021-10-01" />
+<meta name="date" content="2021-10-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -102,8 +102,9 @@
 <li class="chapter" data-level="1.5" data-path="interface.html"><a href="interface.html#nodesvertex-dataset-importation"><i class="fa fa-check"></i><b>1.5</b> Nodes/vertex dataset importation</a></li>
 <li class="chapter" data-level="1.6" data-path="interface.html"><a href="interface.html#preset-nodes-dataset"><i class="fa fa-check"></i><b>1.6</b> Preset nodes dataset</a></li>
 <li class="chapter" data-level="1.7" data-path="interface.html"><a href="interface.html#checking-missing-nodeslinks-features"><i class="fa fa-check"></i><b>1.7</b> Checking missing nodes/links features</a></li>
-<li class="chapter" data-level="1.8" data-path="interface.html"><a href="interface.html#data-indicators-pre-processing"><i class="fa fa-check"></i><b>1.8</b> Data indicators pre processing</a></li>
-<li class="chapter" data-level="1.9" data-path="interface.html"><a href="interface.html#visualize-a-default-flow-map"><i class="fa fa-check"></i><b>1.9</b> Visualize a default flow map</a></li>
+<li class="chapter" data-level="1.8" data-path="interface.html"><a href="interface.html#import-a-flowmap-project"><i class="fa fa-check"></i><b>1.8</b> Import a flowmap project</a></li>
+<li class="chapter" data-level="1.9" data-path="interface.html"><a href="interface.html#data-indicators-pre-processing"><i class="fa fa-check"></i><b>1.9</b> Data indicators pre processing</a></li>
+<li class="chapter" data-level="1.10" data-path="interface.html"><a href="interface.html#visualize-a-default-flow-map"><i class="fa fa-check"></i><b>1.10</b> Visualize a default flow map</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="exports.html"><a href="exports.html"><i class="fa fa-check"></i><b>2</b> Exports</a></li>
 <li class="chapter" data-level="3" data-path="design-and-style-of-the-map-background.html"><a href="design-and-style-of-the-map-background.html"><i class="fa fa-check"></i><b>3</b> Design and style of the map background</a><ul>
@@ -386,14 +387,11 @@ You can also add an external/personal tile.</p>
 <div id="the-statistical-panel" class="section level2">
 <h2><span class="header-section-number">1.3</span> The statistical panel</h2>
 
-<p>The creation of a flow map with Arabesque can be broken down into the following main steps:</p>
-<p><strong>1. Importing flow datasets (links and/or nodes)</strong>
-2. Processing flow datasets (creation of indicators, statistics)
-3. Statistical data computing (filtering, …)
-4. Geographical data computing (choosing the map background…)
-5. Graphic symbolization for thematic flow mapping purposes
-6. Flowmap decoration
-7. Export</p>
+<p>#Data import</p>
+<p>Arabesque also allows you to import your own data sets : (1) flowdata in the form of an origin-destination matrix (adjacency long format in .csv), to agregate them if necessary and (2) nodes dataset before building a readable flowmap.</p>
+<p>For this tutorial, we will use for example the historical trade flows listed in the <a href="https://github.com/gflowiz/sageo-ricardo">RICardo database</a>.</p>
+<p>For more informations about the dataset and its use with Arabesque, see:</p>
+<p><em>Reference</em> : Girard P. et Dedinger B. (2020), Pourquoi et comment géolocaliser le commerce mondial des XIXe-miXXe siècles ? : Retour d’expérience sur l’usage de wikidata comme gazetteer historique et de l’application de cartographie de flux Arabesque, <em>Humanistica</em>, Medialab Sciences-Po. et Centre d’histoire de Sciences-Po., en ligne.</p>
 </div>
 <div id="linksflow-dataset-importation" class="section level2">
 <h2><span class="header-section-number">1.4</span> Links/flow dataset importation</h2>
@@ -440,6 +438,11 @@ otherwise you can use predefined locations with “Preset Location”.</p>
 <p><img src="images/import_suppr_entities.png" /></p>
 <p>This list is for quick reference only. You must copy and paste it (into a text file, for example) if you want to keep the list of deleted entities : here 77 nodes have been deleted because they are not related to other nodes. The corresponding nodes ID are list.</p>
 <p>After loading the link and node files, <em>Arabesque</em> automatically performs a join of the common attributes between the two files and computes indicator on botk links and nodes data.</p>
+</div>
+<div id="import-a-flowmap-project" class="section level2">
+<h2><span class="header-section-number">1.8</span> Import a flowmap project</h2>
+<p>Import a previously made flowmap by loading a project file in .zip format.</p>
+<p><img src="images/Import_zipfile.PNG" /></p>
 
 <p>The creation of a flow map with Arabesque can be broken down into the following main steps:</p>
 <ol style="list-style-type: decimal">
@@ -454,7 +457,7 @@ otherwise you can use predefined locations with “Preset Location”.</p>
 <p>The links and nodes datasets are automatically modified when importing and <em>Arabesque</em> computes different indicators.</p>
 </div>
 <div id="data-indicators-pre-processing" class="section level2">
-<h2><span class="header-section-number">1.8</span> Data indicators pre processing</h2>
+<h2><span class="header-section-number">1.9</span> Data indicators pre processing</h2>
 <p><em>Indicators on links</em>: Euclidean distance between the origin and destination entities</p>
 <p><em>Indicators on nodes</em> : see below the additional indicators () automatically calculated on the nodes of the RIcardo data</p>
 <p>See below the indicators that have been automatically computed (ie the additional variable) on the nodes of the RIcardo data.</p>
@@ -463,7 +466,7 @@ otherwise you can use predefined locations with “Preset Location”.</p>
 <p>Loading links and nodes data into <em>Arabesque</em> leads to the creation of a default map, which is placed in the center of the interface.</p>
 </div>
 <div id="visualize-a-default-flow-map" class="section level2">
-<h2><span class="header-section-number">1.9</span> Visualize a default flow map</h2>
+<h2><span class="header-section-number">1.10</span> Visualize a default flow map</h2>
 <p>Loading data in Arabesque leads to the creation of a default map to avoid visualizing a “spaghetti effect” when entering the application ; all the defined parameters can then be modified during the exploration.</p>
 <p>By default, the links are represented in shades of blue and the nodes in red. The map is presented in the WGS84 projection, according to the lat/lon coordinates* declared during the import.</p>
 <p>Except in the case of loading a projected geometry as input, the map is presented in WGS84.</p>
