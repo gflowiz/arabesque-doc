@@ -19,6 +19,6 @@ an interdisciplinary collaboration carried out with the objective of designing
 and developing a new web application dedicated to the geo visualization of flow 
 and spatial networks datasets. See (in French) : [geoflowiz.hypotheses](https://geoflowiz.hypotheses.org/)
 
-![](images/logo_UGEarabesque.png)
+![](images/logo_UGE-gflowiz.png)
 
 The application and its documentation is under BSD 2-Clause License, Copyright (c) 2019-2020, Univ. Eiffel/IFSTTAR. All rights reserved.
