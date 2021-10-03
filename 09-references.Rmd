@@ -1,0 +1,5 @@
+`r if (knitr::is_html_output()) '
+# References {-}
+'`
+
+_Arabesque_ is a web application for thematic mapping of flow and spatial networks datasets.
