@@ -1,6 +1,6 @@
 --- 
 title: "Arabesque documentation"
-author: "Geographic flow visualisation (gFlowiz) project team"
+author: "Françoise BAHOKEN & Nicolas ROELANDT (Univ-Gustave Eiffel/AME)"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -9,6 +9,7 @@ biblio-style: apalike
 link-citations: yes
 description: "Online documentation of the Arabesque web flow mapping application"
 ---
+# Welcome to Arabesque documentation
 
 ![](images/logo_arabesque_DOC.png)
 
