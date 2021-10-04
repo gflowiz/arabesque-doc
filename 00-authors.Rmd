@@ -1,0 +1,28 @@
+# About the Authors
+
+Françoise BAHOKEN, geographer, Research scientist, Université Gustave Eiffel/AME/
+Scientific coordination (coord.), conception and documentation
+
+Étienne CÔME, computer scientist, Research scientist, Université Gustave Eiffel/COSYS/
+Development (coord.) and conception
+
+Laurent JÉGOU, geographer, teacher-researcher, Université Toulouse 2 / UMR 5193 LISST
+Development and conception
+
+Grégoire LE CAMPION, statistical engineer (UMR Passages, Bordeaux)
+Conception
+
+Marion MAISONOBE, geographer, Research scientist CNRS, UMR Géographie-Cités
+Conception
+
+Nicolas ROELANDT, geomatics engineer, Université Gustave Eiffel/AME/
+Conception, documentation
+
+**Trainee**
+
+Thomas BAPAUME, data scientist student, ESIEE Paris (2018-2019)
+
+Paul FABRE, geomatics student, ENSG Géomatique (2019-2020)
+
+
+
