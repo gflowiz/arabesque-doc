@@ -17,11 +17,10 @@ data-processing
 data-indicators-pre-processing
 visualize-a-default-flow-map
 design-and-style-of-the-map-background
-the-add-projection
-the-add-title
-the-add-layers
+add-projection
+add-title
+add-layers
 add-node-features
-size
 add-link-features
 geometry
 semiology
@@ -29,10 +28,11 @@ add-base-layer
 add-tile-layers-osm
 import-geojson-layers
 design-of-the-flowmap-signs-nodeslinks
+types-of-action-on-a-layer
 designing-the-nodes
 semiology-paramaters
 the-color-of-nodes
-size-1
+size
 text
 the-nodes-geometric-parameters
 designing-the-links
