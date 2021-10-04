@@ -97,11 +97,6 @@
 <li class="chapter" data-level="4.0.1" data-path="design-and-style-of-the-map-background.html"><a href="design-and-style-of-the-map-background.html#the-add-projection"><i class="fa fa-check"></i><b>4.0.1</b> The Add Projection</a></li>
 <li class="chapter" data-level="4.0.2" data-path="design-and-style-of-the-map-background.html"><a href="design-and-style-of-the-map-background.html#the-add-title"><i class="fa fa-check"></i><b>4.0.2</b> The Add Title</a></li>
 <li class="chapter" data-level="4.0.3" data-path="design-and-style-of-the-map-background.html"><a href="design-and-style-of-the-map-background.html#the-add-layers"><i class="fa fa-check"></i><b>4.0.3</b> The Add layers</a></li>
-<li class="chapter" data-level="4.0.4" data-path="design-and-style-of-the-map-background.html"><a href="design-and-style-of-the-map-background.html#add-node-features"><i class="fa fa-check"></i><b>4.0.4</b> Add Node Features</a></li>
-<li class="chapter" data-level="4.0.5" data-path="design-and-style-of-the-map-background.html"><a href="design-and-style-of-the-map-background.html#add-link-features"><i class="fa fa-check"></i><b>4.0.5</b> Add Link Features</a></li>
-<li class="chapter" data-level="4.0.6" data-path="design-and-style-of-the-map-background.html"><a href="design-and-style-of-the-map-background.html#add-base-layer"><i class="fa fa-check"></i><b>4.0.6</b> Add Base Layer</a></li>
-<li class="chapter" data-level="4.0.7" data-path="design-and-style-of-the-map-background.html"><a href="design-and-style-of-the-map-background.html#add-tile-layers-osm"><i class="fa fa-check"></i><b>4.0.7</b> Add Tile Layers (OSM)</a></li>
-<li class="chapter" data-level="4.0.8" data-path="design-and-style-of-the-map-background.html"><a href="design-and-style-of-the-map-background.html#import-geojson-layers"><i class="fa fa-check"></i><b>4.0.8</b> Import GeoJson Layers</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="design-of-the-flowmap-signs-nodeslinks.html"><a href="design-of-the-flowmap-signs-nodeslinks.html"><i class="fa fa-check"></i><b>5</b> Design of the flowmap signs (nodes/links)</a><ul>
 <li class="chapter" data-level="5.1" data-path="design-of-the-flowmap-signs-nodeslinks.html"><a href="design-of-the-flowmap-signs-nodeslinks.html#designing-the-nodes"><i class="fa fa-check"></i><b>5.1</b> Designing the nodes</a><ul>
@@ -182,16 +177,14 @@
 <p><img src="images/geom_add_layers.PNG" /></p>
 <p>Five types of geographic layers can be loaded/add to construct the map (Add Node Feature and Add Link Features) and/or to contextualize the map (Add Base Layer, Add Tile Layers (OSM), Import GeoJson Layers).</p>
 <p>Add Node Feature and Add Link Features leads to act on the design/style the flow features: to symbolize and customize the links and the nodes.</p>
-</div>
-<div id="add-node-features" class="section level3">
-<h3><span class="header-section-number">4.0.4</span> Add Node Features</h3>
+<div id="add-node-features" class="section level4">
+<h4><span class="header-section-number">4.0.3.1</span> Add Node Features</h4>
 <p><img src="images/Add_Nodes_Features.png" /></p>
 <p>Add Node Feature leads to act on the design/style of the flow places features.</p>
 <p>It is possible to set up all the graphic dimensions of the nodes by “Choose semio” for cartographic semiology as Bertin (1967). Hereby the general window.</p>
 <p><img src="images/geom_add_nodes_1.PNG" /></p>
-<div id="color" class="section level4">
-<h4><span class="header-section-number">4.0.4.1</span> <strong>Color</strong></h4>
-<p>The color of the nodes can be fixed (e.g. in black) or shaded in a range of tones.</p>
+<p><strong>Color</strong>
+The color of the nodes can be fixed (e.g. in black) or shaded in a range of tones.</p>
 <p><img src="images/choose_fixed_color.png" /></p>
 <p><strong><em>Example</em></strong> : Application on the nodes. Symbolization of the barycenter of the zones with a circle shape (unique choice for instance) of fixed size and unique black color.</p>
 <p><img src="images/nodes_color.png" /></p>
@@ -206,7 +199,7 @@
 <p><img src="images/geom_add_nodes_1_color_variable3.png" /></p>
 </div>
 <div id="size" class="section level4">
-<h4><span class="header-section-number">4.0.4.2</span> <strong>Size</strong></h4>
+<h4><span class="header-section-number">4.0.3.2</span> <strong>Size</strong></h4>
 <p>The size of the nodes can be fixed and the weight defined.</p>
 <p><img src="images/geom_add_nodes_2_size.png" /></p>
 <p>The size can be <strong>weighted by a variable</strong> according to one of the initial or additional <strong>variables</strong> available in the dataset (hereby the balance).</p>
@@ -215,10 +208,8 @@
 <p><img src="images/geom_add_nodes_2_size_fct.png" /></p>
 <p>The <strong>ratio</strong> representing the max width in pixel of the graphic features can be defined - according to the map bounding box, to obtain an image with balanced features (neither too small nor too big).</p>
 <p><img src="images/geom_add_nodes_2_size_ratio.png" /></p>
-</div>
-<div id="text" class="section level4">
-<h4><span class="header-section-number">4.0.4.3</span> <strong>Text</strong></h4>
-<p>Textuals elements can also be added near the nodes.</p>
+<p><strong>Text</strong>
+Textuals elements can also be added near the nodes.</p>
 <p><img src="images/geom_add_nodes_3_texte.png" /></p>
 <p>The text can be defined according to one of the variable available in the dataset.</p>
 <p><img src="images/geom_add_nodes_3_texte2.png" /></p>
@@ -231,9 +222,8 @@
 <p><img src="images/geom_add_nodes_3_texte_funct.png" /></p>
 <p>The opacity of the text shade can vary according to an indicator present in the dataset and according to a corresponding function which can be Linear, Square, SquareRoot or Logarithm and defined in an min/max interval: here between 0.25 and 0.85.</p>
 </div>
-</div>
-<div id="add-link-features" class="section level3">
-<h3><span class="header-section-number">4.0.5</span> Add Link Features</h3>
+<div id="add-link-features" class="section level4">
+<h4><span class="header-section-number">4.0.3.3</span> Add Link Features</h4>
 <p><img src="images/Add_Links_Features.png" /></p>
 <p>Add Link Feature leads to act on the design/style the flow interactions features.</p>
 <p>It is possible to “Choose semio” for <em>cartographic semiology</em> as Bertin (1967). Hereby the general window.</p>
@@ -242,8 +232,8 @@
 <p>The colors of the links and nodes need to be defined, for reasons of visual harmony.</p>
 <p>EXAMPLE: straight bilateral oriented links, unique black color.</p>
 <p><img src="images/geom_all_links.png" /></p>
-<div id="geometry" class="section level4">
-<h4><span class="header-section-number">4.0.5.1</span> Geometry</h4>
+<div id="geometry" class="section level5">
+<h5><span class="header-section-number">4.0.3.3.1</span> Geometry</h5>
 <p>The geometry of the link can be oriented or not.</p>
 <p><img src="images/geom_add_links_geometry1.PNG" /></p>
 <p>Oriented geometry takes into account the direction of the <strong>flow</strong> to define the <strong>graphic form</strong> of the sign.</p>
@@ -269,8 +259,8 @@
 <p>EXAMPLE*: various geometry of a same Covid-19 flowmaps.</p>
 <p><img src="images/Ex_geom_covid.png" /></p>
 </div>
-<div id="semiology" class="section level4">
-<h4><span class="header-section-number">4.0.5.2</span> Semiology</h4>
+<div id="semiology" class="section level5">
+<h5><span class="header-section-number">4.0.3.3.2</span> Semiology</h5>
 <p><strong>Color</strong></p>
 <p>The Color of the links can be fixed ie it is identical for all links.</p>
 <p>The reference for the color schemes is Cynthia Brewer palette for Diverging, Multi Hue and Single Hue. See: <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=BuGn&amp;n=3">Color Brewer advices for maps</a>. An Extra Palette is also proposed in Arabesque.</p>
@@ -300,8 +290,8 @@
 <p>See layout management section to manage the overlay of the layers.</p>
 </div>
 </div>
-<div id="add-base-layer" class="section level3">
-<h3><span class="header-section-number">4.0.6</span> Add Base Layer</h3>
+<div id="add-base-layer" class="section level4">
+<h4><span class="header-section-number">4.0.3.4</span> Add Base Layer</h4>
 <p><img src="images/Add_base_Layer.png" /></p>
 <p>Add based layers consists in calling a remote geographic information layer, to contextualize the flowmap.</p>
 <p><img src="images/Add_base_Layer_1.png" /></p>
@@ -311,8 +301,8 @@
 <p><img src="images/Add_base_Layer_Country.png" /></p>
 <p>EXAMPLE: various geometry of a same Covid-19 flowmaps.</p>
 </div>
-<div id="add-tile-layers-osm" class="section level3">
-<h3><span class="header-section-number">4.0.7</span> Add Tile Layers (OSM)</h3>
+<div id="add-tile-layers-osm" class="section level4">
+<h4><span class="header-section-number">4.0.3.5</span> Add Tile Layers (OSM)</h4>
 <p><img src="images/Add_Tiles_OSM.png" /></p>
 <p>The Base type of tiles layers come from Open Street Map (OSM).
 See for details: <a href="https://wiki.openstreetmap.org/wiki/Tile_servers">OSM tile server</a></p>
@@ -337,12 +327,13 @@ You can also add an <strong>external/personal tile</strong>.</p>
 <p>You can <strong>import additional tiles</strong> by specifying a URL, the sources/contributors and setting the rendering.</p>
 <p><img src="images/Add_tile_perso2.PNG" /></p>
 </div>
-<div id="import-geojson-layers" class="section level3">
-<h3><span class="header-section-number">4.0.8</span> Import GeoJson Layers</h3>
+<div id="import-geojson-layers" class="section level4">
+<h4><span class="header-section-number">4.0.3.6</span> Import GeoJson Layers</h4>
 <p><img src="images/Add_Import_Geojson.png" /></p>
 <p><strong>Import Geojson</strong> is to load a personal vector layer.</p>
 <p><img src="images/Add_GeoJson_layer.PNG" /></p>
 
+</div>
 </div>
 </div>
             </section>

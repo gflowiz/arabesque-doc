@@ -19,9 +19,7 @@ the-add-projection
 the-add-title
 the-add-layers
 add-node-features
-color
 size
-text
 add-link-features
 geometry
 semiology
@@ -33,7 +31,7 @@ designing-the-nodes
 semiology-paramaters
 the-color-of-nodes
 size-1
-text-1
+text
 the-nodes-geometric-parameters
 designing-the-links
 semiology-parameters
