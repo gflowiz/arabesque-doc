@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Arabesque documentation</title>
+  <meta name="description" content="Online documentation of the Arabesque web flow mapping application" />
+  <meta name="generator" content="bookdown #bookdown:version# and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Arabesque documentation" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Online documentation of the Arabesque web flow mapping application" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Arabesque documentation" />
+  
+  <meta name="twitter:description" content="Online documentation of the Arabesque web flow mapping application" />
+  
+
+<meta name="author" content="GFlowiz project team" />
+
+
+<meta name="date" content="2021-10-03" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<!--bookdown:link_prev-->
+<!--bookdown:link_next-->
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+<!--bookdown:title:start-->
+<div id="header">
+<h1 class="title">Arabesque documentation</h1>
+<p class="author"><em>GFlowiz project team</em></p>
+<p class="date" style="margin-top: 1.5em;"><em>2021-10-03</em></p>
+</div>
+<!--bookdown:title:end-->
+
+<!--bookdown:toc:start-->
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+<!--bookdown:toc2:start-->
+<ul>
+<li><a href="#about-arabesque-documentation">About <em>Arabesque</em> documentation</a></li>
+<li><a href="#about-arabesque">About <em>Arabesque</em></a></li>
+<li><a href="#interface"><span class="toc-section-number">1</span> Interface</a>
+<ul>
+<li><a href="#the-central-panel"><span class="toc-section-number">1.1</span> The central panel</a>
+<ul>
+<li><a href="#primary-actions-with-butons"><span class="toc-section-number">1.1.1</span> Primary actions with butons</a></li>
+<li><a href="#primary-legend"><span class="toc-section-number">1.1.2</span> Primary legend</a></li>
+</ul></li>
+<li><a href="#the-geographic-panel"><span class="toc-section-number">1.2</span> The geographic panel</a></li>
+<li><a href="#the-geographic-layer-manager"><span class="toc-section-number">1.3</span> The geographic layer manager</a></li>
+<li><a href="#the-statistical-panel"><span class="toc-section-number">1.4</span> The statistical panel</a></li>
+<li><a href="#linksflow-dataset-importation"><span class="toc-section-number">1.5</span> Links/flow dataset importation</a></li>
+<li><a href="#nodesvertex-dataset-importation"><span class="toc-section-number">1.6</span> Nodes/vertex dataset importation</a></li>
+<li><a href="#preset-nodes-dataset"><span class="toc-section-number">1.7</span> Preset nodes dataset</a></li>
+<li><a href="#checking-missing-nodeslinks-features"><span class="toc-section-number">1.8</span> Checking missing nodes/links features</a></li>
+<li><a href="#import-a-flowmap-project"><span class="toc-section-number">1.9</span> Import a flowmap project</a></li>
+<li><a href="#data-indicators-pre-processing"><span class="toc-section-number">1.10</span> Data indicators pre processing</a></li>
+<li><a href="#visualize-a-default-flow-map"><span class="toc-section-number">1.11</span> Visualize a default flow map</a></li>
+</ul></li>
+<li><a href="#design-and-style-of-the-map-background"><span class="toc-section-number">2</span> Design and style of the map background</a>
+<ul>
+<li><a href="#the-add-projection"><span class="toc-section-number">2.0.1</span> The Add Projection</a></li>
+<li><a href="#the-add-title"><span class="toc-section-number">2.0.2</span> The Add Title</a></li>
+<li><a href="#the-add-layers"><span class="toc-section-number">2.0.3</span> The Add layers</a></li>
+<li><a href="#add-node-features"><span class="toc-section-number">2.0.4</span> Add Node Features</a></li>
+<li><a href="#add-link-features"><span class="toc-section-number">2.0.5</span> Add Link Features</a></li>
+<li><a href="#add-base-layer"><span class="toc-section-number">2.0.6</span> Add Base Layer</a></li>
+<li><a href="#add-tile-layers-osm"><span class="toc-section-number">2.0.7</span> Add Tile Layers (OSM)</a></li>
+<li><a href="#import-geojson-layers"><span class="toc-section-number">2.0.8</span> Import GeoJson Layers</a></li>
+</ul></li>
+<li><a href="#design-of-the-flowmap-signs-nodeslinks"><span class="toc-section-number">3</span> Design of the flowmap signs (nodes/links)</a>
+<ul>
+<li><a href="#designing-the-nodes"><span class="toc-section-number">3.1</span> Designing the nodes</a>
+<ul>
+<li><a href="#semiology-paramaters"><span class="toc-section-number">3.1.1</span> Semiology paramaters</a></li>
+</ul></li>
+<li><a href="#the-nodes-geometric-parameters"><span class="toc-section-number">3.2</span> The nodes’ geometric parameters</a></li>
+<li><a href="#designing-the-links"><span class="toc-section-number">3.3</span> Designing the links</a>
+<ul>
+<li><a href="#semiology-parameters"><span class="toc-section-number">3.3.1</span> Semiology parameters</a></li>
+<li><a href="#change-arrow-shape"><span class="toc-section-number">3.3.2</span> Change arrow shape</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#filtering-flow-data-nodeslinks"><span class="toc-section-number">4</span> Filtering flow data (nodes/links)</a></li>
+<li><a href="#data-sets"><span class="toc-section-number">5</span> Data sets</a>
+<ul>
+<li><a href="#ricardo-data-set-used-in-the-documentation"><span class="toc-section-number">5.1</span> RIcardo Data set used in the documentation</a>
+<ul>
+<li><a href="#ricardo-general-description"><span class="toc-section-number">5.1.1</span> RIcardo general description</a></li>
+<li><a href="#ricardo-nodeslinks-files-description"><span class="toc-section-number">5.1.2</span> RIcardo nodes/links files description</a></li>
+</ul></li>
+<li><a href="#datasets-used-for-demonstration-purposes"><span class="toc-section-number">5.2</span> Datasets used for demonstration purposes</a>
+<ul>
+<li><a href="#swiss-commuting"><span class="toc-section-number">5.2.1</span> Swiss Commuting</a></li>
+<li><a href="#london-bike-sharing"><span class="toc-section-number">5.2.2</span> London Bike Sharing</a></li>
+<li><a href="#french-commutingmobilités-professionelles-mobpro"><span class="toc-section-number">5.2.3</span> French Commuting/Mobilités professionelles (MOBPRO)</a></li>
+<li><a href="#french-school-mobilitiesmobilités-scolaires-mobsco"><span class="toc-section-number">5.2.4</span> French School Mobilities/Mobilités scolaires (MOBSCO)</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#exports"><span class="toc-section-number">6</span> Exports</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#gflowiz-project-arabesque"><span class="toc-section-number">7</span> GFLOWIZ project &amp; Arabesque</a>
+<ul>
+<li><a href="#geovisualizing-flows-and-networks"><span class="toc-section-number">7.0.1</span> Geovisualizing flows and networks</a></li>
+<li><a href="#funding">Funding</a></li>
+<li><a href="#contributors">Contributors</a></li>
+<li><a href="#about-arabesque-1">About <em>Arabesque</em></a>
+<ul>
+<li><a href="#main-goal"><span class="toc-section-number">7.0.2</span> Main goal</a></li>
+<li><a href="#presentation"><span class="toc-section-number">7.0.3</span> Presentation</a></li>
+<li><a href="#challenges">Challenges</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<!--bookdown:toc2:end-->
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Arabesque documentation</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!--bookdown:toc:end-->
+<!--bookdown:body:start-->
+<div id="about-arabesque-documentation" class="section level2 unnumbered">
+<h2 class="unnumbered">About <em>Arabesque</em> documentation</h2>
+</div>
+<div id="about-arabesque" class="section level2 unnumbered">
+<h2 class="unnumbered">About <em>Arabesque</em></h2>
+<!--chapter:end:index.Rmd-->
+</div>
+<div id="interface" class="section level1" number="1">
+<h1 number="1"><span class="header-section-number">1</span> Interface</h1>
+<p>Placeholder</p>
+<div id="the-central-panel" class="section level2" number="1.1">
+<h2 number="1.1"><span class="header-section-number">1.1</span> The central panel</h2>
+<div id="primary-actions-with-butons" class="section level3" number="1.1.1">
+<h3 number="1.1.1"><span class="header-section-number">1.1.1</span> Primary actions with butons</h3>
+</div>
+<div id="primary-legend" class="section level3" number="1.1.2">
+<h3 number="1.1.2"><span class="header-section-number">1.1.2</span> Primary legend</h3>
+</div>
+</div>
+<div id="the-geographic-panel" class="section level2" number="1.2">
+<h2 number="1.2"><span class="header-section-number">1.2</span> The geographic panel</h2>
+</div>
+<div id="the-geographic-layer-manager" class="section level2" number="1.3">
+<h2 number="1.3"><span class="header-section-number">1.3</span> The geographic layer manager</h2>
+</div>
+<div id="the-statistical-panel" class="section level2" number="1.4">
+<h2 number="1.4"><span class="header-section-number">1.4</span> The statistical panel</h2>
+<!--chapter:end:01-interface.Rmd-->
+</div>
+<div id="linksflow-dataset-importation" class="section level2" number="1.5">
+<h2 number="1.5"><span class="header-section-number">1.5</span> Links/flow dataset importation</h2>
+</div>
+<div id="nodesvertex-dataset-importation" class="section level2" number="1.6">
+<h2 number="1.6"><span class="header-section-number">1.6</span> Nodes/vertex dataset importation</h2>
+</div>
+<div id="preset-nodes-dataset" class="section level2" number="1.7">
+<h2 number="1.7"><span class="header-section-number">1.7</span> Preset nodes dataset</h2>
+</div>
+<div id="checking-missing-nodeslinks-features" class="section level2" number="1.8">
+<h2 number="1.8"><span class="header-section-number">1.8</span> Checking missing nodes/links features</h2>
+</div>
+<div id="import-a-flowmap-project" class="section level2" number="1.9">
+<h2 number="1.9"><span class="header-section-number">1.9</span> Import a flowmap project</h2>
+<!--chapter:end:02-data-import.Rmd-->
+<p>The creation of a flow map with Arabesque can be broken down into the following main steps:</p>
+<ol style="list-style-type: decimal">
+<li>Importing flow datasets (links and/or nodes)
+<strong>2. Processing flow datasets (creation of indicators, statistics)</strong></li>
+<li>Statistical data computing (filtering, …)</li>
+<li>Geographical data computing (choosing the map background…)</li>
+<li>Graphic symbolization for thematic flow mapping purposes</li>
+<li>Flowmap decoration</li>
+<li>Export</li>
+</ol>
+<p>The links and nodes datasets are automatically modified when importing and <em>Arabesque</em> computes different indicators.</p>
+</div>
+<div id="data-indicators-pre-processing" class="section level2" number="1.10">
+<h2 number="1.10"><span class="header-section-number">1.10</span> Data indicators pre processing</h2>
+<p><em>Indicators on links</em>: Euclidean distance between the origin and destination entities</p>
+<p><em>Indicators on nodes</em> : see below the additional indicators () automatically calculated on the nodes of the RIcardo data</p>
+<p>See below the indicators that have been automatically computed (ie the additional variable) on the nodes of the RIcardo data.</p>
+<p><img src="images/import_indic.png" /></p>
+<p>These indicators can be downloaded in . csv format (see Export and Save sections).</p>
+<p>Loading links and nodes data into <em>Arabesque</em> leads to the creation of a default map, which is placed in the center of the interface.</p>
+</div>
+<div id="visualize-a-default-flow-map" class="section level2" number="1.11">
+<h2 number="1.11"><span class="header-section-number">1.11</span> Visualize a default flow map</h2>
+<p>Loading data in Arabesque leads to the creation of a default map to avoid visualizing a “spaghetti effect” when entering the application ; all the defined parameters can then be modified during the exploration.</p>
+<p>By default, the links are represented in shades of blue and the nodes in red. The map is presented in the WGS84 projection, according to the lat/lon coordinates* declared during the import.</p>
+<p>Except in the case of loading a projected geometry as input, the map is presented in WGS84.</p>
+<p>Hereby is the Ricardo’s dataset default map with global statistic of the percent of links versus the percent of volume of flows and nodes.</p>
+<p><img src="images/defaut_flowmap.png" />
+Only the 10% most important links (in value) are represented and symbolized (see the automatic legend) according to their intensity (the flow variable entered at import).
+The corresponding nodes are symbolized according to their degree (variable calculated automatically during the import).</p>
+<!--chapter:end:03-data-processing.Rmd-->
+</div>
+</div>
+<div id="design-and-style-of-the-map-background" class="section level1" number="2">
+<h1 number="2"><span class="header-section-number">2</span> Design and style of the map background</h1>
+<p>Placeholder</p>
+<div id="the-add-projection" class="section level3" number="2.0.1">
+<h3 number="2.0.1"><span class="header-section-number">2.0.1</span> The Add Projection</h3>
+</div>
+<div id="the-add-title" class="section level3" number="2.0.2">
+<h3 number="2.0.2"><span class="header-section-number">2.0.2</span> The Add Title</h3>
+</div>
+<div id="the-add-layers" class="section level3" number="2.0.3">
+<h3 number="2.0.3"><span class="header-section-number">2.0.3</span> The Add layers</h3>
+</div>
+<div id="add-node-features" class="section level3" number="2.0.4">
+<h3 number="2.0.4"><span class="header-section-number">2.0.4</span> Add Node Features</h3>
+<div id="color" class="section level4" number="2.0.4.1">
+<h4 number="2.0.4.1"><span class="header-section-number">2.0.4.1</span> <strong>Color</strong></h4>
+</div>
+<div id="size" class="section level4" number="2.0.4.2">
+<h4 number="2.0.4.2"><span class="header-section-number">2.0.4.2</span> <strong>Size</strong></h4>
+</div>
+<div id="text" class="section level4" number="2.0.4.3">
+<h4 number="2.0.4.3"><span class="header-section-number">2.0.4.3</span> <strong>Text</strong></h4>
+</div>
+</div>
+<div id="add-link-features" class="section level3" number="2.0.5">
+<h3 number="2.0.5"><span class="header-section-number">2.0.5</span> Add Link Features</h3>
+<div id="geometry" class="section level4" number="2.0.5.1">
+<h4 number="2.0.5.1"><span class="header-section-number">2.0.5.1</span> Geometry</h4>
+</div>
+<div id="semiology" class="section level4" number="2.0.5.2">
+<h4 number="2.0.5.2"><span class="header-section-number">2.0.5.2</span> Semiology</h4>
+</div>
+</div>
+<div id="add-base-layer" class="section level3" number="2.0.6">
+<h3 number="2.0.6"><span class="header-section-number">2.0.6</span> Add Base Layer</h3>
+</div>
+<div id="add-tile-layers-osm" class="section level3" number="2.0.7">
+<h3 number="2.0.7"><span class="header-section-number">2.0.7</span> Add Tile Layers (OSM)</h3>
+</div>
+<div id="import-geojson-layers" class="section level3" number="2.0.8">
+<h3 number="2.0.8"><span class="header-section-number">2.0.8</span> Import GeoJson Layers</h3>
+<!--chapter:end:04-design-map-background.Rmd-->
+</div>
+</div>
+<div id="design-of-the-flowmap-signs-nodeslinks" class="section level1" number="3">
+<h1 number="3"><span class="header-section-number">3</span> Design of the flowmap signs (nodes/links)</h1>
+<p>Placeholder</p>
+<div id="designing-the-nodes" class="section level2" number="3.1">
+<h2 number="3.1"><span class="header-section-number">3.1</span> Designing the nodes</h2>
+<div id="semiology-paramaters" class="section level3" number="3.1.1">
+<h3 number="3.1.1"><span class="header-section-number">3.1.1</span> Semiology paramaters</h3>
+<div id="the-color-of-nodes" class="section level4" number="3.1.1.1">
+<h4 number="3.1.1.1"><span class="header-section-number">3.1.1.1</span> The color of nodes</h4>
+</div>
+<div id="size-1" class="section level4" number="3.1.1.2">
+<h4 number="3.1.1.2"><span class="header-section-number">3.1.1.2</span> <strong>Size</strong></h4>
+</div>
+<div id="text-1" class="section level4" number="3.1.1.3">
+<h4 number="3.1.1.3"><span class="header-section-number">3.1.1.3</span> <strong>Text</strong></h4>
+</div>
+</div>
+</div>
+<div id="the-nodes-geometric-parameters" class="section level2" number="3.2">
+<h2 number="3.2"><span class="header-section-number">3.2</span> The nodes’ geometric parameters</h2>
+</div>
+<div id="designing-the-links" class="section level2" number="3.3">
+<h2 number="3.3"><span class="header-section-number">3.3</span> Designing the links</h2>
+<div id="semiology-parameters" class="section level3" number="3.3.1">
+<h3 number="3.3.1"><span class="header-section-number">3.3.1</span> Semiology parameters</h3>
+</div>
+<div id="change-arrow-shape" class="section level3" number="3.3.2">
+<h3 number="3.3.2"><span class="header-section-number">3.3.2</span> Change arrow shape</h3>
+<!--chapter:end:05-design-flowmap-signs.Rmd-->
+</div>
+</div>
+</div>
+<div id="filtering-flow-data-nodeslinks" class="section level1" number="4">
+<h1 number="4"><span class="header-section-number">4</span> Filtering flow data (nodes/links)</h1>
+<!--chapter:end:06-filter-flowdata.Rmd-->
+</div>
+<div id="data-sets" class="section level1" number="5">
+<h1 number="5"><span class="header-section-number">5</span> Data sets</h1>
+<p>Placeholder</p>
+<div id="ricardo-data-set-used-in-the-documentation" class="section level2" number="5.1">
+<h2 number="5.1"><span class="header-section-number">5.1</span> RIcardo Data set used in the documentation</h2>
+<div id="ricardo-general-description" class="section level3" number="5.1.1">
+<h3 number="5.1.1"><span class="header-section-number">5.1.1</span> RIcardo general description</h3>
+</div>
+<div id="ricardo-nodeslinks-files-description" class="section level3" number="5.1.2">
+<h3 number="5.1.2"><span class="header-section-number">5.1.2</span> RIcardo nodes/links files description</h3>
+</div>
+</div>
+<div id="datasets-used-for-demonstration-purposes" class="section level2" number="5.2">
+<h2 number="5.2"><span class="header-section-number">5.2</span> Datasets used for demonstration purposes</h2>
+<div id="swiss-commuting" class="section level3" number="5.2.1">
+<h3 number="5.2.1"><span class="header-section-number">5.2.1</span> Swiss Commuting</h3>
+</div>
+<div id="london-bike-sharing" class="section level3" number="5.2.2">
+<h3 number="5.2.2"><span class="header-section-number">5.2.2</span> London Bike Sharing</h3>
+</div>
+<div id="french-commutingmobilités-professionelles-mobpro" class="section level3" number="5.2.3">
+<h3 number="5.2.3"><span class="header-section-number">5.2.3</span> French Commuting/Mobilités professionelles (MOBPRO)</h3>
+</div>
+<div id="french-school-mobilitiesmobilités-scolaires-mobsco" class="section level3" number="5.2.4">
+<h3 number="5.2.4"><span class="header-section-number">5.2.4</span> French School Mobilities/Mobilités scolaires (MOBSCO)</h3>
+<!--chapter:end:07-dataset-examples.Rmd-->
+</div>
+</div>
+</div>
+<div id="exports" class="section level1" number="6">
+<h1 number="6"><span class="header-section-number">6</span> Exports</h1>
+<!--chapter:end:08-exports.Rmd-->
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1 class="unnumbered">References</h1>
+<p><em>Arabesque</em> is a web application for thematic mapping of flow and spatial networks datasets.</p>
+<!--chapter:end:09-references.Rmd-->
+</div>
+<div id="gflowiz-project-arabesque" class="section level1" number="7">
+<h1 number="7"><span class="header-section-number">7</span> GFLOWIZ project &amp; Arabesque</h1>
+<p>Placeholder</p>
+<div id="geovisualizing-flows-and-networks" class="section level3" number="7.0.1">
+<h3 number="7.0.1"><span class="header-section-number">7.0.1</span> Geovisualizing flows and networks</h3>
+</div>
+<div id="funding" class="section level3 unnumbered">
+<h3 class="unnumbered">Funding</h3>
+</div>
+<div id="contributors" class="section level3 unnumbered">
+<h3 class="unnumbered">Contributors</h3>
+</div>
+<div id="about-arabesque-1" class="section level2 unnumbered">
+<h2 class="unnumbered">About <em>Arabesque</em></h2>
+<div id="main-goal" class="section level3" number="7.0.2">
+<h3 number="7.0.2"><span class="header-section-number">7.0.2</span> Main goal</h3>
+</div>
+<div id="presentation" class="section level3" number="7.0.3">
+<h3 number="7.0.3"><span class="header-section-number">7.0.3</span> Presentation</h3>
+</div>
+<div id="challenges" class="section level3 unnumbered">
+<h3 class="unnumbered">Challenges</h3>
+<!--chapter:end:10-gflowiz-arabesque-project.Rmd-->
+</div>
+</div>
+</div>
+<!--bookdown:body:end-->
+            </section>
+
+          </div>
+        </div>
+      </div>
+<!--bookdown:link_prev-->
+<!--bookdown:link_next-->
+    </div>
+  </div>
+<!--bookdown:config-->
+
+</body>
+
+</html>
