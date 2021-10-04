@@ -5,11 +5,13 @@ primary-legend
 the-geographic-panel
 the-geographic-layer-manager
 the-statistical-panel
+data-import
 linksflow-dataset-importation
 nodesvertex-dataset-importation
 preset-nodes-dataset
 checking-missing-nodeslinks-features
 import-a-flowmap-project
+data-processing
 data-indicators-pre-processing
 visualize-a-default-flow-map
 design-and-style-of-the-map-background

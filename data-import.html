@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>1 Interface | Arabesque documentation</title>
+  <title>2 Data import | Arabesque documentation</title>
   <meta name="description" content="Online documentation of the Arabesque web flow mapping application" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="1 Interface | Arabesque documentation" />
+  <meta property="og:title" content="2 Data import | Arabesque documentation" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="1 Interface | Arabesque documentation" />
+  <meta name="twitter:title" content="2 Data import | Arabesque documentation" />
   
   <meta name="twitter:description" content="Online documentation of the Arabesque web flow mapping application" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="data-import.html"/>
+<link rel="prev" href="interface.html"/>
+<link rel="next" href="data-processing.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -162,69 +162,62 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="interface" class="section level1">
-<h1><span class="header-section-number">1</span> Interface</h1>
-<p>The general structure of the interface of Arabesque is composed of three panel.
-- The **central*panel** is for displaying the map - centered in France here.</p>
-<p>The two side panels are for playing with information.
-- The <strong>left panel</strong> is for dealing with geometries and geographical layers. Here are displayed CARTO Based map : Voyager and
-- The <strong>right panel</strong> is for playing with the flow data set.</p>
-<p><img src="images/Panels_arabesque.PNG" /></p>
-<div id="the-central-panel" class="section level2">
-<h2><span class="header-section-number">1.1</span> The central panel</h2>
-<p>The central part of Arabesque corresponds to the <strong>map view</strong>. It results from the choice of the layers to be displayed (from the left panel) and the filtering of the values of the links and nodes (from the right panel).</p>
-<p>This central panel also presents different buttons allowing the implementation of primary actions.</p>
-<div id="primary-actions-with-butons" class="section level3">
-<h3><span class="header-section-number">1.1.1</span> Primary actions with butons</h3>
-<p>The white page of Arabesque is decorated with blue action buttons.</p>
-<p><img src="images/central_panel_clear.png" />
-<strong>Details of the different buttons</strong></p>
-<p><img src="images/Buton_in_out.png" /> Successively zoom in/out - the same way as with the mouse wheel.</p>
-<p><img src="images/Buton_sauv.png" /> Save the project in .ZIP for later use.</p>
-<p><img src="images/Buton_export.png" /> Export the map in .PNG including legends and and contributors’ sources for external backgrounds such as OSM or NaturalEarth data.</p>
-<p><img src="images/Buton_center.png" /> Refocus and display the entire view without zooming in/out or panning.</p>
-<p><img src="images/Buton_export.png" /> Export the filtered flow data - the ones visible on the map - as a list file in .JSON format.</p>
-<p><img src="images/Buton_leg.png" /> Show/hide the legend.</p>
-<p><img src="images/Buton_screen_black.png" /> Switch to full screen display - with black background.</p>
-<p><img src="images/Buton_open_panel.png" /> Open/close the panels located on each side of the map.</p>
+<div id="data-import" class="section level1">
+<h1><span class="header-section-number">2</span> Data import</h1>
+<p>Arabesque also allows you to import your own data sets : (1) flowdata in the form of an origin-destination matrix (adjacency long format in .csv), to agregate them if necessary and (2) nodes dataset before building a readable flowmap.</p>
+<p>For this tutorial, we will use for example the historical trade flows listed in the <a href="https://github.com/gflowiz/sageo-ricardo">RICardo database</a>.</p>
+<p>For more informations about the dataset and its use with Arabesque, see:</p>
+<p><em>Reference</em> : Girard P. et Dedinger B. (2020), Pourquoi et comment géolocaliser le commerce mondial des XIXe-miXXe siècles ? : Retour d’expérience sur l’usage de wikidata comme gazetteer historique et de l’application de cartographie de flux Arabesque, <em>Humanistica</em>, Medialab Sciences-Po. et Centre d’histoire de Sciences-Po., en ligne.</p>
+<div id="linksflow-dataset-importation" class="section level2">
+<h2><span class="header-section-number">2.1</span> Links/flow dataset importation</h2>
+<p><em>Arabesque</em> requires the loading of at least one origin-destination links/edges/flow data set. It is a matrix in .CSV (separator: comma) and long format.</p>
+<p>You must also declare the 3 minimum fields required for flow mapping: those corresponding to the origin locations, to the destination locations and the flow values.</p>
+<p>If the OD matrix is temporal or available for different categories, you must also choose an aggregation method.</p>
+<p>On the homepage of(<a href="http://arabesque.ifsttar.fr/">Arabesque</a>), load at least one set of flow data.</p>
+<p><img src="images/BjvHVHn.png" /></p>
+<ul>
+<li>Click on the browse button</li>
+</ul>
+<p><strong>Application</strong></p>
+<p>Statistical dataset</p>
+<p>Loading data <em>SAGEO_RICardo_edges_small.csv</em>.</p>
+<p><img src="images/GjzU9IE.png" /></p>
+<p>The data must be in long format, with at least 3 columns : origin, destination, flow</p>
+<p>The data must be in long format, with at least 3 columns to identify the origin, destination and volume of flows.</p>
+<p>If the flow data are multiscalar (e.g. flows that concern several social groups, several goods transported or that occur on several dates), it is necessary to aggregate them when loading them into Arabesque.</p>
+<p>Several aggregation functions are available (sum, average, median, maximum, minimum) to simplify the flows.</p>
+<p><img src="images/flow_aggreg_import.png" /></p>
+<p>Note: This aggregation does not interfere with the geo-visualization possibilities that will remain available for all existing types.</p>
 </div>
-<div id="primary-legend" class="section level3">
-<h3><span class="header-section-number">1.1.2</span> Primary legend</h3>
-<p>A legend is automatically generated for each map for nodes and links plot.</p>
-<p><img src="images/center_legend.PNG" /></p>
-<p>The symbolization elements (size, color and opacity) of the nodes and links are included. Here (for the default map), it is the volume of flows and the degree of places that are represented.</p>
+<div id="nodesvertex-dataset-importation" class="section level2">
+<h2><span class="header-section-number">2.2</span> Nodes/vertex dataset importation</h2>
+<p>If you have locational data associated with your ODs, you can load the corresponding node files with “Import Location”,
+otherwise you can use predefined locations with “Preset Location”.</p>
+<p>If you select “Import Location”, you must load a .GEOJSON or .CSV file, then choose the ID of the nodes and their lat/long geographic coordinates.</p>
+<p><strong>Application</strong></p>
+<p>Loading <em>SAGEO_RICardo_nodes.csv</em> data</p>
+<p><img src="images/import_nodes.png" /></p>
+<p>The data must be in long format, with at least 3 columns to identify the place and the latitude (Y) and longitude (X) coordinates.</p>
+<p>If you do not have a file for the geometry, you can use the codes identifying the reference data (e.g. INSEE codes of the French communes, ISO codes of the countries), to automatically geolocate your nodes. See Preset.</p>
 </div>
+<div id="preset-nodes-dataset" class="section level2">
+<h2><span class="header-section-number">2.3</span> Preset nodes dataset</h2>
+<p>Example of pre-selection of French municipalities.</p>
+<p><img src="images/preset_nodes_import.png" /></p>
+<p>After loading the link and node files, Arabesque automatically performs a join of the common attributes between the two files.</p>
 </div>
-<div id="the-geographic-panel" class="section level2">
-<h2><span class="header-section-number">1.2</span> The geographic panel</h2>
-<p>The left panel is to <strong>design the map</strong> :
-- dealing with the background as the geographical/geometrical layers
-- customize the <em>design</em>/style of the nodes and links features
-map.</p>
-<p>The management of geographic information is composed of two sub-sections:</p>
-<div class="figure">
-<img src="images/geom_panel.PNG" alt="" />
-<p class="caption">General geographic information management panel</p>
+<div id="checking-missing-nodeslinks-features" class="section level2">
+<h2><span class="header-section-number">2.4</span> Checking missing nodes/links features</h2>
+<p>Links that do not have an origin and/or destination ID are automatically deleted. Nodes that don’t have an ID code that allows them to be geographically located are also not kept.</p>
+<p>The list of deleted nodes and links is displayed in a new window.</p>
+<p><img src="images/import_suppr_entities.png" /></p>
+<p>This list is for quick reference only. You must copy and paste it (into a text file, for example) if you want to keep the list of deleted entities : here 77 nodes have been deleted because they are not related to other nodes. The corresponding nodes ID are list.</p>
+<p>After loading the link and node files, <em>Arabesque</em> automatically performs a join of the common attributes between the two files and computes indicator on botk links and nodes data.</p>
 </div>
-<p><img src="images/Buton_home.png" /> Return to the <a href="arabesque.ifsttar.fr">home page</a> to start a new view.</p>
-<p>Actions on the background of the map are for changing projections of the current map and/or to add other layers : remote or personal one. See <a href="./Design-map-background.html">Design map background</a> section.</p>
-<p>Actions on the design/style is for (additional) geographic layers that have been adding through the previous action. See <a href="./Design-flowmap-signs.html">Design flowmap signs</a> section.</p>
-</div>
-<div id="the-geographic-layer-manager" class="section level2">
-<h2><span class="header-section-number">1.3</span> The geographic layer manager</h2>
-<p>In practice, a map is composed by several layer such as the bounding boxes, the graticules, the countries of land, etc.</p>
-<p>All these layers can be loaded in the map design background section by Add Layers.</p>
-<p>They then appear in the layer manager sub-panel, one above the other as shown below.</p>
-<p><img src="images/RICardo_Design_signs_layers.png" /></p>
-<p>The present layers are all available on the map - but not necessarily all of them are visible.</p>
-<p>The layers on the view are positioned in an order that affects their visibility. The top layer will be visible in the foreground.</p>
-<p>The position of the layers above and below (foreground or not) can be modified by a simple drag and drop.</p>
-</div>
-<div id="the-statistical-panel" class="section level2">
-<h2><span class="header-section-number">1.4</span> The statistical panel</h2>
-<p>The <strong>right panel</strong> is for playing with the flow data set, nodes and links, and to <strong>filter the map</strong>.</p>
-<p><img src="images/icon_links_filtering.PNG" /> Display a filtering on the links/flows</p>
-<p><img src="images/icon_nodes_filtering.PNG" /> Display a filtering on the nodes</p>
+<div id="import-a-flowmap-project" class="section level2">
+<h2><span class="header-section-number">2.5</span> Import a flowmap project</h2>
+<p>Import a previously made flowmap by loading a project file in .zip format.</p>
+<p><img src="images/Import_zipfile.PNG" /></p>
 
 </div>
 </div>
@@ -233,8 +226,8 @@ map.</p>
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="data-import.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="interface.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-processing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>1 Interface | Arabesque documentation</title>
+  <title>3 Data processing | Arabesque documentation</title>
   <meta name="description" content="Online documentation of the Arabesque web flow mapping application" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="1 Interface | Arabesque documentation" />
+  <meta property="og:title" content="3 Data processing | Arabesque documentation" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="1 Interface | Arabesque documentation" />
+  <meta name="twitter:title" content="3 Data processing | Arabesque documentation" />
   
   <meta name="twitter:description" content="Online documentation of the Arabesque web flow mapping application" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="data-import.html"/>
+<link rel="prev" href="data-import.html"/>
+<link rel="next" href="design-and-style-of-the-map-background.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -162,69 +162,37 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="interface" class="section level1">
-<h1><span class="header-section-number">1</span> Interface</h1>
-<p>The general structure of the interface of Arabesque is composed of three panel.
-- The **central*panel** is for displaying the map - centered in France here.</p>
-<p>The two side panels are for playing with information.
-- The <strong>left panel</strong> is for dealing with geometries and geographical layers. Here are displayed CARTO Based map : Voyager and
-- The <strong>right panel</strong> is for playing with the flow data set.</p>
-<p><img src="images/Panels_arabesque.PNG" /></p>
-<div id="the-central-panel" class="section level2">
-<h2><span class="header-section-number">1.1</span> The central panel</h2>
-<p>The central part of Arabesque corresponds to the <strong>map view</strong>. It results from the choice of the layers to be displayed (from the left panel) and the filtering of the values of the links and nodes (from the right panel).</p>
-<p>This central panel also presents different buttons allowing the implementation of primary actions.</p>
-<div id="primary-actions-with-butons" class="section level3">
-<h3><span class="header-section-number">1.1.1</span> Primary actions with butons</h3>
-<p>The white page of Arabesque is decorated with blue action buttons.</p>
-<p><img src="images/central_panel_clear.png" />
-<strong>Details of the different buttons</strong></p>
-<p><img src="images/Buton_in_out.png" /> Successively zoom in/out - the same way as with the mouse wheel.</p>
-<p><img src="images/Buton_sauv.png" /> Save the project in .ZIP for later use.</p>
-<p><img src="images/Buton_export.png" /> Export the map in .PNG including legends and and contributors’ sources for external backgrounds such as OSM or NaturalEarth data.</p>
-<p><img src="images/Buton_center.png" /> Refocus and display the entire view without zooming in/out or panning.</p>
-<p><img src="images/Buton_export.png" /> Export the filtered flow data - the ones visible on the map - as a list file in .JSON format.</p>
-<p><img src="images/Buton_leg.png" /> Show/hide the legend.</p>
-<p><img src="images/Buton_screen_black.png" /> Switch to full screen display - with black background.</p>
-<p><img src="images/Buton_open_panel.png" /> Open/close the panels located on each side of the map.</p>
+<div id="data-processing" class="section level1">
+<h1><span class="header-section-number">3</span> Data processing</h1>
+<p>The creation of a flow map with Arabesque can be broken down into the following main steps:</p>
+<ol style="list-style-type: decimal">
+<li>Importing flow datasets (links and/or nodes)
+<strong>2. Processing flow datasets (creation of indicators, statistics)</strong></li>
+<li>Statistical data computing (filtering, …)</li>
+<li>Geographical data computing (choosing the map background…)</li>
+<li>Graphic symbolization for thematic flow mapping purposes</li>
+<li>Flowmap decoration</li>
+<li>Export</li>
+</ol>
+<p>The links and nodes datasets are automatically modified when importing and <em>Arabesque</em> computes different indicators.</p>
+<div id="data-indicators-pre-processing" class="section level2">
+<h2><span class="header-section-number">3.1</span> Data indicators pre processing</h2>
+<p><em>Indicators on links</em>: Euclidean distance between the origin and destination entities</p>
+<p><em>Indicators on nodes</em> : see below the additional indicators () automatically calculated on the nodes of the RIcardo data</p>
+<p>See below the indicators that have been automatically computed (ie the additional variable) on the nodes of the RIcardo data.</p>
+<p><img src="images/import_indic.png" /></p>
+<p>These indicators can be downloaded in . csv format (see Export and Save sections).</p>
+<p>Loading links and nodes data into <em>Arabesque</em> leads to the creation of a default map, which is placed in the center of the interface.</p>
 </div>
-<div id="primary-legend" class="section level3">
-<h3><span class="header-section-number">1.1.2</span> Primary legend</h3>
-<p>A legend is automatically generated for each map for nodes and links plot.</p>
-<p><img src="images/center_legend.PNG" /></p>
-<p>The symbolization elements (size, color and opacity) of the nodes and links are included. Here (for the default map), it is the volume of flows and the degree of places that are represented.</p>
-</div>
-</div>
-<div id="the-geographic-panel" class="section level2">
-<h2><span class="header-section-number">1.2</span> The geographic panel</h2>
-<p>The left panel is to <strong>design the map</strong> :
-- dealing with the background as the geographical/geometrical layers
-- customize the <em>design</em>/style of the nodes and links features
-map.</p>
-<p>The management of geographic information is composed of two sub-sections:</p>
-<div class="figure">
-<img src="images/geom_panel.PNG" alt="" />
-<p class="caption">General geographic information management panel</p>
-</div>
-<p><img src="images/Buton_home.png" /> Return to the <a href="arabesque.ifsttar.fr">home page</a> to start a new view.</p>
-<p>Actions on the background of the map are for changing projections of the current map and/or to add other layers : remote or personal one. See <a href="./Design-map-background.html">Design map background</a> section.</p>
-<p>Actions on the design/style is for (additional) geographic layers that have been adding through the previous action. See <a href="./Design-flowmap-signs.html">Design flowmap signs</a> section.</p>
-</div>
-<div id="the-geographic-layer-manager" class="section level2">
-<h2><span class="header-section-number">1.3</span> The geographic layer manager</h2>
-<p>In practice, a map is composed by several layer such as the bounding boxes, the graticules, the countries of land, etc.</p>
-<p>All these layers can be loaded in the map design background section by Add Layers.</p>
-<p>They then appear in the layer manager sub-panel, one above the other as shown below.</p>
-<p><img src="images/RICardo_Design_signs_layers.png" /></p>
-<p>The present layers are all available on the map - but not necessarily all of them are visible.</p>
-<p>The layers on the view are positioned in an order that affects their visibility. The top layer will be visible in the foreground.</p>
-<p>The position of the layers above and below (foreground or not) can be modified by a simple drag and drop.</p>
-</div>
-<div id="the-statistical-panel" class="section level2">
-<h2><span class="header-section-number">1.4</span> The statistical panel</h2>
-<p>The <strong>right panel</strong> is for playing with the flow data set, nodes and links, and to <strong>filter the map</strong>.</p>
-<p><img src="images/icon_links_filtering.PNG" /> Display a filtering on the links/flows</p>
-<p><img src="images/icon_nodes_filtering.PNG" /> Display a filtering on the nodes</p>
+<div id="visualize-a-default-flow-map" class="section level2">
+<h2><span class="header-section-number">3.2</span> Visualize a default flow map</h2>
+<p>Loading data in Arabesque leads to the creation of a default map to avoid visualizing a “spaghetti effect” when entering the application ; all the defined parameters can then be modified during the exploration.</p>
+<p>By default, the links are represented in shades of blue and the nodes in red. The map is presented in the WGS84 projection, according to the lat/lon coordinates* declared during the import.</p>
+<p>Except in the case of loading a projected geometry as input, the map is presented in WGS84.</p>
+<p>Hereby is the Ricardo’s dataset default map with global statistic of the percent of links versus the percent of volume of flows and nodes.</p>
+<p><img src="images/defaut_flowmap.png" />
+Only the 10% most important links (in value) are represented and symbolized (see the automatic legend) according to their intensity (the flow variable entered at import).
+The corresponding nodes are symbolized according to their degree (variable calculated automatically during the import).</p>
 
 </div>
 </div>
@@ -233,8 +201,8 @@ map.</p>
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="data-import.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-import.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="design-and-style-of-the-map-background.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
