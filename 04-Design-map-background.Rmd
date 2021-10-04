@@ -36,7 +36,7 @@ Five types of geographic layers can be loaded/add to construct the map (Add Node
 
 Add Node Feature and Add Link Features leads to act on the design/style the flow features: to symbolize and customize the links and the nodes.
 
-### Add Node Features
+#### Add Node Features
 
 
 ![](images/add_Nodes_features.png)
@@ -49,7 +49,7 @@ It is possible to set up all the graphic dimensions of the nodes by "Choose semi
 ![](images/geom_add_nodes_1.png)
 
 
-#### **Color** 
+**Color** 
 The color of the nodes can be fixed (e.g. in black) or shaded in a range of tones.
 
 ![](images/choose_fixed_color.png)
@@ -95,7 +95,7 @@ The **ratio** representing the max width in pixel of the graphic features can be
 
 ![](images/geom_add_nodes_2_size_ratio.png)
 
-#### **Text**
+**Text**
 Textuals elements can also be added near the nodes.
 
 ![](images/geom_add_nodes_3_texte.png)
@@ -125,7 +125,7 @@ EXAMPLE : Application of the shade opacity on the nodes. Symbolization of the no
 The opacity of the text shade can vary according to an indicator present in the dataset and according to a corresponding function which can be Linear, Square, SquareRoot or Logarithm and defined in an min/max interval: here between 0.25 and 0.85. 
 
 
-### Add Link Features
+#### Add Link Features
 
 ![](images/add_links_features.png)
 
@@ -145,7 +145,7 @@ EXAMPLE: straight bilateral oriented links, unique black color.
 ![](images/geom_all_links.png)
 
 
-#### Geometry
+##### Geometry
 
 The geometry of the link can be oriented or not.
 
@@ -193,7 +193,7 @@ EXAMPLE*: various geometry of a same Covid-19 flowmaps.
 
 ![](images/Ex_geom_covid.png)
 
-#### Semiology
+##### Semiology
 
 **Color**
 
@@ -252,7 +252,7 @@ EXAMPLES:
 See layout management section to manage the overlay of the layers.
 
 
-### Add Base Layer
+#### Add Base Layer
 
 
 ![](images/Add_base_layer.png)
@@ -261,7 +261,6 @@ Add based layers consists in calling a remote geographic information layer, to c
 
 
 ![](images/Add_base_Layer_1.png)
-
 
 
 Several layers are available :
@@ -282,7 +281,7 @@ EXAMPLE: various geometry of a same Covid-19 flowmaps.
 
 
 
-### Add Tile Layers (OSM) 
+#### Add Tile Layers (OSM) 
 
 
 
@@ -338,7 +337,7 @@ You can **import additional tiles** by specifying a URL, the sources/contributor
 
 ![](images/Add_tile_perso2.png)
 
-### Import GeoJson Layers
+#### Import GeoJson Layers
 
 ![](images/Add_import_Geojson.png)
 
