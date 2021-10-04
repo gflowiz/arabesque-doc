@@ -1,4 +1,4 @@
-#Data import
+# Data import
 
 Arabesque also allows you to import your own data sets : (1) flowdata in the form of an origin-destination matrix (adjacency long format in .csv), to agregate them if necessary and (2) nodes dataset before building a readable flowmap.
 

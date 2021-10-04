@@ -1,3 +1,5 @@
+# Data processing
+
 The creation of a flow map with Arabesque can be broken down into the following main steps:
 
 1. Importing flow datasets (links and/or nodes)
