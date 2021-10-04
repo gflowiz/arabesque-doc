@@ -39,7 +39,7 @@ designing-the-links
 semiology-parameters
 change-arrow-shape
 filtering-flow-data-nodeslinks
-data-sets
+data-sets-and-examples
 ricardo-data-set-used-in-the-documentation
 ricardo-general-description
 ricardo-nodeslinks-files-description
