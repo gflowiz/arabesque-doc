@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>6 Design of the flowmap signs (nodes/links) | Arabesque documentation</title>
+  <title>Arabesque documentation</title>
   <meta name="description" content="Online documentation of the Arabesque web flow mapping application" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="6 Design of the flowmap signs (nodes/links) | Arabesque documentation" />
+  <meta property="og:title" content="Arabesque documentation" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="6 Design of the flowmap signs (nodes/links) | Arabesque documentation" />
+  <meta name="twitter:title" content="Arabesque documentation" />
   
   <meta name="twitter:description" content="Online documentation of the Arabesque web flow mapping application" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="design-and-style-of-the-map-background.html"/>
-<link rel="next" href="filtering-flow-data-nodeslinks.html"/>
+
+<link rel="next" href="interface.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -154,90 +154,37 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="design-of-the-flowmap-signs-nodeslinks" class="section level1">
-<h1><span class="header-section-number">6</span> Design of the flowmap signs (nodes/links)</h1>
-<p>This section is about changing the semiology (design/style) and changing the geometry (size, …) of flowmap signs: nodes and links.</p>
-<p><img src="images/geom_panel_flowsigns.png" /></p>
-<p>Several types of actions can be performed on all the layer level available in the layer management section, using the following icon-buttons.</p>
-<p>##Types of action on a layer</p>
-<p><img src="images/Buton_action_visible.png" /></p>
-<p>Visible/invisible the layer.</p>
-<p><img src="images/Buton_action_semio.png" />
-Semiology parameters for nodes and links: color, size, text, opacity.</p>
-<p><img src="images/Buton_action_geom.png" /></p>
-<p>Geometry parameters for changing links/arrows shape only (not available for nodes): orientation, type of link (curve, triange, …) and arrow head parameters.</p>
-<p><img src="images/Buton_action_delete.png" /></p>
-<p>Definitively deletes the layer.</p>
-<div id="designing-the-nodes" class="section level2">
-<h2><span class="header-section-number">6.1</span> Designing the nodes</h2>
-<p>Drawing the nodes opens a window that allows you to act on their parameters related to semiology, respecting the Jacques Bertin’ (1967) principes.</p>
-<div id="semiology-paramaters" class="section level3">
-<h3><span class="header-section-number">6.1.1</span> Semiology paramaters</h3>
-<p>Hereby the general window.</p>
-<p><img src="images/Design_nodes.PNG" /></p>
-<div id="the-color-of-nodes" class="section level4">
-<h4><span class="header-section-number">6.1.1.1</span> The color of nodes</h4>
-<p><img src="images/geom_add_nodes_1.PNG" /></p>
-<p>The color of the nodes can be fixed (e.g. in black) or shaded in a range of tones.</p>
-<p><img src="images/choose_fixed_color.png" /></p>
-<p>The color of the nodes can be shaded in a range of tones.</p>
-<p><img src="images/geom_add_nodes_1_color.PNG" /></p>
-<p>The reference for the color schemes is Cynthia Brewer palette for Diverging, Multi Hue and Single Hue. See: <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=BuGn&amp;n=3">Color Brewer advices for maps</a>. An Extra Palette is also proposed in Arabesque.</p>
-<p>The color of the node can be set according to one of the variables (initial or calculated by Arabesque) present in the dataset.</p>
-<p><img src="images/geom_add_nodes_1_color_variable.png" /></p>
-<p>By definition, the type of color range (Diverging/Multi Hue/Single Hue/Extra Palette) will have to be realized according to the type of the variable to represent (quantitative/qualitative, discrete/continuous, stock/ratio/scale, …).</p>
-<p><img src="images/geom_add_nodes_1_color_variable2.png" /></p>
-<p>The progression (up/down) of the <strong>color range</strong> depends on that of the <strong>value range</strong>: it can be direct or inverse. The checked box means an inverse progression: a light color is applied to a strong value.</p>
-<p><img src="images/geom_add_nodes_1_color_variable3.png" /></p>
+<div id="header">
+<h1 class="title">Arabesque documentation</h1>
+<p class="author"><em>Geographic flow visualisation (gFlowiz) project team</em></p>
+<p class="date"><em>2021-10-04</em></p>
 </div>
-<div id="size-1" class="section level4">
-<h4><span class="header-section-number">6.1.1.2</span> <strong>Size</strong></h4>
-<p>The size of the nodes can be fixed and the weight defined.</p>
-<p><img src="images/geom_add_nodes_2_size.png" /></p>
-<p>The size can be <strong>weighted by a variable</strong> according to one of the initial or additional <strong>variables</strong> available in the dataset (hereby the balance).</p>
-<p><img src="images/geom_add_nodes_2_size_variable.png" /></p>
-<p>Three functions to set the size of the node according to the corresponding value are proposed: the square, the square root and the logarithm.</p>
-<p><img src="images/geom_add_nodes_2_size_fct.png" /></p>
-<p>The <strong>ratio</strong> representing the max width in pixel of the graphic features can be defined - according to the map bounding box, to obtain an image with balanced features (neither too small nor too big).</p>
-<p><img src="images/geom_add_nodes_2_size_ratio.png" /></p>
-</div>
-<div id="text" class="section level4">
-<h4><span class="header-section-number">6.1.1.3</span> <strong>Text</strong></h4>
-<p>Textuals elements can also be added near the nodes.</p>
-<p><img src="images/geom_add_nodes_3_texte.png" /></p>
-<p>The text can be defined according to one of the variable available in the dataset.</p>
-<p><img src="images/geom_add_nodes_3_texte2.png" /></p>
-<p>The opacity of the text shade (currently set to black) can be set to a given value (here 0.85).</p>
-<p><img src="images/geom_add_nodes_3_texte_fixe.png" /></p>
-<p>The opacity of the text shade (currently set to black) can be varied according to an indicator present in the dataset.</p>
-<p><img src="images/geom_add_nodes_3_texte_variable.png" /></p>
-</div>
-</div>
-</div>
-<div id="the-nodes-geometric-parameters" class="section level2">
-<h2><span class="header-section-number">6.2</span> The nodes’ geometric parameters</h2>
-<p>Not implemented yet.Upcoming projects.</p>
-</div>
-<div id="designing-the-links" class="section level2">
-<h2><span class="header-section-number">6.3</span> Designing the links</h2>
-<div id="semiology-parameters" class="section level3">
-<h3><span class="header-section-number">6.3.1</span> Semiology parameters</h3>
-</div>
-<div id="change-arrow-shape" class="section level3">
-<h3><span class="header-section-number">6.3.2</span> Change arrow shape</h3>
-<p>Drawing the links opens a window that allows you to act on several dimensions of their geometry.</p>
-<p><img src="images/Design_links_arrows.PNG" /></p>
+<div id="about-the-authors" class="section level1">
+<h1><span class="header-section-number">1</span> About the Authors</h1>
+<p>Françoise BAHOKEN, geographer, Research scientist, Université Gustave Eiffel/AME/
+Scientific coordination (coord.), conception and documentation</p>
+<p>Étienne CÔME, computer scientist, Research scientist, Université Gustave Eiffel/COSYS/
+Development (coord.) and conception</p>
+<p>Laurent JÉGOU, geographer, teacher-researcher, Université Toulouse 2 / UMR 5193 LISST
+Development and conception</p>
+<p>Grégoire LE CAMPION, statistical engineer (UMR Passages, Bordeaux)
+Conception</p>
+<p>Marion MAISONOBE, geographer, Research scientist CNRS, UMR Géographie-Cités
+Conception</p>
+<p>Nicolas ROELANDT, geomatics engineer, Université Gustave Eiffel/AME/
+Conception, documentation</p>
+<p><strong>Trainee</strong></p>
+<p>Thomas BAPAUME, data scientist student, ESIEE Paris (2018-2019)</p>
+<p>Paul FABRE, geomatics student, ENSG Géomatique (2019-2020)</p>
 
-</div>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="design-and-style-of-the-map-background.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="filtering-flow-data-nodeslinks.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+<a href="interface.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

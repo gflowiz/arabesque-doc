@@ -1,3 +1,4 @@
+about-the-authors
 interface
 the-central-panel
 primary-actions-with-butons
