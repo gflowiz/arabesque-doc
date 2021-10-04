@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>5 Data processing | Arabesque documentation</title>
+  <title>Arabesque documentation</title>
   <meta name="description" content="Online documentation of the Arabesque web flow mapping application" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="5 Data processing | Arabesque documentation" />
+  <meta property="og:title" content="Arabesque documentation" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="5 Data processing | Arabesque documentation" />
+  <meta name="twitter:title" content="Arabesque documentation" />
   
   <meta name="twitter:description" content="Online documentation of the Arabesque web flow mapping application" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="data-import.html"/>
-<link rel="next" href="design-and-style-of-the-map-background.html"/>
+
+<link rel="next" href="about-the-authors.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -155,47 +155,44 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="data-processing" class="section level1">
-<h1><span class="header-section-number">5</span> Data processing</h1>
-<p>The creation of a flow map with Arabesque can be broken down into the following main steps:</p>
-<ol style="list-style-type: decimal">
-<li>Importing flow datasets (links and/or nodes)
-<strong>2. Processing flow datasets (creation of indicators, statistics)</strong></li>
-<li>Statistical data computing (filtering, …)</li>
-<li>Geographical data computing (choosing the map background…)</li>
-<li>Graphic symbolization for thematic flow mapping purposes</li>
-<li>Flowmap decoration</li>
-<li>Export</li>
-</ol>
-<p>The links and nodes datasets are automatically modified when importing and <em>Arabesque</em> computes different indicators.</p>
-<div id="data-indicators-pre-processing" class="section level2">
-<h2><span class="header-section-number">5.1</span> Data indicators pre processing</h2>
-<p><em>Indicators on links</em>: Euclidean distance between the origin and destination entities</p>
-<p><em>Indicators on nodes</em> : see below the additional indicators () automatically calculated on the nodes of the RIcardo data</p>
-<p>See below the indicators that have been automatically computed (ie the additional variable) on the nodes of the RIcardo data.</p>
-<p><img src="images/import_indic.png" /></p>
-<p>These indicators can be downloaded in . csv format (see Export and Save sections).</p>
-<p>Loading links and nodes data into <em>Arabesque</em> leads to the creation of a default map, which is placed in the center of the interface.</p>
+<div id="header">
+<h1 class="title">Arabesque documentation</h1>
+<p class="author"><em>Françoise BAHOKEN &amp; Nicolas ROELANDT (Univ-Gustave Eiffel/AME)</em></p>
+<p class="date"><em>2021-10-04</em></p>
 </div>
-<div id="visualize-a-default-flow-map" class="section level2">
-<h2><span class="header-section-number">5.2</span> Visualize a default flow map</h2>
-<p>Loading data in Arabesque leads to the creation of a default map to avoid visualizing a “spaghetti effect” when entering the application ; all the defined parameters can then be modified during the exploration.</p>
-<p>By default, the links are represented in shades of blue and the nodes in red. The map is presented in the WGS84 projection, according to the lat/lon coordinates* declared during the import.</p>
-<p>Except in the case of loading a projected geometry as input, the map is presented in WGS84.</p>
-<p>Hereby is the Ricardo’s dataset default map with global statistic of the percent of links versus the percent of volume of flows and nodes.</p>
-<p><img src="images/defaut_flowmap.png" />
-Only the 10% most important links (in value) are represented and symbolized (see the automatic legend) according to their intensity (the flow variable entered at import).
-The corresponding nodes are symbolized according to their degree (variable calculated automatically during the import).</p>
+<div id="welcome-to-arabesque-documentation" class="section level1">
+<h1><span class="header-section-number">1</span> Welcome to Arabesque documentation</h1>
+<p><img src="images/logo_arabesque_DOC.png" /></p>
+<p><em>Arabesque</em> is a web application for thematic mapping of flow and spatial networks datasets. This documentation aims to present how <em>Arabesque</em> works and how to use it using examples datasets provided.</p>
+<p><strong>Summary:</strong></p>
+<ul>
+<li><a href="./interface.html">Interface presentation</a></li>
+<li><a href="./data-import.html">Data importation</a></li>
+<li><a href="./data-processing.html">Data processing</a></li>
+<li><a href="./Design-map-background.html">Designing flowmap background</a></li>
+<li><a href="./Design-flowmap-signs.html">Designing flowmap signs</a></li>
+<li><a href="./Filter-flowdata.html">Filtering flowdata</a></li>
+<li><a href="./examples.html">Examples/Datasets</a></li>
+<li><a href="./exports.html">Exporting flowmap</a></li>
+<li><a href="./examples.html">References</a></li>
+<li><a href="./gflowiz-arabesque-project.html">gflowiz-arabesque</a></li>
+</ul>
+<p><strong>About <em>Arabesque</em> documentation {-}</strong></p>
+<p><a href="https://gflowiz.github.io/arabesque-doc/">Arabesque_ documentation</a>.</p>
+<p>For a light french version, see: <a href="https://github.com/gflowiz/sageo-ricardo">Arabesque_ documentation</a></p>
+<p><strong>About <em>Arabesque</em> {-} </strong></p>
+<p>The application is available here: <a href="http://arabesque.ifsttar.fr/">arabesque.ifsttar.fr</a>
+For more information on the project, see: <a href="https://geoflowiz.hypotheses.org/">geoflowiz.hypotheses.org</a>.</p>
+<p>Please report any issue on <a href="https://github.com/gflowiz/arabesque">GitHub</a>. This is a Free and OpenSource project, feel free to help us make it better.</p>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="data-import.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="design-and-style-of-the-map-background.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+<a href="about-the-authors.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
