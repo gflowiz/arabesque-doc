@@ -1,6 +1,6 @@
 --- 
 title: "Arabesque documentation"
-author: "GFlowiz project team"
+author: "Geographic flow visualisation (gFlowiz) project team"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -10,13 +10,11 @@ link-citations: yes
 description: "Online documentation of the Arabesque web flow mapping application"
 ---
 
-![](images/logo_arabesque_clair.png)
+![](images/logo_arabesque_DOC.png)
 
-_Arabesque_ is a web application for thematic mapping of flow and spatial networks datasets. 
+_Arabesque_ is a web application for thematic mapping of flow and spatial networks datasets.
 
-See the documentation is available here : 
-
-The documentation aims to present how _Arabesque_ works and how to use it using example datasets provided.
+This documentation aims to present how _Arabesque_ works and how to use it using examples datasets provided.
 
 The documentation is segmented in several parts:
 
