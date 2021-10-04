@@ -12,11 +12,9 @@ description: "Online documentation of the Arabesque web flow mapping application
 
 ![](images/logo_arabesque_DOC.png)
 
-_Arabesque_ is a web application for thematic mapping of flow and spatial networks datasets.
+_Arabesque_ is a web application for thematic mapping of flow and spatial networks datasets. This documentation aims to present how _Arabesque_ works and how to use it using examples datasets provided.
 
-This documentation aims to present how _Arabesque_ works and how to use it using examples datasets provided.
-
-The documentation is segmented in several parts:
+**Summary:**
 
 * [Interface presentation](./interface.html)
 * [Data importation](./data-import.html)
@@ -29,15 +27,13 @@ The documentation is segmented in several parts:
 * [References](./examples.html)
 * [gflowiz-arabesque](./gflowiz-arabesque-project.html)
 
-# Introduction  {-}
-
-## About _Arabesque_ documentation {-}
+**About _Arabesque_ documentation {-}**
 
 [Arabesque_ documentation](https://gflowiz.github.io/arabesque-doc/).
 
 For a light french version, see: [Arabesque_ documentation](https://github.com/gflowiz/sageo-ricardo)
 
-## About _Arabesque_ {-} 
+**About _Arabesque_ {-} **
 
 The application is available here: [arabesque.ifsttar.fr](http://arabesque.ifsttar.fr/) 
 For more information on the project, see: [geoflowiz.hypotheses.org](https://geoflowiz.hypotheses.org/).
