@@ -1,4 +1,7 @@
 # References {-}
 
 
-_Arabesque_ is a web application for thematic mapping of flow and spatial networks datasets.
+Hereby are the references quoted in this documentation.
+
+Girard P. et Dedinger B. (2020), Pourquoi et comment géolocaliser le commerce mondial des XIXe-miXXe siècles ? : Retour d’expérience sur l’usage de wikidata comme gazetteer historique et de l’application de cartographie de flux Arabesque, Humanistica, Medialab Sciences-Po. et Centre d’histoire de Sciences-Po.![Accéder](http://medialab.github.io/publications/geolocaliserRICardo@humanistica2020/)
+
