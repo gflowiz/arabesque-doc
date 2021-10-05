@@ -71,6 +71,10 @@ french-school-mobilitiesmobilités-scolaires-mobsco
 exports
 references
 gflowiz-project-arabesque
+the-geographic-flow-visualization-gflowiz
+funding
+contributors
+about-arabesque
 main-goal
 presentation
 challenges
