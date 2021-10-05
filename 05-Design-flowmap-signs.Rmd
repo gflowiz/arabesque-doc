@@ -108,17 +108,36 @@ The opacity of the text shade (currently set to black) can be varied according t
 
 ## The nodes' geometric parameters
 
-Not implemented yet.Upcoming projects.
+Not implemented yet.
+
+Upcoming projects.
 
 
 ## Designing the links
+
+
+The visual appearance of the link layers (shape, color, opacity, size) can be modified at two points: 
+
+-- either when importing/creating the layer - which will then result in the current layer being deleted
+
+or
+
+--  when managing the displayed layers, by using the following icons:
+
+![](./images/Icon_links_geom.png) Modify the style of the links 
+
+
+
+![](./images/Icon_links_brush.png) gives access to the window for setting the style of the link layer.
 
 
 
 ### Semiology parameters
 
 
+The color, size and style of the links can be set
 
+![](./images/Links_change_style.png)
 
 
 ### Change arrow shape 
