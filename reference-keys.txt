@@ -42,7 +42,9 @@ text
 the-nodes-geometric-parameters
 designing-the-links
 semiology-parameters
-change-arrow-shape
+geometry-parameters-change-arrow-shape
+geometry-1
+design-of-arrows
 filtering-flow-data-nodeslinks
 available-filtering-procedures
 filtering-possibilities

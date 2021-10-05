@@ -121,7 +121,7 @@
 <li class="chapter" data-level="7.3" data-path="design-of-the-flowmap-signs-nodeslinks.html"><a href="design-of-the-flowmap-signs-nodeslinks.html#the-nodes-geometric-parameters"><i class="fa fa-check"></i><b>7.3</b> The nodes’ geometric parameters</a></li>
 <li class="chapter" data-level="7.4" data-path="design-of-the-flowmap-signs-nodeslinks.html"><a href="design-of-the-flowmap-signs-nodeslinks.html#designing-the-links"><i class="fa fa-check"></i><b>7.4</b> Designing the links</a><ul>
 <li class="chapter" data-level="7.4.1" data-path="design-of-the-flowmap-signs-nodeslinks.html"><a href="design-of-the-flowmap-signs-nodeslinks.html#semiology-parameters"><i class="fa fa-check"></i><b>7.4.1</b> Semiology parameters</a></li>
-<li class="chapter" data-level="7.4.2" data-path="design-of-the-flowmap-signs-nodeslinks.html"><a href="design-of-the-flowmap-signs-nodeslinks.html#change-arrow-shape"><i class="fa fa-check"></i><b>7.4.2</b> Change arrow shape</a></li>
+<li class="chapter" data-level="7.4.2" data-path="design-of-the-flowmap-signs-nodeslinks.html"><a href="design-of-the-flowmap-signs-nodeslinks.html#geometry-parameters-change-arrow-shape"><i class="fa fa-check"></i><b>7.4.2</b> Geometry parameters : Change arrow shape</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html"><i class="fa fa-check"></i><b>8</b> Filtering flow data (nodes/links)</a><ul>
@@ -263,11 +263,39 @@ Semiology parameters for nodes and links: color, size, text, opacity.</p>
 <p>The color, size and style of the links can be set</p>
 <p><img src="images/Links_change_style.png" /></p>
 </div>
-<div id="change-arrow-shape" class="section level3">
-<h3><span class="header-section-number">7.4.2</span> Change arrow shape</h3>
+<div id="geometry-parameters-change-arrow-shape" class="section level3">
+<h3><span class="header-section-number">7.4.2</span> Geometry parameters : Change arrow shape</h3>
 <p>Drawing the links opens a window that allows you to act on several dimensions of their geometry.</p>
 <p><img src="images/Design_links_arrows.PNG" /></p>
+<p>This section is the same of the <a href="https://gflowiz.github.io/arabesque-doc/design-and-style-of-the-map-background.html#add-link-features">Design Link features/geometry</a> one.</p>
+<div id="geometry-1" class="section level4">
+<h4><span class="header-section-number">7.4.2.1</span> Geometry</h4>
+<p>The geometry of the link can be oriented or not.</p>
+<p><img src="images/geom_add_links_geometry1.PNG" /></p>
+<p>Oriented geometry takes into account the direction of the <strong>flow</strong> to define the <strong>graphic form</strong> of the sign.</p>
+<p><img src="images/geom_add_links_oriented.png" /></p>
+<p><strong>Available forms of flow lines</strong> are : straight (as euclidian distance symbolisation), straight no hook, Triangle, (line) Curve and Triangle curve.</p>
+<p><img src="images/Links_geom.png" /></p>
+<ul>
+<li><p><strong>Straight</strong>: The link is straight and oriented, with a half arrowhead</p></li>
+<li><p><strong>Straight no hook</strong>: The link is straight and oriented, it has a point without hook</p></li>
+<li><p><strong>Triangle</strong>: The link is straight and takes the shape of a triangle</p></li>
+<li><p><strong>Curve</strong> : The link is curved and oriented, its curvature is configurable.</p></li>
+<li><p><strong>Triangle curve</strong>: The link is curved and takes the shape of a drop of water, its curvature is configurable.</p></li>
+<li><p><strong>Non oriented</strong>: The link is straight, validated or not, it has no orientation.</p></li>
+</ul>
+</div>
+<div id="design-of-arrows" class="section level4">
+<h4><span class="header-section-number">7.4.2.2</span> Design of arrows</h4>
+<p>The arrow geometry - which corresponds to the visual shape variable - can be rectilinear or curvilinear.</p>
+<p>The curvature of the line is generated according to the Chaikin algorithm which allows to parameterize its height and its base, with respect to the body of the link.</p>
+<p><img src="images/geom_add_links_curve.png" /></p>
+<ul>
+<li><p><strong>Arrow / Height curve</strong>: The value of the height of the head is the percentage of the map distance of the link (distance between the origin and the destination) used to define the maximum (map) width of the link - the width being itself a function of the value of the flow.</p></li>
+<li><p><strong>Arrow / Height</strong>: The value of ([0,1]) is that of the center of the curve; the point is identified by the indication of a distance from the origin node of the link.</p></li>
+</ul>
 
+</div>
 </div>
 </div>
 </div>
