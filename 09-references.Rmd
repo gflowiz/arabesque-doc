@@ -1,9 +1,8 @@
-# References {-}
+# References
 
+Hereby are the references quoted in this documentation.
 
- Hereby are the references quoted in this documentation.
-
--- Equipe gflowiz (2019), [Arabesque quick tutorial v.0](https://github.com/gflowiz/sageo-ricardo) - french version.Licence : CC-BY-SA 3.0-FR. 
+-- Equipe gflowiz (2019), [Arabesque quick tutorial v.0](https://github.com/gflowiz/sageo-ricardo) for SAGEO 2019 - french version. Licence : CC-BY-SA 3.0-FR. 
 
 -- Girard P. et Dedinger B. (2020), Pourquoi et comment géolocaliser le commerce mondial des XIXe-miXXe siècles ? : Retour d’expérience sur l’usage de wikidata comme gazetteer historique et de l’application de cartographie de flux Arabesque, Humanistica, Medialab Sciences-Po. et Centre d’histoire de Sciences-Po. [Accéder](http://medialab.github.io/publications/geolocaliserRICardo@humanistica2020/)
 
