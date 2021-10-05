@@ -1,5 +1,8 @@
 
-# GFLOWIZ project & Arabesque
+# gFLOWIZ project & Arabesque
+
+
+## The geographic flow visualization (gFLOWIZ)
 
 From a scientific point of view, [Gflowiz  research project](https://geoflowiz.hypotheses.org/) is part of the new paradigm of **visualization cartography** introduced by Mac Eachren in 2004, which follows Waldo Tobler's ideas of **analytical cartography**. This vision of cartographic analysis consists in combining within the same interface the two pillars of representation: (geo)visualization and the upstream data processing of the corresponding geographic and statistical data.
 
@@ -7,16 +10,14 @@ The main challenge of gFlowiz is to follow this thread, by relying on current te
 
 ![Geographic flows visualisation - GFlowiz](images/logo_gflowiz.jpg)
 
-# Funding {-}
+### Funding
 
-The project is funded by former IFSTTAR's scientific direction 
-(VP Recherche Univ. Gustave Eiffel), with the participation of the 
-Projet federateur Mobilities and numeric transitions (PF MobTransNum). 
-The team is strengthened by the participation of members of CNRS laboratories,
-as well as it is  supported by the research GDR Magis through the GEOWEB
-prospective action (2019).
+The project is initially funded by the Univ. Gustave Eiffel (former IFSTTAR's scientific direction) with the participation of the 
+Projet fédérateur Mobilities and numeric transitions [PF MobTransNum](https://mobtransnum.ifsttar.fr/). The team is strengthened by the participation of members of CNRS laboratories (UMR Géographie Cités and UMR Passages), as well as it is supported by the research group [GDR Magis](http://gdr-magis.imag.fr/) through the GEOWEB prospective action (2019).
+In 2021, funding is renewed through 2023, december in conjunction with the start of the [Tribute To Tobler](https://geoflowiz.hypotheses.org/ttt-tribute-to-tobler) project.
 
-# Contributors {-}
+
+### Contributors
 
 - Scientific responsibility, design, development and coordination </br>
  Françoise BAHOKEN, Étienne CÔME & Laurent JÉGOU
@@ -28,11 +29,12 @@ prospective action (2019).
 Grégoire LE CAMPION, Marion MAISONOBE, Alain NGUYEN (2018) & Nicolas ROELANDT
 
 
-# About _Arabesque_ {-}
+## About _Arabesque_
 
-## Main goal
 
 ![](images/logo_arabesque_clair.png)
+
+### Main goal
 
 Arabesque is part of this [Gflowiz  research project](https://geoflowiz.hypotheses.org/), which consists in building mapping applications for flow maping on the web.
 
@@ -40,26 +42,30 @@ One of Arabesque's goals is the web design of a geo visualization application fo
 To this end, it aims to allow data describing geographical interactions to be explored and represented graphically, from different points of view, by focusing on statistical and geographical data filtering, spatial scale issues specific to certain data sets 
 (the world scale or local scale) and their temporality.
 
-## Presentation
+### Presentation
 
 This first version allows the exploration, filtering, geovisualization 
-and representation of complex matrices. it provides a full toolset to filter you origin-destination data and 
-simplify it in order to make clearer and understandable maps.
+and representation of complex matrices. It provides a full toolset to filter you origin-destination data and 
+simplify it in order to make clearer and understandable flowmaps.
 
 _Arabesque_ allows the creation of flow maps from a web browser - 
-equipped with Mozilla or Chrome, from its own datasets.
+equipped with **Mozilla** or **Chrome**, from its own datasets.
 It is based on current technological possibilities, in particular 
 those offered by the new web visualization (built in javascript and HTML 5) 
 and mapping libraries:
 
-([OpenLayers](https://openlayers.org/), 
-[D3.js](https://d3js.org/), 
-[Turf](https://turfjs.org/), 
-[OpenStreetMap](https://www.openstreetmap.org) and 
-[Natural Earth](https://www.naturalearthdata.com/) data). 
+[OpenLayers](https://openlayers.org/ 
+
+[D3.js](https://d3js.org/)
+
+[Turf](https://turfjs.org/)
+
+[OpenStreetMap](https://www.openstreetmap.org)
+
+[Natural Earth](https://www.naturalearthdata.com/)
 
 
-## Challenges
+### Challenges
 
 The challenge of _Arabesque_ consists in offering a set of tools for 
 the analysis and the cartographic representation of complex matrices 
@@ -72,8 +78,8 @@ by different audiences (academic, institutional, socio-economic, educational...)
 
 You can find More imformation about the project' life on the research notebook [geoflowiz.hypotheses.org](https://geoflowiz.hypotheses.org/)
 
-# Works related to Arabesque
 
+## Works related to Arabesque
 
 **2021**
 
