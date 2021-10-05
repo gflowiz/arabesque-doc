@@ -1,28 +1,39 @@
-# About the Authors
+# About the auteurs & contributors of Arabesque
 
-Françoise BAHOKEN, geographer, Research scientist, Université Gustave Eiffel/AME/
-Scientific coordination (coord.), conception and documentation
+Françoise BAHOKEN, geographer & cartographer </br> 
+Research scientist, Université Gustave Eiffel/AME/ </br>
+_Scientific coordination (coord.), conception and documentation_
 
-Étienne CÔME, computer scientist, Research scientist, Université Gustave Eiffel/COSYS/
-Development (coord.) and conception
+Étienne CÔME, statistical & computer scientist</br>
+Research scientist, Université Gustave Eiffel/COSYS/</br>
+_Development (coord.) and conception_
 
-Laurent JÉGOU, geographer, teacher-researcher, Université Toulouse 2 / UMR 5193 LISST
-Development and conception
+Laurent JÉGOU, geographer & cartographer </br>
+Teacher-researcher, Université Toulouse 2 / UMR 5193 LISST</br>
+_Conception (co-coord.)_
 
-Grégoire LE CAMPION, statistical engineer (UMR Passages, Bordeaux)
+Grégoire LE CAMPION, statistician </br>
+Engineer, CNRS/UMR Passages </br>
 Conception
 
-Marion MAISONOBE, geographer, Research scientist CNRS, UMR Géographie-Cités
+Marion MAISONOBE, geographer </br> 
+Research scientist, CNRS/UMR Géographie-Cités/PARIS </br>
 Conception
 
-Nicolas ROELANDT, geomatics engineer, Université Gustave Eiffel/AME/
+Nicolas ROELANDT, geomatician </br>
+Engineer, Université Gustave Eiffel/AME/ </br>
 Conception, documentation
 
 **Trainees**
 
-Thomas BAPAUME, data scientist student, ESIEE Paris (2018-2019)
+Thomas BAPAUME, data scientist student (2018-2019) </br> 
+ESIEE Paris 
 
-Paul FABRE, geomatics student, ENSG Géomatique (2019-2020)
+Paul FABRE, geomatics student (2019-2020) </br>
+ENSG Géomatique 
+
+
+The team is open to any proposal of collaboration on the development/documentation of Arabesque. 
 
 
 
