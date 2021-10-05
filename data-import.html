@@ -88,7 +88,10 @@
 <li class="chapter" data-level="3.4" data-path="interface.html"><a href="interface.html#the-statistical-panel"><i class="fa fa-check"></i><b>3.4</b> The statistical panel</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="data-import.html"><a href="data-import.html"><i class="fa fa-check"></i><b>4</b> Data import</a><ul>
-<li class="chapter" data-level="4.1" data-path="data-import.html"><a href="data-import.html#linksflow-dataset-importation"><i class="fa fa-check"></i><b>4.1</b> Links/flow dataset importation</a></li>
+<li class="chapter" data-level="4.1" data-path="data-import.html"><a href="data-import.html#linksflow-dataset-importation"><i class="fa fa-check"></i><b>4.1</b> Links/flow dataset importation</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="data-import.html"><a href="data-import.html#origin-destination-and-unique-flow-matrice"><i class="fa fa-check"></i><b>4.1.1</b> Origin, Destination and unique flow matrice</a></li>
+<li class="chapter" data-level="4.1.2" data-path="data-import.html"><a href="data-import.html#origin-destination-and-multiscalar-matrice"><i class="fa fa-check"></i><b>4.1.2</b> Origin, Destination and multiscalar matrice</a></li>
+</ul></li>
 <li class="chapter" data-level="4.2" data-path="data-import.html"><a href="data-import.html#nodesvertex-dataset-importation"><i class="fa fa-check"></i><b>4.2</b> Nodes/vertex dataset importation</a></li>
 <li class="chapter" data-level="4.3" data-path="data-import.html"><a href="data-import.html#preset-nodes-dataset"><i class="fa fa-check"></i><b>4.3</b> Preset nodes dataset</a></li>
 <li class="chapter" data-level="4.4" data-path="data-import.html"><a href="data-import.html#checking-missing-nodeslinks-features"><i class="fa fa-check"></i><b>4.4</b> Checking missing nodes/links features</a></li>
@@ -170,14 +173,16 @@
 <h1><span class="header-section-number">4</span> Data import</h1>
 <p>Arabesque also allows you to import your own data sets : (1) flowdata in the form of an origin-destination matrix (adjacency long format in .csv), to agregate them if necessary and (2) nodes dataset before building a readable flowmap.</p>
 <p>For this tutorial, we will use for example the historical trade flows listed in the <a href="https://github.com/gflowiz/sageo-ricardo">RICardo database</a>.</p>
-<p>For more informations about the dataset and its use with Arabesque, see in Refence</p>
+<p>For more informations about the dataset and its use with Arabesque, see in <a href="./examples.html">References</a>.</p>
 <p>The application <em>Arabesque</em> accepts as input files in the following format: .CSV, .JSON and .geoJSON.</p>
 <div id="linksflow-dataset-importation" class="section level2">
 <h2><span class="header-section-number">4.1</span> Links/flow dataset importation</h2>
 <p><em>Arabesque</em> requires the loading of at least one origin-destination links/edges/flow data set. It is a matrix in .CSV (separator: comma) and long format.</p>
+<div id="origin-destination-and-unique-flow-matrice" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Origin, Destination and unique flow matrice</h3>
 <p>You must also declare the 3 minimum fields required for flow mapping: those corresponding to the origin locations, to the destination locations and the flow values.</p>
 <p>If the OD matrix is temporal or available for different categories, you must also choose an aggregation method.</p>
-<p>On the homepage of(<a href="http://arabesque.ifsttar.fr/">Arabesque</a>), load at least one set of flow data.</p>
+<p>On the homepage of <a href="http://arabesque.ifsttar.fr/">Arabesque</a> load at least one set of flow data.</p>
 <p><img src="images/BjvHVHn.png" /></p>
 <ul>
 <li>Click on the browse button</li>
@@ -187,18 +192,24 @@
 <p>Loading data <em>SAGEO_RICardo_edges_small.csv</em>.</p>
 <p><img src="images/GjzU9IE.png" /></p>
 <p>The data must be in long format, with at least 3 columns : origin, destination, flow</p>
-<p>The data must be in long format, with at least 3 columns to identify the origin, destination and volume of flows.</p>
-<p>If the flow data are multiscalar (e.g. flows that concern several social groups, several goods transported or that occur on several dates), it is necessary to aggregate them when loading them into Arabesque.</p>
-<p>Several aggregation functions are available (sum, average, median, maximum, minimum) to simplify the flows.</p>
+<p><em>NOTE</em> : Remember that data must be in long format, with at least 3 columns to identify the origin, destination and volume of flows.</p>
+</div>
+<div id="origin-destination-and-multiscalar-matrice" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> Origin, Destination and multiscalar matrice</h3>
+<p>If the flow data are multiscalar (e.g. flows that concern several social groups, several goods transported or that occur on several dates), agregations procedures are suggested when importing the dataset in <em>Arabesque</em>.</p>
+<p>By default, the sum function is applied in the lack of any specifications. However, the user can choose to apply an average, minimum, maximum or median function calculated on all the matrices or graphs provided.</p>
+<p>It is also possible to choose a single date or to aggregate the data, according to a given function, over a period or for categories.</p>
+<p>This aggregation unction is important because it defines the default flowmap which will be proposed at the entry of <em>Arabesque</em>: the percent of links, nodes and interaction depicted, the intensity of the colors and the opacity of the corresponding signs (see <a href="./data-processing.html">Data processing</a> chapter.</p>
 <p><img src="images/flow_aggreg_import.png" /></p>
 <p>Note: This aggregation does not interfere with the geo-visualization possibilities that will remain available for all existing types.</p>
+</div>
 </div>
 <div id="nodesvertex-dataset-importation" class="section level2">
 <h2><span class="header-section-number">4.2</span> Nodes/vertex dataset importation</h2>
 <p>If you have locational data associated with your ODs, you can load the corresponding node files with “Import Location”,
 otherwise you can use predefined locations with “Preset Location”.</p>
 <p>If you select “Import Location”, you must load a .GEOJSON or .CSV file, then choose the ID of the nodes and their lat/long geographic coordinates.</p>
-<p><strong>Application</strong></p>
+<p><em>EXAMPLE:</em> Application on RIcardo dataset.</p>
 <p>Loading <em>SAGEO_RICardo_nodes.csv</em> data</p>
 <p><img src="images/import_nodes.png" /></p>
 <p>The data must be in long format, with at least 3 columns to identify the place and the latitude (Y) and longitude (X) coordinates.</p>

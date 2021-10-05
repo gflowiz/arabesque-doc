@@ -11,6 +11,8 @@ layer-rearrangement
 the-statistical-panel
 data-import
 linksflow-dataset-importation
+origin-destination-and-unique-flow-matrice
+origin-destination-and-multiscalar-matrice
 nodesvertex-dataset-importation
 preset-nodes-dataset
 checking-missing-nodeslinks-features
