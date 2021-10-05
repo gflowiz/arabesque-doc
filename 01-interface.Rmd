@@ -104,7 +104,17 @@ The present layers are all available on the map - but not necessarily all of the
 
 The layers on the view are positioned in an order that affects their visibility. The top layer will be visible in the foreground.
 
+
 ### Layer rearrangement
+
+The drawing of the different layers and their objects can be finely parameterized in _Arabesque_, in order to take into account the possible complexity of the information (density of the matrix) which requires a particular management of the superimpositions and the arrangements of the layers of links and nodes.
+
+In the example below, the largest links are placed in the foregroundby default, while the largest circles are not. After their rearrangement, the largest links are background and their color intensity has been changed (See Chapter [Designing flowmap signs](./Design-flowmap-signs.html)).
+
+_EXAMPLE:_ rearrangement of nodes and links.
+
+![](images/Dispositions.png)
+
 
 The position of the layers above and below (foreground/lowerground) can be modified by a simple drag and drop.
 
@@ -112,15 +122,15 @@ The position of the layers above and below (foreground/lowerground) can be modif
 ![](images/RIcardo_layout_dragdrop.png)
 
 
-_**Do it yourself**_: 
+_**Do it yoursel!**_: 
 
---Click on the link layer and hold it down;
+-- Click on the link layer and hold it down;
 
---Drag/drop the link layer and place it in the foreground;
+-- Drag/drop the link layer and place it in the foreground;
 
---Release the layer;
+-- Release the layer;
 
---Repeat the same operation with the node layer if necessary._
+-- Repeat the same operation with the node layer if necessary._
 
 
 After that, it can be seen that the flow layer has just been brought to the forefront.
