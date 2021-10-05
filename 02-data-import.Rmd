@@ -4,7 +4,7 @@ Arabesque also allows you to import your own data sets : (1) flowdata in the for
 
 For this tutorial, we will use for example the historical trade flows listed in the [RICardo database](https://github.com/gflowiz/sageo-ricardo). 
 
-For more informations about the dataset and its use with Arabesque, see in Refence
+For more informations about the dataset and its use with Arabesque, see in [References](./examples.html).
 
 The application _Arabesque_ accepts as input files in the following format: .CSV, .JSON and .geoJSON.
 
@@ -13,11 +13,13 @@ The application _Arabesque_ accepts as input files in the following format: .CSV
 
 _Arabesque_ requires the loading of at least one origin-destination links/edges/flow data set. It is a matrix in .CSV (separator: comma) and long format. 
 
+### Origin, Destination and unique flow matrice
+
 You must also declare the 3 minimum fields required for flow mapping: those corresponding to the origin locations, to the destination locations and the flow values. 
 
 If the OD matrix is temporal or available for different categories, you must also choose an aggregation method.
 
-On the homepage of([Arabesque](http://arabesque.ifsttar.fr/)), load at least one set of flow data.
+On the homepage of [Arabesque](http://arabesque.ifsttar.fr/) load at least one set of flow data.
 
 ![](images/BjvHVHn.png)
 
@@ -33,11 +35,20 @@ Loading data *SAGEO_RICardo_edges_small.csv*.
 
 The data must be in long format, with at least 3 columns  : origin, destination, flow
 
-The data must be in long format, with at least 3 columns to identify the origin, destination and volume of flows.
+_NOTE_ : Remember that data must be in long format, with at least 3 columns to identify the origin, destination and volume of flows.
 
-If the flow data are multiscalar (e.g. flows that concern several social groups, several goods transported or that occur on several dates), it is necessary to aggregate them when loading them into Arabesque.
 
-Several aggregation functions are available (sum, average, median, maximum, minimum) to simplify the flows.
+### Origin, Destination and multiscalar matrice
+
+
+If the flow data are multiscalar (e.g. flows that concern several social groups, several goods transported or that occur on several dates), agregations procedures are suggested when importing the dataset in _Arabesque_.
+
+By default, the sum function is applied in the lack of any specifications. However, the user can choose to apply an average, minimum, maximum or median function calculated on all the matrices or graphs provided. 
+
+It is also possible to choose a single date or to aggregate the data, according to a given function, over a period or for categories. 
+
+This aggregation unction is important because it defines the default flowmap which will be proposed at the entry of _Arabesque_: the percent of links, nodes and interaction depicted, the intensity of the colors and the opacity of the corresponding signs (see [Data processing](./data-processing.html) chapter.
+
 
 ![](images/flow_aggreg_import.png)
 
@@ -51,7 +62,7 @@ otherwise you can use predefined locations with "Preset Location".
 
 If you select "Import Location", you must load a .GEOJSON or .CSV file, then choose the ID of the nodes and their lat/long geographic coordinates.
 
-**Application**
+_EXAMPLE:_ Application on RIcardo dataset.
 
 Loading _SAGEO_RICardo_nodes.csv_ data
 
