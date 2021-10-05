@@ -18,7 +18,7 @@ Conception
 Nicolas ROELANDT, geomatics engineer, Université Gustave Eiffel/AME/
 Conception, documentation
 
-**Trainee**
+**Trainees**
 
 Thomas BAPAUME, data scientist student, ESIEE Paris (2018-2019)
 
