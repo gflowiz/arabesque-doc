@@ -52,6 +52,7 @@ london-bike-sharing
 french-commutingmobilités-professionelles-mobpro
 french-school-mobilitiesmobilités-scolaires-mobsco
 exports
+references
 gflowiz-project-arabesque
 geovisualizing-flows-and-networks
 main-goal
