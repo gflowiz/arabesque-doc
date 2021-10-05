@@ -1,25 +1,44 @@
-# Data processing
+# Data pre processing
 
 After loading the data, the creation of a flow map with Arabesque can be broken down into the following main steps:
 
-1. Importing flow datasets (links and/or nodes)
-**2. Processing flow datasets (creation of indicators, statistics)**
-3. Geographical data computing : designing the map background (layers, ...)
-4. Cartographic symbolization : designing the flowmap signs (arrows, ...)
-5. Statistical data computing (filtering, ...)
-7. Export
 
-The links and nodes datasets are automatically modified when importing and _Arabesque_ computes different indicators.
+>1. Importing flow datasets (links and/or nodes)
+>**2. Processing flow datasets (indicators calculation, ...)**
+>3. Geographical data computing : designing the map background (layers, ...)
+>4. Cartographic symbolization : designing the flowmap signs (arrows, ...)
+>5. Statistical data computing (filtering, ...)
+>7. Export
 
-## Data indicators pre processing
 
-*Indicators on links*: Euclidean distance between the origin and destination entities
+The links and nodes datasets are automatically modified when importing and _Arabesque_ computes different indicators and a default flowmap is suggested.
 
-*Indicators on nodes* : see below the additional indicators () automatically calculated on the nodes of the RIcardo data
+
+## Indicators on links 
+
+For the moment, only the euclidean distance between the origin and destination entities is calculated.
+
+## Indicators on nodes 
+
+A list of Various simple and weighted indicators are calculated on the nodes (with reference to the Social Network Analysis (SNA) theory are proposed.
+
+**balance** : difference between the number of in and out degrees.
+
+**outdegree** : number of outgoing links from a places
+
+**indegree** : number of ingoing links from a places
+
+**weigthed Balance** : difference between the number of in and out degrees weighted by the flow value (.ie. volume)
+
+**weigthed degree** : difference between the number of ingoing and outgoing links weigthed by the flow value (.ie. volume).
+
+
+See below the additional indicators automatically calculated on the nodes of the RIcardo data
 
 See below the indicators that have been automatically computed (ie the additional variable) on the nodes of the RIcardo data.
 
 ![](images/import_indic.png)
+
 
 
 These indicators can be downloaded in . csv format (see Export and Save sections). 
@@ -27,18 +46,18 @@ These indicators can be downloaded in . csv format (see Export and Save sections
 Loading links and nodes data into _Arabesque_ leads to the creation of a default map, which is placed in the center of the interface.
 
 
-## Visualize a default flow map
+## Suggested default flowmap
 
 Loading data in Arabesque leads to the creation of a default map to avoid visualizing a "spaghetti effect" when entering the application ; all the defined parameters can then be modified during the exploration.
 
-By default, the links are represented in shades of blue and the nodes in red. The map is presented in the WGS84 projection, according to the lat/lon coordinates* declared during the import.
+By default, the links are represented in shades of blue and the nodes in red. The map is presented in the WGS84 projection, according to the lat/lon coordinates declared during the import.
 
 Except in the case of loading a projected geometry as input, the map is presented in WGS84.
 
 Hereby is the Ricardo's dataset default map with global statistic of the percent of links versus the percent of volume of flows and nodes.
 
 ![](images/defaut_flowmap.png)
-Only the 10% most important links (in value) are represented and symbolized (see the automatic legend) according to their intensity (the flow variable entered at import).
+**For all default map, only the 10% most important links (in value) are represented** and symbolized (see the automatic legend) according to their intensity (the flow variable entered at import).
 The corresponding nodes are symbolized according to their degree (variable calculated automatically during the import).
 
 
