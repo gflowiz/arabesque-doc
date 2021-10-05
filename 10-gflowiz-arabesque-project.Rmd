@@ -1,15 +1,13 @@
 
 # GFLOWIZ project & Arabesque
 
-### Geovisualizing flows and networks
-
 From a scientific point of view, [Gflowiz  research project](https://geoflowiz.hypotheses.org/) is part of the new paradigm of **visualization cartography** introduced by Mac Eachren in 2004, which follows Waldo Tobler's ideas of **analytical cartography**. This vision of cartographic analysis consists in combining within the same interface the two pillars of representation: (geo)visualization and the upstream data processing of the corresponding geographic and statistical data.
 
 The main challenge of gFlowiz is to follow this thread, by relying on current technological possibilities, in particular those offered by the new visualization and web mapping libraries
 
 ![Geographic flows visualisation - GFlowiz](images/logo_gflowiz.jpg)
 
-### Funding {-}
+# Funding {-}
 
 The project is funded by former IFSTTAR's scientific direction 
 (VP Recherche Univ. Gustave Eiffel), with the participation of the 
@@ -18,47 +16,50 @@ The team is strengthened by the participation of members of CNRS laboratories,
 as well as it is  supported by the research GDR Magis through the GEOWEB
 prospective action (2019).
 
-### Contributors {-}
+# Contributors {-}
 
-- Scientific responsibility, design and coordination </br>
- Françoise Bahoken, Etienne Côme & Laurent Jégou (coord.) 
+- Scientific responsibility, design, development and coordination </br>
+ Françoise BAHOKEN, Étienne CÔME & Laurent JÉGOU
  
 - Development & Design </br>
-Etienne Côme (coord.), Thomas Bapaume (2019) & Paul Fabre (2020).
+Étienne CÔME (coord.), Thomas BAPAUME (2019) & Paul FABRE (2020).
 
 - Other members </br>
-Grégoire Le Campion, Marion Maisonobe, Alain Nguyen (2018) & Nicolas Roelandt
+Grégoire LE CAMPION, Marion MAISONOBE, Alain NGUYEN (2018) & Nicolas ROELANDT
 
 
-## About _Arabesque_ {-}
+# About _Arabesque_ {-}
 
-### Main goal
+## Main goal
 
-![](/images/logo_arabesque_clair.png)
+![](images/logo_arabesque_clair.png)
 
 Arabesque is part of this [Gflowiz  research project](https://geoflowiz.hypotheses.org/), which consists in building mapping applications for flow maping on the web.
 
-One of Arabesque's goals is the web design of a geo visualization application for flow
-or traffic data to analyze the geographical determinants of spatial mobility. 
+One of Arabesque's goals is the web design of a geo visualization application for flow or traffic data to analyze the geographical determinants of spatial mobility. 
 To this end, it aims to allow data describing geographical interactions to be explored and represented graphically, from different points of view, by focusing on statistical and geographical data filtering, spatial scale issues specific to certain data sets 
 (the world scale or local scale) and their temporality.
 
-
-### Presentation
+## Presentation
 
 This first version allows the exploration, filtering, geovisualization 
-and representation of complex matrices. 
-it provides a full toolset to filter you origin-destination data and 
+and representation of complex matrices. it provides a full toolset to filter you origin-destination data and 
 simplify it in order to make clearer and understandable maps.
 
 _Arabesque_ allows the creation of flow maps from a web browser - 
 equipped with Mozilla or Chrome, from its own datasets.
 It is based on current technological possibilities, in particular 
 those offered by the new web visualization (built in javascript and HTML 5) 
-and mapping libraries ([OpenLayers](https://openlayers.org/), [D3.js](https://d3js.org/), [Turf](https://turfjs.org/), [OpenStreetMap](https://www.openstreetmap.org) and [Natural Earth](https://www.naturalearthdata.com/) data). 
+and mapping libraries:
+
+([OpenLayers](https://openlayers.org/), 
+[D3.js](https://d3js.org/), 
+[Turf](https://turfjs.org/), 
+[OpenStreetMap](https://www.openstreetmap.org) and 
+[Natural Earth](https://www.naturalearthdata.com/) data). 
 
 
-### Challenges {-}
+## Challenges
 
 The challenge of _Arabesque_ consists in offering a set of tools for 
 the analysis and the cartographic representation of complex matrices 
@@ -69,9 +70,62 @@ Its techniques allow an easy exploration, a fluidity of the display
 in a simple configuration facilitating the appropriation of flow mapping 
 by different audiences (academic, institutional, socio-economic, educational...).
 
+You can find More imformation about the project' life on the research notebook [geoflowiz.hypotheses.org](https://geoflowiz.hypotheses.org/)
 
-You can find More imformation about the project 
+# Works related to Arabesque
 
-![](/images/logo-hypotheses.png)
-[geoflowiz.hypotheses.org](https://geoflowiz.hypotheses.org/).
 
+**2021**
+
+Roelandt N., Bahoken F., Le Campion G., Jégou L., Maisonobe M., Mericskay B., Côme E. (in press), One Arabesque in the small world of OD webmaps, Proceedings of the 2021 edition of the FOSS4G 2021 – Academic Track, International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences (ISPRS). URL: https://www.isprs.org/. Version reproductible. 
+
+Bahoken F., Côme É., Jégou L. & Roelandt N. (2021), Arabesque, une application d’exploration et de visualisation thématique de flux dans le géoweb. Communication au Colloque Cartomob, Session Ateliers & démonstrations. 15/06/2021
+
+Bahoken F., Côme É. et Jégou L. (2021), Arabesque : Explorer et visualiser facilement vos flux géo-localisés sur le web – Meetup Visualisation, association Toulouse dataviz (TDV). 13 avril 2021. [Écouter] [support]
+
+
+**2020**
+
+
+Bahoken F., Le Campion G., Maisonobe M., Jégou L., Côme É. (2020), « Typologie d’un geoweb des flux et réseaux / Typology of a flow and network geoweb », Géomatica Journal: URL : https://cdnsciencepub.com/doi/abs/10.1139/geomat-2020-0007 ; DOI : 10.1139/geomat-2020-0007.
+      
+Girard P. et Dedinger B. (2020), Pourquoi et comment géolocaliser le commerce mondial des XIXe-miXXe siècles ? : Retour d’expérience sur l’usage de wikidata comme gazetteer historique et de l’application de cartographie de flux Arabesque, Humanistica, Medialab Sciences-Po. et Centre d’histoire de Sciences-Po., en ligne
+
+Roelandt N., Bahoken F., Jégou L., Côme É., Le Campion G (2020), arabesque : a geographic flow visualization application, FOSDEM’20, Bruxelles [FOSDEM’20 : Session Géospatial Devroom]
+
+**2019**
+        
+Jégou J., Maisonobe M. (2019), Introduction à l’exploration et la représentation de flux à l’échelle mondiale : l’exemple du commerce international et des collaborations scientifiques entre villes, Semaine DataSHS, Toulouse, Session 8. Conférences et ateliers, 9-13 décembre 2019. Dépôt.
+        
+Côme E., Bapaume T., Jégou L., Bahoken F., Maisonobe M., Roelandt N., Le Campion G. (2019), Arabesque, application d’exploration et de géovisualisation de données de flux et de réseaux, in: Actes de la conférence internationale de géomatique (SAGEO’2019), Session stockages et flux, Clermont-Ferrand, 13-15 novembre 2019, pp. 265-264. Actes_Sageo2019.
+       
+Bahoken F., Le Campion G., Jégou L., Maisonobe M., Côme E. (2019), Panorama d’un geoweb des flux et des réseaux, in: Actes de la conférence internationale de géomatique (SAGEO’2019), Session stockages et flux, Clermont-Ferrand, 13-15 novembre 2019, pp. 218-231. Actes_sageo2019.
+        
+Bahoken F. (2019), Panorama critique des applications web de (géo)visualisation de flux migratoires, Conférence invitée à l’Espace géonumérique, Festival international de géographie, Saint-Dié-des-Vosges, 5 octobre 2019.
+        
+
+Bapaume T. (2019) Développement de l’interface web Arabesque de géo-visualisation de flux et de mouvements, Mémoire de fin d’études d’ingénieur à l’ESIEE, Université Paris-Est Marne-la-vallée.
+
+
+Roelandt N., Bahoken F., Jégou L., Maisonobe M., Côme E., Le Campion G.,  Bapaume T. (2019) gFlowiz, an open science framework to analyze and geovisualize networks and flow datasets, FOSS4G, Bucarest, Voir la vidéo.
+
+Le Campion G., Nguyen A. (2019) Dashboard for exploring web applications of geographic flow and movements (DBgFlowiz), IFSTTAR, AME-SPLOTT / COSYS-GRETTIA, and CNRS-UMR Passages. (Accéder)
+     
+**2018**
+    
+Bahoken F., Côme E., Jégou L., Maisonobe, M., Le Campion, G. (2018), What about flows, networks and movements in the geoweb? Workshop « Flux et réseaux dans le geoweb : état de la question, verrous, défis techniques et technologiques », 20 décembre 2018 (en ligne).
+    
+Bahoken F., Côme E., Jégou L., Le Campion, G. (2018), Flux et réseaux de transport dans le geoweb, Séminaire de travail, Projet Fédérateur Mobilités et transitions numériques, IFSTTAR, Marne-la-Vallée, 03 décembre 2018 (Programme du séminaire).
+  
+Bahoken F., Nguyen A., Jégou L., Côme E. (2018), Qu’en est-il des flux dans le geoweb ? Repenser les cartes à l’ère du Web. Approches critiques et enjeux politiques, sociaux et économiques des nouvelles données territoriales, Section 3 : Expérimentations Web, Bordeaux, 10-11 septembre 2018.
+    
+Nguyen A. (2018), Applications d’analyses et de (géo)visualisations de données d’interactions territoriales (flux, trafics et mouvements), Mémoire de fin d’études en Master 2 Géomatique, applications et accessibilité – Mention : Mathématiques et informatique appliquées aux sciences humaines et sociales, (MIASHS).
+
+Nguyen A., Bahoken F. (2018), Applications d’analyse et de visualisations de données d’interactions territoriales, In : Séminaire de travail du Projet Fédérateur Mobilités et transitions numériques (MobtransNum), IFSTTAR, Champs-sur-Marne, 25 mai 2018 (en ligne).
+
+
+**Presentations**
+
+[Arabesque/presentations](https://github.com/gflowiz/presentations)
+
+**All the works and publications of the team** [gFlowiz/PUBLI](https://geoflowiz.hypotheses.org/accueil/travaux-et-productions/travaux-et-references)
