@@ -1,1 +1,8 @@
 # Exports
+
+The flowmap including the legend can be exported in .PNG format.
+
+The workspace as it is can be saved as a .ZIP file for later opening.
+
+![](images/central_panel_exports.png)
+
