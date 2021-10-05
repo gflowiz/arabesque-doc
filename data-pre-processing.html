@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>5 Data processing | Arabesque documentation</title>
+  <title>5 Data pre processing | Arabesque documentation</title>
   <meta name="description" content="Online documentation of the Arabesque web flow mapping application" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="5 Data processing | Arabesque documentation" />
+  <meta property="og:title" content="5 Data pre processing | Arabesque documentation" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="5 Data processing | Arabesque documentation" />
+  <meta name="twitter:title" content="5 Data pre processing | Arabesque documentation" />
   
   <meta name="twitter:description" content="Online documentation of the Arabesque web flow mapping application" />
   
@@ -24,7 +24,7 @@
 <meta name="author" content="Françoise BAHOKEN &amp; Nicolas ROELANDT (Univ-Gustave Eiffel/AME)" />
 
 
-<meta name="date" content="2021-10-04" />
+<meta name="date" content="2021-10-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -91,9 +91,10 @@
 <li class="chapter" data-level="4.4" data-path="data-import.html"><a href="data-import.html#checking-missing-nodeslinks-features"><i class="fa fa-check"></i><b>4.4</b> Checking missing nodes/links features</a></li>
 <li class="chapter" data-level="4.5" data-path="data-import.html"><a href="data-import.html#import-a-flowmap-project"><i class="fa fa-check"></i><b>4.5</b> Import a flowmap project</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>5</b> Data processing</a><ul>
-<li class="chapter" data-level="5.1" data-path="data-processing.html"><a href="data-processing.html#data-indicators-pre-processing"><i class="fa fa-check"></i><b>5.1</b> Data indicators pre processing</a></li>
-<li class="chapter" data-level="5.2" data-path="data-processing.html"><a href="data-processing.html#visualize-a-default-flow-map"><i class="fa fa-check"></i><b>5.2</b> Visualize a default flow map</a></li>
+<li class="chapter" data-level="5" data-path="data-pre-processing.html"><a href="data-pre-processing.html"><i class="fa fa-check"></i><b>5</b> Data pre processing</a><ul>
+<li class="chapter" data-level="5.1" data-path="data-pre-processing.html"><a href="data-pre-processing.html#indicators-on-links"><i class="fa fa-check"></i><b>5.1</b> Indicators on links</a></li>
+<li class="chapter" data-level="5.2" data-path="data-pre-processing.html"><a href="data-pre-processing.html#indicators-on-nodes"><i class="fa fa-check"></i><b>5.2</b> Indicators on nodes</a></li>
+<li class="chapter" data-level="5.3" data-path="data-pre-processing.html"><a href="data-pre-processing.html#suggested-default-flowmap"><i class="fa fa-check"></i><b>5.3</b> Suggested default flowmap</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="design-and-style-of-the-map-background.html"><a href="design-and-style-of-the-map-background.html"><i class="fa fa-check"></i><b>6</b> Design and style of the map background</a><ul>
 <li class="chapter" data-level="6.1" data-path="design-and-style-of-the-map-background.html"><a href="design-and-style-of-the-map-background.html#add-projection"><i class="fa fa-check"></i><b>6.1</b> Add Projection</a></li>
@@ -162,36 +163,46 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="data-processing" class="section level1">
-<h1><span class="header-section-number">5</span> Data processing</h1>
-<p>The creation of a flow map with Arabesque can be broken down into the following main steps:</p>
+<div id="data-pre-processing" class="section level1">
+<h1><span class="header-section-number">5</span> Data pre processing</h1>
+<p>After loading the data, the creation of a flow map with Arabesque can be broken down into the following main steps:</p>
+<blockquote>
 <ol style="list-style-type: decimal">
 <li>Importing flow datasets (links and/or nodes)
-<strong>2. Processing flow datasets (creation of indicators, statistics)</strong></li>
+<strong>2. Processing flow datasets (indicators calculation, …)</strong></li>
+<li>Geographical data computing : designing the map background (layers, …)</li>
+<li>Cartographic symbolization : designing the flowmap signs (arrows, …)</li>
 <li>Statistical data computing (filtering, …)</li>
-<li>Geographical data computing (choosing the map background…)</li>
-<li>Graphic symbolization for thematic flow mapping purposes</li>
-<li>Flowmap decoration</li>
 <li>Export</li>
 </ol>
-<p>The links and nodes datasets are automatically modified when importing and <em>Arabesque</em> computes different indicators.</p>
-<div id="data-indicators-pre-processing" class="section level2">
-<h2><span class="header-section-number">5.1</span> Data indicators pre processing</h2>
-<p><em>Indicators on links</em>: Euclidean distance between the origin and destination entities</p>
-<p><em>Indicators on nodes</em> : see below the additional indicators () automatically calculated on the nodes of the RIcardo data</p>
+</blockquote>
+<p>The links and nodes datasets are automatically modified when importing and <em>Arabesque</em> computes different indicators and a default flowmap is suggested.</p>
+<div id="indicators-on-links" class="section level2">
+<h2><span class="header-section-number">5.1</span> Indicators on links</h2>
+<p>For the moment, only the euclidean distance between the origin and destination entities is calculated.</p>
+</div>
+<div id="indicators-on-nodes" class="section level2">
+<h2><span class="header-section-number">5.2</span> Indicators on nodes</h2>
+<p>A list of Various simple and weighted indicators are calculated on the nodes (with reference to the Social Network Analysis (SNA) theory are proposed.</p>
+<p><strong>balance</strong> : difference between the number of in and out degrees.</p>
+<p><strong>outdegree</strong> : number of outgoing links from a places</p>
+<p><strong>indegree</strong> : number of ingoing links from a places</p>
+<p><strong>weigthed Balance</strong> : difference between the number of in and out degrees weighted by the flow value (.ie. volume)</p>
+<p><strong>weigthed degree</strong> : difference between the number of ingoing and outgoing links weigthed by the flow value (.ie. volume).</p>
+<p>See below the additional indicators automatically calculated on the nodes of the RIcardo data</p>
 <p>See below the indicators that have been automatically computed (ie the additional variable) on the nodes of the RIcardo data.</p>
 <p><img src="images/import_indic.png" /></p>
 <p>These indicators can be downloaded in . csv format (see Export and Save sections).</p>
 <p>Loading links and nodes data into <em>Arabesque</em> leads to the creation of a default map, which is placed in the center of the interface.</p>
 </div>
-<div id="visualize-a-default-flow-map" class="section level2">
-<h2><span class="header-section-number">5.2</span> Visualize a default flow map</h2>
+<div id="suggested-default-flowmap" class="section level2">
+<h2><span class="header-section-number">5.3</span> Suggested default flowmap</h2>
 <p>Loading data in Arabesque leads to the creation of a default map to avoid visualizing a “spaghetti effect” when entering the application ; all the defined parameters can then be modified during the exploration.</p>
-<p>By default, the links are represented in shades of blue and the nodes in red. The map is presented in the WGS84 projection, according to the lat/lon coordinates* declared during the import.</p>
+<p>By default, the links are represented in shades of blue and the nodes in red. The map is presented in the WGS84 projection, according to the lat/lon coordinates declared during the import.</p>
 <p>Except in the case of loading a projected geometry as input, the map is presented in WGS84.</p>
 <p>Hereby is the Ricardo’s dataset default map with global statistic of the percent of links versus the percent of volume of flows and nodes.</p>
 <p><img src="images/defaut_flowmap.png" />
-Only the 10% most important links (in value) are represented and symbolized (see the automatic legend) according to their intensity (the flow variable entered at import).
+<strong>For all default map, only the 10% most important links (in value) are represented</strong> and symbolized (see the automatic legend) according to their intensity (the flow variable entered at import).
 The corresponding nodes are symbolized according to their degree (variable calculated automatically during the import).</p>
 
 </div>

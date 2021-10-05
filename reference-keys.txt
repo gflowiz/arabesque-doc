@@ -13,9 +13,10 @@ nodesvertex-dataset-importation
 preset-nodes-dataset
 checking-missing-nodeslinks-features
 import-a-flowmap-project
-data-processing
-data-indicators-pre-processing
-visualize-a-default-flow-map
+data-pre-processing
+indicators-on-links
+indicators-on-nodes
+suggested-default-flowmap
 design-and-style-of-the-map-background
 add-projection
 add-title
