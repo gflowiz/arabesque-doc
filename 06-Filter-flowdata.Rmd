@@ -64,7 +64,7 @@ Three main possibilities are proposed
 -- (3) visual filtering **using a slider** (hereby, on links)
 
 
-![](images/Slider_temp.png)
+![](images/schema_Slider_temp.png)
 
 
 ## Filtering by links
