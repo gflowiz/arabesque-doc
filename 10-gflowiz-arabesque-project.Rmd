@@ -54,7 +54,7 @@ It is based on current technological possibilities, in particular
 those offered by the new web visualization (built in javascript and HTML 5) 
 and mapping libraries:
 
-[OpenLayers](https://openlayers.org/ 
+[OpenLayers](https://openlayers.org/) 
 
 [D3.js](https://d3js.org/)
 
@@ -62,7 +62,7 @@ and mapping libraries:
 
 [OpenStreetMap](https://www.openstreetmap.org)
 
-[Natural Earth](https://www.naturalearthdata.com/)
+[NaturalEarth data](https://www.naturalearthdata.com/)
 
 
 ### Challenges
