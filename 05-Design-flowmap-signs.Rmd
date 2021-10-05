@@ -10,23 +10,23 @@ Several types of actions can be performed on all the layer level available in th
 
 ## Types of action on a layer
 
-![](images/Buton_action_visible.png)
+![](images/Buton_action_visible.png) Visible/invisible the layer.
 
-Visible/invisible the layer.
+
 
 
 ![](images/Buton_action_semio.png) 
 Semiology parameters for nodes and links: color, size, text, opacity.
 
 
-![](images/Buton_action_geom.png) 
-
-Geometry parameters for changing links/arrows shape only (not available for nodes): orientation, type of link (curve, triange, ...) and arrow head parameters.
+![](images/Buton_action_geom.png) Geometry parameters for changing links/arrows shape only (not available for nodes): orientation, type of link (curve, triange, ...) and arrow head parameters.
 
 
-![](images/Buton_action_delete.png) 
 
-Definitively deletes the layer.
+
+![](images/Buton_action_delete.png) Definitively deletes the layer.
+
+
 
 
 ## Designing the nodes
@@ -127,9 +127,7 @@ or
 ![](./images/Icon_links_geom.png) Modify the style of the links 
 
 
-
 ![](./images/Icon_links_brush.png) gives access to the window for setting the style of the link layer.
-
 
 
 ### Semiology parameters
