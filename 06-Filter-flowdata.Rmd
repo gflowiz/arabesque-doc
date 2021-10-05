@@ -1,2 +1,191 @@
 # Filtering flow data (nodes/links)
 
+
+
+The aim of filtering procedures is to reduce the graphic complexity of the flow map, such as the following example, and to select useful information/links/nodes to obtain an interesting flowmap.
+
+
+_EXAMPLE:_ RICardo international trade flows.
+
+Without filtering, the maps patterns reveals a _spaghetti-effect_.
+
+![](images/RICardo_spaghetti.PNG)
+
+The selected information shown is described in percent on the bottom of the right panel. Here, all the information is represented :100% of the links,100% of the nodes and 100% of the total information).
+
+
+Filtering can be performed in _Arabesque_ on all variables describing the nodes and/or links. 
+
+
+## Available filtering procedures
+
+
+### Filtering possibilities
+
+Filtering is available on numerical, temporal and categorical variables.
+
+
+#### Numerical variables
+
+Numerical filtering applies to quantitative (absolute, continuous or pseudo-continuous) dat is done either visually with a brush on an interactive histogram or bar chart. It is also possible to indicate a threshold. 
+
+#### Temporal variables
+
+The filtering possibilities of the temporal matrices are currently only available for links. They concern the choice of a date or a period, in a numerical or graphical form (slider). Three date formats are available (string, hours, timestamp).
+
+#### Categorical variables
+
+Categorical filtering is applied to nominal qualitative data available in node and/or link datasets. Three possibilities are offered, graphically and numerically:
+
+-- **Selection of multiple variables**: the user chooses one or more of the available categorical variables (e.g., prefectures and sub-prefectures if a variable specifying the administrative profile of French cities is available) or the type of links (e.g., import or export for trade data);
+
+-- **Selection of a single variable**: the user chooses a single variable (for the nodes: for example, the flows from and to France for mobility data; the import type flows for trade data);
+
+-- **Selection by deletion of a single variable**: the user chooses one or more variables relating to the nodes and links to be deleted. If the deletion selection concerns nodes, all the corresponding links (for example, the Ile-de-France region for an analysis at the national level) are deleted.
+
+
+### Implementing filtering
+
+The _Arabesque_ filtering possibilities depend on the type of variable/procedure of filtering, as well as the corresponding graph for visual implementation.
+
+Three main possibilities are proposed
+
+-- (1) visual filtering using modular* **selection area (brush)** applied on an histogram or an bar chart (see above) ;
+
+-- (2) **numerical thresholding** by indicating a threshold ;
+
+
+![](images/schema_histogram.png)
+
+
+![](images/schema_BarChart.png)
+
+
+-- (3) visual filtering **using a slider** (hereby, on links)
+
+
+![](images/Slider_temp.png)
+
+
+## Filtering by links
+
+![](images/icon_links_filtering.png) Icon indicating the existence of a filtering possibility applied on the links.
+
+
+### Add filter
+
+
+![](images/Add_stats_Filter.png)
+
+
+
+First, it is to click on Add filter on the bottom of the right panel, then on Link in the opened window.
+
+
+![](images/Add_filter_links1.png)
+
+
+The most common filtering consists in thresholding on the flow values (the volume variable declared when importing the data)
+
+![](images/Add_filter_links_volume.png)
+
+For links, the possibility of filtering according to the distance traveled is also proposed.
+
+
+### Choose the format of the variable to be filtered
+
+You must declare the type of data so that the corresponding graph can be displayed to allow visual thresholding.
+
+
+![](images/Add_filter_links.png)
+
+**Categorial** is for qualitative categorical variables
+
+**Numeral** is for filtering with the slider on a measure or on an interval of values, on a quantitative variable.
+
+**Remove** is for deleting one or more modality/measure relating to links (and the corresponding nodes, and reversly) from be flowmap.
+
+**One category** is for filtering on a single modality of a qualitative variable
+
+**Temporal** is for filtering with a slider a time variable.
+
+
+Above, the volume is declare as numeral for plotting the resulting map with RICardo data set:
+
+
+![](images/RICardo_filter_links_numeral.png)
+
+The selected information shown is described in percent on the bottom of the panel. Here only 2,6% of the links and 15% of the nodes represents 56% of the total volume of trade flows.
+
+The minimum and maximum values are automatically shown on the histogram. It is possible to change these values by brushing on the histogram.
+
+
+### Multi variables filtering
+
+Several filter can be applied on links. Hereby, we add a second filter on the distance variable. 
+
+
+![](images/Add_filter_links_dist.png)
+
+The two filter will then be available in the right panel (hereby, volume and distance)
+
+![](images/Add_links_filter_vol_distance.png)
+
+Only flows that have traveled less than 4900 km are depicted.
+
+
+### Local filter of links: by origin or destination
+
+It is also possible to filter the links by origin or by destination.
+
+![](images/Add_links_filter_origin.png)
+
+Then, it is a matter of specifying a type, here categorical, to display the flows issued from a country. 
+
+
+![](images/Add_filter_links_origin_categorial.png)
+
+You must then choose the country displayed, below, France.
+
+
+![](images/Add_links_filter_origin_France.png)
+
+
+_NOTE_: in order to be able to see all the flows from one place of origin (or destination), it is necessary to set the previous filters to zero (but it is not necessary to delete them).
+
+
+### Filter by a categorical variable
+
+It is possible to select several categorical variables (ie several countries of origin).
+
+
+![](images/Add_filter_links_category.png)
+
+
+### Filter by a temporal variable
+
+The filtering of temporal data considers different field formats: date, hours and time stamp.
+
+
+![](images/Add_filter_links_temporal.png)
+
+### Filter by a Remove
+
+
+
+
+
+
+## Filtering by nodes
+
+First, it is to click on Add filter, then on Node.
+
+![](images/icon_nodes_filtering.png) Icon indicating the existence of a filtering possibility applied on the nodes.
+
+
+![](images/Add_filter_nodes1.png)
+
+
+
+
+
