@@ -91,7 +91,10 @@ See [Design flowmap signs](./Design-flowmap-signs.html) section.
 
 In practice, a map is composed by several layer such as the bounding boxes, the graticules, the countries of land, etc.
 
-All these layers can be loaded in the map design background section by Add Layers. 
+
+### Layers forming a flowmap
+
+All these layers (from RIcardo example) can be loaded in the map design background section by Add Layers. 
 
 They then appear in the layer manager sub-panel, one above the other as shown below.
 
@@ -101,7 +104,26 @@ The present layers are all available on the map - but not necessarily all of the
 
 The layers on the view are positioned in an order that affects their visibility. The top layer will be visible in the foreground.
 
-The position of the layers above and below (foreground or not) can be modified by a simple drag and drop.
+### Layer rearrangement
+
+The position of the layers above and below (foreground/lowerground) can be modified by a simple drag and drop.
+
+
+![](images/RIcardo_layout_dragdrop.png)
+
+
+_**Do it yourself**_: 
+
+--Click on the link layer and hold it down;
+
+--Drag/drop the link layer and place it in the foreground;
+
+--Release the layer;
+
+--Repeat the same operation with the node layer if necessary._
+
+
+After that, it can be seen that the flow layer has just been brought to the forefront.
 
 
 ## The statistical panel
