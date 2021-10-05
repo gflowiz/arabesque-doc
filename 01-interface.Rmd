@@ -1,10 +1,24 @@
 # Interface
 
-The general structure of the interface of Arabesque is composed of three panel. 
-- The **central*panel** is for displaying the map - centered in France here.
+The different steps of the creation/exploration/geovisualization of a flowmap are accessible through the interface of Arabesque.
 
-The two side panels are for playing with information.
+
+>1. Importing flow datasets (links and/or nodes)
+>2. Processing flow datasets (indicators calculation, ...)
+>3. **Geographical data computing : designing the map background (layers, ...)**
+>4. **Cartographic symbolization : designing the flowmap signs (arrows, ...)**
+>5. **Statistical data computing (filtering, ...)**
+>7. **Export**
+
+
+**The general structure of the interface** is composed of three panels.
+
+- The **central panel** is for displaying the map - centered in France here.
+
+The two side panels are for playing with information:
+
 - The **left panel** is for dealing with geometries and geographical layers. Here are displayed CARTO Based map : Voyager and 
+
 - The **right panel** is for playing with the flow data set.
 
 ![](images/panels_arabesque.png)
@@ -51,8 +65,10 @@ The symbolization elements (size, color and opacity) of the nodes and links are 
 
 ## The geographic panel
 
-The left panel is to **design the map** :
+The left panel is to **design the map**:
+
 - dealing with the background as the geographical/geometrical layers 
+
 - customize the _design_/style of the nodes and links features
 map.
 
@@ -63,9 +79,13 @@ The management of geographic information is composed of two sub-sections:
 ![](images/Buton_home.png) Return to the [home page](arabesque.ifsttar.fr) to start a new view.
 
 
-Actions on the background of the map are for changing projections of the current map and/or to add other layers : remote or personal one. See [Design map background](./Design-map-background.html) section.
+Actions on the background of the map are for changing projections of the current map and/or to add other layers : remote or personal one. 
 
-Actions on the design/style is for (additional) geographic layers that have been adding through the previous action. See [Design flowmap signs](./Design-flowmap-signs.html) section.
+See [Design map background](./Design-map-background.html) section.
+
+Actions on the design/style is for (additional) geographic layers that have been adding through the previous action. 
+
+See [Design flowmap signs](./Design-flowmap-signs.html) section.
 
 ## The geographic layer manager
 
@@ -93,7 +113,4 @@ The **right panel** is for playing with the flow data set, nodes and links, and 
 
 
 ![](images/icon_nodes_filtering.png) Display a filtering on the nodes
-
-
-
 
