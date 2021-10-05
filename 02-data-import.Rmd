@@ -4,9 +4,10 @@ Arabesque also allows you to import your own data sets : (1) flowdata in the for
 
 For this tutorial, we will use for example the historical trade flows listed in the [RICardo database](https://github.com/gflowiz/sageo-ricardo). 
 
-For more informations about the dataset and its use with Arabesque, see:
+For more informations about the dataset and its use with Arabesque, see in Refence
 
-*Reference* : Girard P. et Dedinger B. (2020), Pourquoi et comment géolocaliser le commerce mondial des XIXe-miXXe siècles ? : Retour d’expérience sur l’usage de wikidata comme gazetteer historique et de l’application de cartographie de flux Arabesque, _Humanistica_, Medialab Sciences-Po. et Centre d’histoire de Sciences-Po., en ligne.
+The application _Arabesque_ accepts as input files in the following format: .CSV, .JSON and .geoJSON.
+
 
 ## Links/flow dataset importation
 
