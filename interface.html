@@ -81,7 +81,10 @@
 <li class="chapter" data-level="3.1.2" data-path="interface.html"><a href="interface.html#primary-legend"><i class="fa fa-check"></i><b>3.1.2</b> Primary legend</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="interface.html"><a href="interface.html#the-geographic-panel"><i class="fa fa-check"></i><b>3.2</b> The geographic panel</a></li>
-<li class="chapter" data-level="3.3" data-path="interface.html"><a href="interface.html#the-geographic-layer-manager"><i class="fa fa-check"></i><b>3.3</b> The geographic layer manager</a></li>
+<li class="chapter" data-level="3.3" data-path="interface.html"><a href="interface.html#the-geographic-layer-manager"><i class="fa fa-check"></i><b>3.3</b> The geographic layer manager</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="interface.html"><a href="interface.html#layers-forming-a-flowmap"><i class="fa fa-check"></i><b>3.3.1</b> Layers forming a flowmap</a></li>
+<li class="chapter" data-level="3.3.2" data-path="interface.html"><a href="interface.html#layer-rearrangement"><i class="fa fa-check"></i><b>3.3.2</b> Layer rearrangement</a></li>
+</ul></li>
 <li class="chapter" data-level="3.4" data-path="interface.html"><a href="interface.html#the-statistical-panel"><i class="fa fa-check"></i><b>3.4</b> The statistical panel</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="data-import.html"><a href="data-import.html"><i class="fa fa-check"></i><b>4</b> Data import</a><ul>
@@ -165,11 +168,26 @@
             <section class="normal" id="section-">
 <div id="interface" class="section level1">
 <h1><span class="header-section-number">3</span> Interface</h1>
-<p>The general structure of the interface of Arabesque is composed of three panel.
-- The **central*panel** is for displaying the map - centered in France here.</p>
-<p>The two side panels are for playing with information.
-- The <strong>left panel</strong> is for dealing with geometries and geographical layers. Here are displayed CARTO Based map : Voyager and
-- The <strong>right panel</strong> is for playing with the flow data set.</p>
+<p>The different steps of the creation/exploration/geovisualization of a flowmap are accessible through the interface of Arabesque.</p>
+<blockquote>
+<ol style="list-style-type: decimal">
+<li>Importing flow datasets (links and/or nodes)</li>
+<li>Processing flow datasets (indicators calculation, …)</li>
+<li><strong>Geographical data computing : designing the map background (layers, …)</strong></li>
+<li><strong>Cartographic symbolization : designing the flowmap signs (arrows, …)</strong></li>
+<li><strong>Statistical data computing (filtering, …)</strong></li>
+<li><strong>Export</strong></li>
+</ol>
+</blockquote>
+<p><strong>The general structure of the interface</strong> is composed of three panels.</p>
+<ul>
+<li>The <strong>central panel</strong> is for displaying the map - centered in France here.</li>
+</ul>
+<p>The two side panels are for playing with information:</p>
+<ul>
+<li><p>The <strong>left panel</strong> is for dealing with geometries and geographical layers. Here are displayed CARTO Based map : Voyager and</p></li>
+<li><p>The <strong>right panel</strong> is for playing with the flow data set.</p></li>
+</ul>
 <p><img src="images/Panels_arabesque.PNG" /></p>
 <div id="the-central-panel" class="section level2">
 <h2><span class="header-section-number">3.1</span> The central panel</h2>
@@ -198,28 +216,45 @@
 </div>
 <div id="the-geographic-panel" class="section level2">
 <h2><span class="header-section-number">3.2</span> The geographic panel</h2>
-<p>The left panel is to <strong>design the map</strong> :
-- dealing with the background as the geographical/geometrical layers
-- customize the <em>design</em>/style of the nodes and links features
-map.</p>
+<p>The left panel is to <strong>design the map</strong>:</p>
+<ul>
+<li><p>dealing with the background as the geographical/geometrical layers</p></li>
+<li><p>customize the <em>design</em>/style of the nodes and links features
+map.</p></li>
+</ul>
 <p>The management of geographic information is composed of two sub-sections:</p>
 <div class="figure">
 <img src="images/geom_panel.PNG" alt="" />
 <p class="caption">General geographic information management panel</p>
 </div>
 <p><img src="images/Buton_home.png" /> Return to the <a href="arabesque.ifsttar.fr">home page</a> to start a new view.</p>
-<p>Actions on the background of the map are for changing projections of the current map and/or to add other layers : remote or personal one. See <a href="./Design-map-background.html">Design map background</a> section.</p>
-<p>Actions on the design/style is for (additional) geographic layers that have been adding through the previous action. See <a href="./Design-flowmap-signs.html">Design flowmap signs</a> section.</p>
+<p>Actions on the background of the map are for changing projections of the current map and/or to add other layers : remote or personal one.</p>
+<p>See <a href="./Design-map-background.html">Design map background</a> section.</p>
+<p>Actions on the design/style is for (additional) geographic layers that have been adding through the previous action.</p>
+<p>See <a href="./Design-flowmap-signs.html">Design flowmap signs</a> section.</p>
 </div>
 <div id="the-geographic-layer-manager" class="section level2">
 <h2><span class="header-section-number">3.3</span> The geographic layer manager</h2>
 <p>In practice, a map is composed by several layer such as the bounding boxes, the graticules, the countries of land, etc.</p>
-<p>All these layers can be loaded in the map design background section by Add Layers.</p>
+<div id="layers-forming-a-flowmap" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> Layers forming a flowmap</h3>
+<p>All these layers (from RIcardo example) can be loaded in the map design background section by Add Layers.</p>
 <p>They then appear in the layer manager sub-panel, one above the other as shown below.</p>
 <p><img src="images/RICardo_Design_signs_layers.png" /></p>
 <p>The present layers are all available on the map - but not necessarily all of them are visible.</p>
 <p>The layers on the view are positioned in an order that affects their visibility. The top layer will be visible in the foreground.</p>
-<p>The position of the layers above and below (foreground or not) can be modified by a simple drag and drop.</p>
+</div>
+<div id="layer-rearrangement" class="section level3">
+<h3><span class="header-section-number">3.3.2</span> Layer rearrangement</h3>
+<p>The position of the layers above and below (foreground/lowerground) can be modified by a simple drag and drop.</p>
+<p><img src="images/RIcardo_layout_dragdrop.png" /></p>
+<p><em><strong>Do it yourself</strong></em>:</p>
+<p>–Click on the link layer and hold it down;</p>
+<p>–Drag/drop the link layer and place it in the foreground;</p>
+<p>–Release the layer;</p>
+<p>–Repeat the same operation with the node layer if necessary._</p>
+<p>After that, it can be seen that the flow layer has just been brought to the forefront.</p>
+</div>
 </div>
 <div id="the-statistical-panel" class="section level2">
 <h2><span class="header-section-number">3.4</span> The statistical panel</h2>

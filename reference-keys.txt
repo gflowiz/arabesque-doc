@@ -6,6 +6,8 @@ primary-actions-with-butons
 primary-legend
 the-geographic-panel
 the-geographic-layer-manager
+layers-forming-a-flowmap
+layer-rearrangement
 the-statistical-panel
 data-import
 linksflow-dataset-importation
