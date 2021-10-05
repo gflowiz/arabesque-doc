@@ -124,7 +124,22 @@
 <li class="chapter" data-level="7.4.2" data-path="design-of-the-flowmap-signs-nodeslinks.html"><a href="design-of-the-flowmap-signs-nodeslinks.html#change-arrow-shape"><i class="fa fa-check"></i><b>7.4.2</b> Change arrow shape</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html"><i class="fa fa-check"></i><b>8</b> Filtering flow data (nodes/links)</a></li>
+<li class="chapter" data-level="8" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html"><i class="fa fa-check"></i><b>8</b> Filtering flow data (nodes/links)</a><ul>
+<li class="chapter" data-level="8.1" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html#available-filtering-procedures"><i class="fa fa-check"></i><b>8.1</b> Available filtering procedures</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html#filtering-possibilities"><i class="fa fa-check"></i><b>8.1.1</b> Filtering possibilities</a></li>
+<li class="chapter" data-level="8.1.2" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html#implementing-filtering"><i class="fa fa-check"></i><b>8.1.2</b> Implementing filtering</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html#filtering-by-links"><i class="fa fa-check"></i><b>8.2</b> Filtering by links</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html#add-filter"><i class="fa fa-check"></i><b>8.2.1</b> Add filter</a></li>
+<li class="chapter" data-level="8.2.2" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html#choose-the-format-of-the-variable-to-be-filtered"><i class="fa fa-check"></i><b>8.2.2</b> Choose the format of the variable to be filtered</a></li>
+<li class="chapter" data-level="8.2.3" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html#multi-variables-filtering"><i class="fa fa-check"></i><b>8.2.3</b> Multi variables filtering</a></li>
+<li class="chapter" data-level="8.2.4" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html#local-filter-of-links-by-origin-or-destination"><i class="fa fa-check"></i><b>8.2.4</b> Local filter of links: by origin or destination</a></li>
+<li class="chapter" data-level="8.2.5" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html#filter-by-a-categorical-variable"><i class="fa fa-check"></i><b>8.2.5</b> Filter by a categorical variable</a></li>
+<li class="chapter" data-level="8.2.6" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html#filter-by-a-temporal-variable"><i class="fa fa-check"></i><b>8.2.6</b> Filter by a temporal variable</a></li>
+<li class="chapter" data-level="8.2.7" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html#filter-by-a-remove"><i class="fa fa-check"></i><b>8.2.7</b> Filter by a Remove</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="filtering-flow-data-nodeslinks.html"><a href="filtering-flow-data-nodeslinks.html#filtering-by-nodes"><i class="fa fa-check"></i><b>8.3</b> Filtering by nodes</a></li>
+</ul></li>
 <li class="chapter" data-level="9" data-path="data-sets-and-examples.html"><a href="data-sets-and-examples.html"><i class="fa fa-check"></i><b>9</b> Data sets and examples</a><ul>
 <li class="chapter" data-level="9.1" data-path="data-sets-and-examples.html"><a href="data-sets-and-examples.html#ricardo-data-set-used-in-the-documentation"><i class="fa fa-check"></i><b>9.1</b> RIcardo Data set used in the documentation</a><ul>
 <li class="chapter" data-level="9.1.1" data-path="data-sets-and-examples.html"><a href="data-sets-and-examples.html#ricardo-general-description"><i class="fa fa-check"></i><b>9.1.1</b> RIcardo general description</a></li>
@@ -171,7 +186,110 @@
             <section class="normal" id="section-">
 <div id="filtering-flow-data-nodeslinks" class="section level1">
 <h1><span class="header-section-number">8</span> Filtering flow data (nodes/links)</h1>
+<p>The aim of filtering procedures is to reduce the graphic complexity of the flow map, such as the following example, and to select useful information/links/nodes to obtain an interesting flowmap.</p>
+<p><em>EXAMPLE:</em> RICardo international trade flows.</p>
+<p>Without filtering, the maps patterns reveals a <em>spaghetti-effect</em>.</p>
+<p><img src="images/RICardo_spaghetti.PNG" /></p>
+<p>The selected information shown is described in percent on the bottom of the right panel. Here, all the information is represented :100% of the links,100% of the nodes and 100% of the total information).</p>
+<p>Filtering can be performed in <em>Arabesque</em> on all variables describing the nodes and/or links.</p>
+<div id="available-filtering-procedures" class="section level2">
+<h2><span class="header-section-number">8.1</span> Available filtering procedures</h2>
+<div id="filtering-possibilities" class="section level3">
+<h3><span class="header-section-number">8.1.1</span> Filtering possibilities</h3>
+<p>Filtering is available on numerical, temporal and categorical variables.</p>
+<div id="numerical-variables" class="section level4">
+<h4><span class="header-section-number">8.1.1.1</span> Numerical variables</h4>
+<p>Numerical filtering applies to quantitative (absolute, continuous or pseudo-continuous) dat is done either visually with a brush on an interactive histogram or bar chart. It is also possible to indicate a threshold.</p>
+</div>
+<div id="temporal-variables" class="section level4">
+<h4><span class="header-section-number">8.1.1.2</span> Temporal variables</h4>
+<p>The filtering possibilities of the temporal matrices are currently only available for links. They concern the choice of a date or a period, in a numerical or graphical form (slider). Three date formats are available (string, hours, timestamp).</p>
+</div>
+<div id="categorical-variables" class="section level4">
+<h4><span class="header-section-number">8.1.1.3</span> Categorical variables</h4>
+<p>Categorical filtering is applied to nominal qualitative data available in node and/or link datasets. Three possibilities are offered, graphically and numerically:</p>
+<p>– <strong>Selection of multiple variables</strong>: the user chooses one or more of the available categorical variables (e.g., prefectures and sub-prefectures if a variable specifying the administrative profile of French cities is available) or the type of links (e.g., import or export for trade data);</p>
+<p>– <strong>Selection of a single variable</strong>: the user chooses a single variable (for the nodes: for example, the flows from and to France for mobility data; the import type flows for trade data);</p>
+<p>– <strong>Selection by deletion of a single variable</strong>: the user chooses one or more variables relating to the nodes and links to be deleted. If the deletion selection concerns nodes, all the corresponding links (for example, the Ile-de-France region for an analysis at the national level) are deleted.</p>
+</div>
+</div>
+<div id="implementing-filtering" class="section level3">
+<h3><span class="header-section-number">8.1.2</span> Implementing filtering</h3>
+<p>The <em>Arabesque</em> filtering possibilities depend on the type of variable/procedure of filtering, as well as the corresponding graph for visual implementation.</p>
+<p>Three main possibilities are proposed</p>
+<p>– (1) visual filtering using modular* <strong>selection area (brush)</strong> applied on an histogram or an bar chart (see above) ;</p>
+<p>– (2) <strong>numerical thresholding</strong> by indicating a threshold ;</p>
+<p><img src="images/schema_Histogram.png" /></p>
+<p><img src="images/schema_BarChart.png" /></p>
+<p>– (3) visual filtering <strong>using a slider</strong> (hereby, on links)</p>
+<p><img src="images/schema_Slider_temp.png" /></p>
+</div>
+</div>
+<div id="filtering-by-links" class="section level2">
+<h2><span class="header-section-number">8.2</span> Filtering by links</h2>
+<p><img src="images/icon_links_filtering.PNG" /> Icon indicating the existence of a filtering possibility applied on the links.</p>
+<div id="add-filter" class="section level3">
+<h3><span class="header-section-number">8.2.1</span> Add filter</h3>
+<p><img src="images/Add_stats_Filter.png" /></p>
+<p>First, it is to click on Add filter on the bottom of the right panel, then on Link in the opened window.</p>
+<p><img src="images/Add_filter_links1.png" /></p>
+<p>The most common filtering consists in thresholding on the flow values (the volume variable declared when importing the data)</p>
+<p><img src="images/Add_filter_links_volume.png" /></p>
+<p>For links, the possibility of filtering according to the distance traveled is also proposed.</p>
+</div>
+<div id="choose-the-format-of-the-variable-to-be-filtered" class="section level3">
+<h3><span class="header-section-number">8.2.2</span> Choose the format of the variable to be filtered</h3>
+<p>You must declare the type of data so that the corresponding graph can be displayed to allow visual thresholding.</p>
+<p><img src="images/Add_filter_links.png" /></p>
+<p><strong>Categorial</strong> is for qualitative categorical variables</p>
+<p><strong>Numeral</strong> is for filtering with the slider on a measure or on an interval of values, on a quantitative variable.</p>
+<p><strong>Remove</strong> is for deleting one or more modality/measure relating to links (and the corresponding nodes, and reversly) from be flowmap.</p>
+<p><strong>One category</strong> is for filtering on a single modality of a qualitative variable</p>
+<p><strong>Temporal</strong> is for filtering with a slider a time variable.</p>
+<p>Above, the volume is declare as numeral for plotting the resulting map with RICardo data set:</p>
+<p><img src="images/RICardo_filter_links_numeral.png" /></p>
+<p>The selected information shown is described in percent on the bottom of the panel. Here only 2,6% of the links and 15% of the nodes represents 56% of the total volume of trade flows.</p>
+<p>The minimum and maximum values are automatically shown on the histogram. It is possible to change these values by brushing on the histogram.</p>
+</div>
+<div id="multi-variables-filtering" class="section level3">
+<h3><span class="header-section-number">8.2.3</span> Multi variables filtering</h3>
+<p>Several filter can be applied on links. Hereby, we add a second filter on the distance variable.</p>
+<p><img src="images/Add_filter_links_dist.png" /></p>
+<p>The two filter will then be available in the right panel (hereby, volume and distance)</p>
+<p><img src="images/Add_links_filter_vol_distance.png" /></p>
+<p>Only flows that have traveled less than 4900 km are depicted.</p>
+</div>
+<div id="local-filter-of-links-by-origin-or-destination" class="section level3">
+<h3><span class="header-section-number">8.2.4</span> Local filter of links: by origin or destination</h3>
+<p>It is also possible to filter the links by origin or by destination.</p>
+<p><img src="images/Add_links_filter_origin.png" /></p>
+<p>Then, it is a matter of specifying a type, here categorical, to display the flows issued from a country.</p>
+<p><img src="images/Add_filter_links_origin_categorial.PNG" /></p>
+<p>You must then choose the country displayed, below, France.</p>
+<p><img src="images/Add_links_filter_origin_France.png" /></p>
+<p><em>NOTE</em>: in order to be able to see all the flows from one place of origin (or destination), it is necessary to set the previous filters to zero (but it is not necessary to delete them).</p>
+</div>
+<div id="filter-by-a-categorical-variable" class="section level3">
+<h3><span class="header-section-number">8.2.5</span> Filter by a categorical variable</h3>
+<p>It is possible to select several categorical variables (ie several countries of origin).</p>
+<p><img src="images/Add_filter_links_category.png" /></p>
+</div>
+<div id="filter-by-a-temporal-variable" class="section level3">
+<h3><span class="header-section-number">8.2.6</span> Filter by a temporal variable</h3>
+<p>The filtering of temporal data considers different field formats: date, hours and time stamp.</p>
+<p><img src="images/Add_filter_links_temporal.png" /></p>
+</div>
+<div id="filter-by-a-remove" class="section level3">
+<h3><span class="header-section-number">8.2.7</span> Filter by a Remove</h3>
+</div>
+</div>
+<div id="filtering-by-nodes" class="section level2">
+<h2><span class="header-section-number">8.3</span> Filtering by nodes</h2>
+<p>First, it is to click on Add filter, then on Node.</p>
+<p><img src="images/icon_nodes_filtering.PNG" /> Icon indicating the existence of a filtering possibility applied on the nodes.</p>
+<p><img src="images/Add_filter_nodes1.png" /></p>
 
+</div>
 </div>
             </section>
 
