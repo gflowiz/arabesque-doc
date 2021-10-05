@@ -1,5 +1,5 @@
 welcome-to-arabesque-documentation
-about-the-authors
+about-the-auteurs-contributors-of-arabesque
 interface
 the-central-panel
 primary-actions-with-butons
