@@ -6,7 +6,7 @@ The management of the map background is related to the geographic information. I
 
 ![](images/geom_panel_background.png)
 
-### The Add Projection
+## Add Projection
 
 Geographic layers can be reprojected, by choosing one of the proposed formulas: 
 
@@ -21,13 +21,13 @@ EXAMPLE: several projections of RICardo data
 
 ![](images/RIcardo_reprojection.png)
 
-### The Add Title
+## Add Title
 
 The Add Title section allows you to add a simple title to the view, useful when importing
 
 ![](images/Add_geom_title.png)
 
-### The Add layers
+## Add layers
 
 
 ![](images/geom_add_layers.png)
@@ -36,7 +36,7 @@ Five types of geographic layers can be loaded/add to construct the map (Add Node
 
 Add Node Feature and Add Link Features leads to act on the design/style the flow features: to symbolize and customize the links and the nodes.
 
-#### Add Node Features
+### Add Node Features
 
 
 ![](images/add_Nodes_features.png)
@@ -76,7 +76,8 @@ The progression (up/down) of the **color range** depends on that of the **value 
 
 ![](images/geom_add_nodes_1_color_variable3.png)
 
-#### **Size**
+**Size**
+
 The size of the nodes can be fixed and the weight defined.
 
 ![](images/geom_add_nodes_2_size.png)
@@ -125,7 +126,7 @@ EXAMPLE : Application of the shade opacity on the nodes. Symbolization of the no
 The opacity of the text shade can vary according to an indicator present in the dataset and according to a corresponding function which can be Linear, Square, SquareRoot or Logarithm and defined in an min/max interval: here between 0.25 and 0.85. 
 
 
-#### Add Link Features
+### Add Link Features
 
 ![](images/add_links_features.png)
 
@@ -145,7 +146,7 @@ EXAMPLE: straight bilateral oriented links, unique black color.
 ![](images/geom_all_links.png)
 
 
-##### Geometry
+#### Geometry
 
 The geometry of the link can be oriented or not.
 
@@ -193,7 +194,7 @@ EXAMPLE*: various geometry of a same Covid-19 flowmaps.
 
 ![](images/Ex_geom_covid.png)
 
-##### Semiology
+#### Semiology
 
 **Color**
 
@@ -213,7 +214,7 @@ The color of the links can also be set according to one of the variables present
 The choice to shade the links is associated here with a continuous (pseudo) character whose type (quantitative) must be specified.
 
 
-**Size**:
+**Size**
 
 Ideally, it is necessary to simultaneously set the size of the links. Ideally, it is necessary to simultaneously set the size using a discrete character. The links's color using a continuous character (ratio or rate) - otherwise, the links will keep the same size and the result of the application of a nuance will be hardly visible.
 
@@ -252,7 +253,7 @@ EXAMPLES:
 See layout management section to manage the overlay of the layers.
 
 
-#### Add Base Layer
+### Add Base Layer
 
 
 ![](images/Add_base_layer.png)
@@ -281,7 +282,7 @@ EXAMPLE: various geometry of a same Covid-19 flowmaps.
 
 
 
-#### Add Tile Layers (OSM) 
+### Add Tile Layers (OSM) 
 
 
 
@@ -337,7 +338,7 @@ You can **import additional tiles** by specifying a URL, the sources/contributor
 
 ![](images/Add_tile_perso2.png)
 
-#### Import GeoJson Layers
+### Import GeoJson Layers
 
 ![](images/Add_import_Geojson.png)
 

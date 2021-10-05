@@ -8,7 +8,7 @@ This section is about changing the semiology (design/style) and changing the geo
 Several types of actions can be performed on all the layer level available in the layer management section, using the following icon-buttons.
 
 
-##Types of action on a layer
+## Types of action on a layer
 
 ![](images/Buton_action_visible.png)
 
