@@ -1,11 +1,11 @@
-# About the auteurs & contributors of Arabesque {#authors}
+# Authors & contributors of Arabesque {#authors}
 
 Françoise BAHOKEN, geographer & cartographer </br> 
-Research scientist, Université Gustave Eiffel/AME/ </br>
+Research scientist, Université Gustave Eiffel/AME </br>
 _Scientific coordination (coord.), conception and documentation_
 
 Étienne CÔME, statistical & computer scientist</br>
-Research scientist, Université Gustave Eiffel/COSYS/</br>
+Research scientist, Université Gustave Eiffel/COSYS</br>
 _Development (coord.) and conception_
 
 Laurent JÉGOU, geographer & cartographer </br>
@@ -21,10 +21,10 @@ Research scientist, CNRS/UMR Géographie-Cités/PARIS </br>
 Conception
 
 Nicolas ROELANDT, geomatician </br>
-Engineer, Université Gustave Eiffel/AME/ </br>
+Engineer, Université Gustave Eiffel/AME </br>
 Conception, documentation
 
-**Trainees**
+## Trainees {-}
 
 Thomas BAPAUME, data scientist student (2018-2019) </br> 
 ESIEE Paris 
@@ -32,8 +32,12 @@ ESIEE Paris
 Paul FABRE, geomatics student (2019-2020) </br>
 ENSG Géomatique 
 
+## Join us {-}
 
-The team is open to any proposal of collaboration on the development/documentation of Arabesque. 
+The team is open to any proposal of collaboration on the development/documentation of Arabesque.
 
+You can join us developing _Arabesque_ on [GitHub](https://github.com/gflowiz/arabesque-dev)
+
+Please report any issue about this documentation on [GitHub](https://github.com/gflowiz/arabesque-doc)
 
 
