@@ -12,34 +12,32 @@ The different steps of the creation/exploration/geovisualization of a flowmap ar
 
 
 **The general structure of the interface** is composed of three panels.
+A **central panel** that contains the map - centered in France here.
+And two side panels that allow interaction with the map :
 
-- The **central panel** is for displaying the map - centered in France here.
+- The **left panel** deals with geometries and geographical layers. Here for example with the [Voyager CARTO Basemap](https://carto.com/blog/new-voyager-basemap/) as basemap.
 
-The two side panels are for playing with information:
+- The **right panel** contains tools to interact with the flow data set.
 
-- The **left panel** is for dealing with geometries and geographical layers. Here are displayed CARTO Based map : Voyager and 
-
-- The **right panel** is for playing with the flow data set.
-
-![](images/panels_arabesque.png)
+![Arabesque's general interface](images/panels_arabesque.png)
 
 
-## The central panel
+## Central panel
 
-The central part of Arabesque corresponds to the **map view**. It results from the choice of the layers to be displayed (from the left panel) and the filtering of the values of the links and nodes (from the right panel).
+The central part of Arabesque corresponds to the **map view**. It results from the choice of the layers to be displayed (from the left panel) and the filtered values of the links and nodes (from the right panel).
 
 This central panel also presents different buttons allowing the implementation of primary actions.
 
-### Primary actions with butons
+### Primary actions with buttons
 
 The white page of Arabesque is decorated with blue action buttons.
 
-![](images/central_panel_clear.png)
-**Details of the different buttons**
+![Details of the different buttons available in the central panel](images/central_panel_clear.png)
 
-![](images/Buton_in_out.png) Successively zoom in/out - the same way as with the mouse wheel.
 
-![](images/Buton_sauv.png) Save the project in .ZIP for later use.
+![](images/Buton_in_out.png) Zoom in/out - the same way as with the mouse wheel.
+
+![](images/Buton_sauv.png) Save the project in .ZIP file for later use.
 
 ![](images/Buton_export.png) Export the map in .PNG including legends and and contributors' sources for external backgrounds such as OSM or NaturalEarth data.
 
@@ -58,71 +56,88 @@ The white page of Arabesque is decorated with blue action buttons.
 
 A legend is automatically generated for each map for nodes and links plot.
 
-![](images/center_legend.png)
+![Map legend](images/center_legend.png)
 
-The symbolization elements (size, color and opacity) of the nodes and links are included. Here (for the default map), it is the volume of flows and the degree of places that are represented.
+The symbolization elements (size, color and opacity) of the nodes and links are included. 
+In default map of this example, the volume of flows and the degree of places are represented.
 
 
-## The geographic panel
+## Geographical panel
 
-The left panel is to **design the map**:
+The left panel provides tools to **design the map**:
 
-- dealing with the background as the geographical/geometrical layers 
+- define the background with the geographical or geometrical layers;
 
-- customize the _design_/style of the nodes and links features
-map.
+- customize the _design_/style of the nodes and links features.
 
-The management of geographic information is composed of two sub-sections:
+The management of geographic information is composed of the home button and two sub-sections.
 
 ![General geographic information management panel](images/geom_panel.png)
 
-![](images/Buton_home.png) Return to the [home page](arabesque.ifsttar.fr) to start a new view.
+### Home button {-}
+
+![Home button](images/Buton_home.png) Return to the [home page](arabesque.ifsttar.fr) to start a new view.
 
 
-Actions on the background of the map are for changing projections of the current map and/or to add other layers : remote or personal one. 
+### Background elements {-}
 
-See [Design map background](./Design-map-background.html) section.
+Those elements changes the background of the map :
 
-Actions on the design/style is for (additional) geographic layers that have been adding through the previous action. 
+- change projection of the current map ;
+- add a title;
+- add new layers. 
 
-See [Design flowmap signs](./Design-flowmap-signs.html) section.
-
-## The geographic layer manager
-
-In practice, a map is composed by several layer such as the bounding boxes, the graticules, the countries of land, etc.
+See the [Design map background](#background-design) section for more details.
 
 
-### Layers forming a flowmap
+### Geographical layer manager {-}
 
-All these layers (from RIcardo example) can be loaded in the map design background section by Add Layers. 
+In practice, a map is composed by several layer such as bounding boxes, graticules, administrative divisions, etc.
 
-They then appear in the layer manager sub-panel, one above the other as shown below.
+The geographical layer manager section also allows you to organize the layers.
+
+You can have as many layers you want but the *node* and *link* layers are unique and are loaded at the start of the application.
+
+#### Layers controls {-}
+
+Depending on the type of the layers, you can access several tools to customize them.
+
+_Arabesque_ provides a large amount of styling options for the signes, please see the [Design flowmap signs](#sign-design) section for more details on that subject.
+
+
+#### Flowmap Layers  {-}
+
+All the map layers (from the [RIcardo example](#ricardo)) can be loaded using the `Add Layers` button. 
+
+They appear in the layer manager sub-panel, one above the other as shown below.
 
 ![](images/RICardo_Design_signs_layers.png)
 
-The present layers are all available on the map - but not necessarily all of them are visible.
+All present layers are available on the map - but not necessarily all of them are visible.
 
-The layers on the view are positioned in an order that affects their visibility. The top layer will be visible in the foreground.
+The order of the layers affects their visibility.
+The top layer will be visible in the foreground.
 
-
-### Layer rearrangement
-
-The drawing of the different layers and their objects can be finely parameterized in _Arabesque_, in order to take into account the possible complexity of the information (density of the matrix) which requires a particular management of the superimpositions and the arrangements of the layers of links and nodes.
-
-In the example below, the largest links are placed in the foregroundby default, while the largest circles are not. After their rearrangement, the largest links are background and their color intensity has been changed (See Chapter [Designing flowmap signs](./Design-flowmap-signs.html)).
-
-_EXAMPLE:_ rearrangement of nodes and links.
-
-![](images/Dispositions.png)
+In order to change the visibility of a layer, you can rearrange its position.
 
 
-The position of the layers above and below (foreground/lowerground) can be modified by a simple drag and drop.
+### Layer rearrangement {-}
+
+The drawing of the different layers and their objects can be finely parameterized in _Arabesque_.
+The possible complexity of the information (_density of the matrix_) might require a particular management of the superimpositions and arrangements of the links and nodes layers.
+
+In the example below, the largest links are placed in the foreground by default, while the largest circles are not. After their rearrangement, the largest links are background and their color intensity has been changed (See Chapter [Designing flowmap signs](#sign-design)).
+
+![_EXAMPLE:_ rearrangement of nodes and links](images/Dispositions.png)
+
+
+The position of the layers above and below (foreground/lowerground) can be modified with a drag and drop.
 
 
 ![](images/RIcardo_layout_dragdrop.png)
 
 
-_**Do it yoursel!**_: 
+_**Do it yourself!**_: 
 
 -- Click on the link layer and hold it down;
 
@@ -130,19 +145,24 @@ _**Do it yoursel!**_:
 
 -- Release the layer;
 
--- Repeat the same operation with the node layer if necessary._
+-- Repeat the same operation with the node layer if necessary.
 
 
 After that, it can be seen that the flow layer has just been brought to the forefront.
 
 
-## The statistical panel
+## Statistical panel
 
-The **right panel** is for playing with the flow data set, nodes and links, and to **filter the map**.
+The **right panel** is for filtering the flow data set, nodes and links.
+This filtering influences the **display of the map**.
+
+You can have several filters by data type (node or link).
+An icon indicates which one is affected by the filter :
+
+* ![](images/icon_links_filtering.png) Links/flows filter
 
 
-![](images/icon_links_filtering.png) Display a filtering on the links/flows
+* ![](images/icon_nodes_filtering.png) Nodes filter
 
-
-![](images/icon_nodes_filtering.png) Display a filtering on the nodes
+Please see the [Filtering flow data](#filtering) section for more details on that subject.
 

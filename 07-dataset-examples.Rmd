@@ -2,7 +2,7 @@
 
 *Arabesque* provides several origin-destination flow data sets that are used either to illustrate the documentation or to serve as application cases for the DEMO section (these are accessible from the home page)
 
-## RIcardo Data set used in the documentation
+## RIcardo Data set used in the documentation {#ricardo}
 
 ### RIcardo general description
 

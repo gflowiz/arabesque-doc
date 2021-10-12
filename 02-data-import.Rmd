@@ -4,9 +4,9 @@ Arabesque also allows you to import your own data sets : (1) flowdata in the for
 
 For this tutorial, we will use for example the historical trade flows listed in the [RICardo database](https://github.com/gflowiz/sageo-ricardo). 
 
-For more informations about the dataset and its use with Arabesque, see in [References](./examples.html).
+For more informations about the dataset and its use with Arabesque, see in [Examples](#examples).
 
-The application _Arabesque_ accepts as input files in the following format: .CSV, .JSON and .geoJSON.
+_Arabesque_ accepts input files in the following format: .CSV, .JSON and .geoJSON.
 
 
 ## Links/flow dataset importation
