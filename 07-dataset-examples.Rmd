@@ -1,4 +1,4 @@
-# Data sets and examples
+# Data sets and examples {#examples}
 
 *Arabesque* provides several origin-destination flow data sets that are used either to illustrate the documentation or to serve as application cases for the DEMO section (these are accessible from the home page)
 

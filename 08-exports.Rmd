@@ -1,4 +1,4 @@
-# Exports
+# Exports {#export}
 
 The flowmap including the legend can be exported in .PNG format.
 

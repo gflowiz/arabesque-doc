@@ -1,4 +1,4 @@
-# Design and style of the map background
+# Design and style of the map background {#background-design}
 
 This section is about loadind external and personal layers as background, and their customization.
 

@@ -1,4 +1,4 @@
-# Interface
+# Interface {#interface}
 
 The different steps of the creation/exploration/geovisualization of a flowmap are accessible through the interface of Arabesque.
 

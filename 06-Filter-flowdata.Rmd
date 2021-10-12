@@ -1,5 +1,4 @@
-# Filtering flow data (nodes/links)
-
+# Filtering flow data (nodes/links) {#filtering}
 
 
 The aim of filtering procedures is to reduce the graphic complexity of the flow map, such as the following example, and to select useful information/links/nodes to obtain an interesting flowmap.

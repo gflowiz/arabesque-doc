@@ -15,23 +15,23 @@ file. Make sure to keep this in so that index.html is included. -->
 
 # Welcome to Arabesque documentation
 
-![](images/logo_arabesque_DOC.png)
+![Arabesque's documentation logo](images/logo_arabesque_DOC.png)
 
 _Arabesque_ is a web application for thematic mapping of flow and spatial networks datasets. This documentation aims to present how _Arabesque_ works and how to use it using examples datasets provided.
 
 **Summary:**
 
-* [Authors](./authors.html)
-* [Interface presentation](./interface.html)
-* [Data importation](./data-import.html)
-* [Data processing](./data-processing.html)
-* [Designing flowmap background](./Design-map-background.html)
-* [Designing flowmap signs](./Design-flowmap-signs.html)
-* [Filtering flowdata](./Filter-flowdata.html)
-* [Examples/datasets](./examples.html)
-* [Exporting flowmap](./exports.html)
-* [References](./examples.html)
-* [gflowiz/arabesque project](./gflowiz-arabesque-project.html)
+* [Authors](#authors)
+* [Interface presentation](#interface)
+* [Data importation](#data-import)
+* [Data processing](#data-processing)
+* [Designing flowmap background](#background-design)
+* [Designing flowmap signs](#sign-design)
+* [Filtering flowdata](#filtering)
+* [Examples/datasets](#examples)
+* [Exporting flowmap](#export)
+* [References](#references)
+* [gflowiz/arabesque project](#gflowiz-project)
 
 
 Access to [Arabesque_ documentation](https://gflowiz.github.io/arabesque-doc/) </br>

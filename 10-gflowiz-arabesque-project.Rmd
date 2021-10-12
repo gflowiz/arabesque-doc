@@ -1,5 +1,4 @@
-
-# gFLOWIZ project & Arabesque
+# gFLOWIZ project & Arabesque {#gflowiz-project}
 
 
 ## The geographic flow visualization (gFLOWIZ)

@@ -1,4 +1,4 @@
-# Design of the flowmap signs (nodes/links)
+# Design of the flowmap signs (nodes/links) {#sign-design}
 
 This section is about changing the semiology (design/style) and changing the geometry (size, ...) of flowmap signs: nodes and links.
 
