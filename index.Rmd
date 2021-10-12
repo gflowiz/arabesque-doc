@@ -19,7 +19,7 @@ file. Make sure to keep this in so that index.html is included. -->
 
 _Arabesque_ is a web application for thematic mapping of flow and spatial networks datasets. This documentation aims to present how _Arabesque_ works and how to use it using examples datasets provided.
 
-**Summary:**
+## Summary {-}
 
 * [Authors](#authors)
 * [Interface presentation](#interface)
@@ -34,13 +34,18 @@ _Arabesque_ is a web application for thematic mapping of flow and spatial networ
 * [gflowiz/arabesque project](#gflowiz-project)
 
 
-Access to [Arabesque_ documentation](https://gflowiz.github.io/arabesque-doc/) </br>
-Access to a light version of the documentation in french [Arabesque_ documentation for SAGEO](https://github.com/gflowiz/sageo-ricardo)</br>
-**Access to [arabesque.ifsttar.fr](http://arabesque.ifsttar.fr/)** </br>
+## Useful links {-}
+
+- A lighter version of this documentation, in French, is available here : [Arabesque documentation for SAGEO](https://github.com/gflowiz/sageo-ricardo)
+- **Access to the _Arabesque_ application here : [arabesque.ifsttar.fr](http://arabesque.ifsttar.fr/)** 
 
 ---
-This is a Free and OpenSource project, feel free to help us make it better.</br>
-Please report any issue on [GitHub](https://github.com/gflowiz/arabesque).
+This is a Free and OpenSource project, feel free to help us make it better.
+
+Please report any issue on [GitHub](https://github.com/gflowiz/arabesque-doc).
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work by the gFlowiz team is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 
 ```{r include=FALSE}
@@ -49,6 +54,3 @@ knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work by the gFlowiz team is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-
