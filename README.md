@@ -1,28 +1,34 @@
 ![](images/logo_arabesque_DOC.png)
 
 
-This book contains the general documentation of [Arabesque](http://arabesque.ifsttar.fr/), a web application for exploration and filtering origin-destination flows for thematic mapping purposes.
+This book contains the general documentation of [Arabesque](https://tonhauck.github.io/dev-arabesque/), a web application for exploration and filtering origin-destination flows for thematic mapping purposes. Arabesque_ presents different possibilities for action on geographical, statistical and cartographic representation of movements.
 
-_Arabesque_ presents different possibilities for action on geographical, statistical and cartographic representation.
+**Documentation**  </br>
+ online documentation is available [here](https://gflowiz.github.io/arabesque-doc/), for version 1. Updating for version 1 is in progress.
 
-[Index](./index.html) to access to the different sections of the documentation.
+**About _Arabesque_ development** </br>
+The actual version of Arabesque can be accessed [here](https://tonhauck.github.io/dev-arabesque/). </br>
+For current developments of this version 2, see: [GitHub/gflowiz/arabesque](https://github.com/gflowiz/arabesque-dev).
 
-**About _Arabesque_ development**
-The online version is version 1.
-for current developments to version 2, see: [GitHub/gflowiz/arabesque](https://github.com/gflowiz/arabesque-dev)
+The online version on [Ifsttar's website](http://arabesque.ifsttar.fr/) is version 1 - it is still available but some bugs remain.
 
-**Online documentation** (in progress) is available here: [gflowiz.github.io/arabesque-doc](https://gflowiz.github.io/arabesque-doc/).
+**Issues** </br>
+Arabesque is a Free and OpenSource project, feel free to help us make it better by reporting issues on our [gitHub](https://github.com/gflowiz/arabesque-doc/issues). 
 
-**Report issue** about this documentation on [GitHub](https://github.com/gflowiz/arabesque-doc/issues). 
-This is a Free and OpenSource project, feel free to help us make it better.
+**Main keywords** </br>
+origine-destination matrix, hyper matrix, multiplex graph, exploration, geovisualization, geoweb, flow mapping, semiology.
 
-**Main keywords**: origine-destination matrix, hyper matrix, multiplex graph, geoweb, flow mapping, semiology.
-
+**About**</br>
 _Arabesque_ is a part of the **GFlowiz (geographic flow visualisation)* ** project, 
 an interdisciplinary collaboration carried out with the objective of designing 
 and developing a new web application dedicated to the geo visualization of flow 
 and spatial networks datasets. See (in French) : [geoflowiz.hypotheses](https://geoflowiz.hypotheses.org/)
 
+**Contacts** </br>
+[Françoise BAHOKEN & Étienne CÔME](mailto:francoise.bahoken@univ-eiffel.fr,etienne.come@univ-eiffel.fr)
+
 ![](images/logo_UGE-gflowiz.png)
 
-The application and its documentation is under BSD 2-Clause License, Copyright (c) 2019-2020, Univ. Gustave Eiffel/IFSTTAR. All rights reserved.
+The application and its documentation is under BSD 2-Clause License, Copyright (c) 2019-2023, Univ. Gustave Eiffel/IFSTTAR. All rights reserved.
+
+
