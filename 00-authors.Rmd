@@ -12,6 +12,9 @@ Laurent JÉGOU, geographer & cartographer </br>
 Teacher-researcher, Université Toulouse 2 / UMR 5193 LISST</br>
 _Conception (co-coord.)_
 
+Tony HAUCK (since 2022)
+Geomatician, Development service provider
+
 Grégoire LE CAMPION, statistician </br>
 Engineer, CNRS/UMR Passages </br>
 Conception
@@ -32,8 +35,5 @@ ESIEE Paris
 Paul FABRE, geomatics student (2019-2020) </br>
 ENSG Géomatique 
 
-
 The team is open to any proposal of collaboration on the development/documentation of Arabesque. 
-
-
 
