@@ -1,16 +1,13 @@
 ![](images/logo_arabesque_DOC.png)
 
 
-This book contains the general documentation of [Arabesque](https://tonhauck.github.io/dev-arabesque/), a web application for exploration and filtering origin-destination flows for thematic mapping purposes. Arabesque_ presents different possibilities for action on geographical, statistical and cartographic representation of movements.
+This book contains the general documentation of [Arabesque](https://gflowiz.github.io/dev-arabesque/), a web application for exploration and filtering origin-destination flows for thematic mapping purposes. Arabesque presents different possibilities for action on geographical, statistical and cartographic representation of movements.
 
 **Documentation**  </br>
- online documentation is available [here](https://gflowiz.github.io/arabesque-doc/), for version 1. Updating for version 1 is in progress.
+online documentation is available [here](https://gflowiz.github.io/arabesque-doc/), for version 1. Updating for version 2 is in progress.
 
 **About _Arabesque_ development** </br>
-The actual version of Arabesque can be accessed [here](https://tonhauck.github.io/dev-arabesque/). </br>
-For current developments of this version 2, see: [GitHub/gflowiz/arabesque](https://github.com/gflowiz/arabesque-dev).
-
-The online version on [Ifsttar's website](http://arabesque.ifsttar.fr/) is version 1 - it is still available but some bugs remain.
+The second version of Arabesque can be accessed [here](https://github.com/gflowiz/dev-arabesque). </br>
 
 **Issues** </br>
 Arabesque is a Free and OpenSource project, feel free to help us make it better by reporting issues on our [gitHub](https://github.com/gflowiz/arabesque-doc/issues). 
