@@ -1,23 +1,24 @@
 --- 
 title: "Arabesque documentation"
-author: "Françoise BAHOKEN, Étienne CÔME & Laurent JÉGOU (coord.) </br> Grégoire LE CAMPION, Marion MAISONOBE & Nicolas ROELANDT"
+author: "Françoise BAHOKEN (eds.)"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "Online documentation of the Arabesque web flow mapping application"
+description: "Online documentation of the Arabesque flow mapping application"
 ---
 
 <!-- index.Rmd has to have some content in it or it won't create an index.html 
 file. Make sure to keep this in so that index.html is included. -->
 
-# Welcome to Arabesque documentation
+# Hello !
 
 ![](images/logo_arabesque_DOC.png)
 
-_Arabesque_ is a web application for thematic mapping of flow and spatial networks datasets. This documentation aims to present how _Arabesque_ works and how to use it using examples datasets provided.
+This documentation aims to present how [Arabesque](https://gflowiz.github.io/dev-arabesque/) works and how to use it using examples provided.
+
 
 **Summary:**
 
@@ -34,13 +35,10 @@ _Arabesque_ is a web application for thematic mapping of flow and spatial networ
 * [gflowiz/arabesque project](./gflowiz-arabesque-project.html)
 
 
-Access to [Arabesque_ documentation](https://gflowiz.github.io/arabesque-doc/) </br>
-Access to a light version of the documentation in french [Arabesque_ documentation for SAGEO](https://github.com/gflowiz/sageo-ricardo)</br>
-**Access to [arabesque.ifsttar.fr](http://arabesque.ifsttar.fr/)** </br>
+**Access to [Arabesque](https://gflowiz.github.io/dev-arabesque/)** </br>
 
 ---
-This is a Free and OpenSource project, feel free to help us make it better.</br>
-Please report any issue on [GitHub](https://github.com/gflowiz/arabesque).
+Feel free to report any issue on [Arabesque-dev/issues](https://github.com/gflowiz/arabesque-doc/issues).
 
 
 ```{r include=FALSE}
@@ -50,5 +48,5 @@ knitr::write_bib(c(
 ), 'packages.bib')
 ```
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work by the gFlowiz team is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work by the gflowiz team (see [authors](./authors.html)) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 

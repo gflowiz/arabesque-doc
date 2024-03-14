@@ -19,14 +19,26 @@ In 2021, funding is renewed through 2023, december in conjunction with the start
 
 ### Contributors
 
-- Scientific responsibility, design, development and coordination </br>
- Françoise BAHOKEN, Étienne CÔME & Laurent JÉGOU
+- _Scientific responsibility_, design, development and coordination </br>
+ Françoise BAHOKEN (holder) and Étienne CÔME (co-holder) </br>
+ with the collaboration of Laurent JÉGOU
  
-- Development & Design </br>
-Étienne CÔME (coord.), Thomas BAPAUME (2019) & Paul FABRE (2020).
+- _Development and Design_ </br>
+Étienne CÔME (coord.) </br>
+Tony Hauck (2023, 2024)</br>
+Paul FABRE (2020) </br> 
+Thomas BAPAUME (2019) for the first version development </br>
 
-- Other members </br>
-Grégoire LE CAMPION, Marion MAISONOBE, Alain NGUYEN (2018) & Nicolas ROELANDT
+- _Conception & Design_ </br>
+Françoise BAHOKEN (coord.) </br>
+Étienne CÔME </br>
+Grégoire LE CAMPION (2018-2021) </br>
+Laurent JÉGOU </br>
+Marion MAISONOBE (2018-2021) </br> 
+Alain NGUYEN (2018) </br>
+Nicolas ROELANDT (2019-) </br>
+
+The team is open to any proposal of collaboration on the development/documentation of Arabesque. 
 
 
 ## About _Arabesque_
