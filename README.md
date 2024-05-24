@@ -1,12 +1,14 @@
 ![](images/logo_arabesque_DOC.png)
 
 **About this**  </br>
-This book contains the general documentation of the current version of [Arabesque](https://gflowiz.github.io/dev-arabesque/) : a web application for thematic origin-destination flow or movement mapping. It allows you to explore, filter and geovisualize your own data sets. 
+This book contains the general documentation of the first version of [Arabesque](https://gflowiz.github.io/dev-arabesque/) : a web application for thematic origin-destination flow or movement mapping. It allows you to explore, filter and geovisualize your own data sets. 
 [Go to summary...](https://gflowiz.github.io/arabesque-doc/index.html)
 
 **Current version** </br>
 The current release of Arabesque is the version 2 (2024). </br>
 The current developments can be accessed from this [Arabesque-dev](https://github.com/gflowiz/dev-arabesque) github repositery. </br>
+
+=> [Here is the online book documentation repo of Arabesque 2](https://github.com/gflowiz/arabesque2-doc).
 
 **Issues** </br>
 Arabesque is a Free and OpenSource project, so feel free to help us make it better by reporting issues on our [Arabesque-dev/issues](https://github.com/gflowiz/arabesque-doc/issues). 
